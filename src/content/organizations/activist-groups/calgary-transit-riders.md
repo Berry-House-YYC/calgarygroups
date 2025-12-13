@@ -1,0 +1,17 @@
+---
+layout: layouts/organization.njk
+name: "Calgary Transit Riders"
+type: "activist-group"
+interests: ["social-impact"]
+age_range: "all-ages"
+identity_focused: false
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "active"
+permalink: "/organizations/{{ page.fileSlug }}/"
+---
+
+Focused on Urban Issues.
+
+**Contact Info:**
+- Website: https://www.calgarytransitriders.ca/

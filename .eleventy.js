@@ -1,0 +1,41 @@
+const nunjucks = require("nunjucks");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+
+  eleventyConfig.addNunjucksFilter("json", (value) => {
+    const json = value === undefined ? "null" : JSON.stringify(value);
+    return new nunjucks.runtime.SafeString(json);
+  });
+
+  eleventyConfig.addFilter("jsonString", (value) => {
+    return value === undefined ? "null" : JSON.stringify(value);
+  });
+
+  eleventyConfig.addFilter("stripHtml", (value) => {
+    const str = typeof value === "string" ? value : "";
+    return str.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  });
+
+  eleventyConfig.addFilter("truncate", (value, maxLength = 180) => {
+    const str = typeof value === "string" ? value : "";
+    if (str.length <= maxLength) return str;
+    return str.slice(0, Math.max(0, maxLength - 1)).trimEnd() + "…";
+  });
+
+  eleventyConfig.addCollection("organizations", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("./src/content/organizations/**/*.md");
+  });
+
+  return {
+    dir: {
+      input: "src",
+      includes: "_includes",
+      data: "_data",
+      output: "_site"
+    },
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    templateFormats: ["njk", "md", "html"]
+  };
+};

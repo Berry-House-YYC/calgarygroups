@@ -1,0 +1,251 @@
+---
+layout: layouts/base.njk
+title: Directory
+---
+
+{% set organizationsData %}
+[
+{% for org in collections.organizations %}
+  {
+    "name": {{ org.data.name | json | safe }},
+    "type": {{ org.data.type | json | safe }},
+    "interests": {{ (org.data.interests or []) | json | safe }},
+    "age_range": {{ org.data.age_range | json | safe }},
+    "identity_focused": {{ org.data.identity_focused | json | safe }},
+    "meeting_format": {{ org.data.meeting_format | json | safe }},
+    "location_area": {{ org.data.location_area | json | safe }},
+    "status": {{ org.data.status | json | safe }},
+    "excerpt": {{ (org.templateContent | stripHtml | truncate(220)) | json | safe }},
+    "url": {{ org.url | json | safe }}
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]
+{% endset %}
+
+<template id="organizations-data">
+{{ organizationsData | safe }}
+</template>
+
+<section class="space-y-6" x-data="directory(getOrganizations())">
+  <header class="space-y-2">
+    <h1 class="text-3xl font-semibold tracking-tight">Calgary Groups Directory</h1>
+    <p class="max-w-2xl text-slate-700">Search and filter grassroots organizations, clubs, activist groups, and community initiatives in Calgary.</p>
+  </header>
+
+  <div class="grid gap-4 lg:grid-cols-12">
+    <aside class="lg:col-span-4">
+      <div class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <h2 class="text-base font-semibold">Filters</h2>
+          <button type="button" class="rounded px-2 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400" @click="clearAll()">Clear</button>
+        </div>
+
+        <div class="mt-4">
+          <label class="text-sm font-medium text-slate-900" for="search">Search</label>
+          <input id="search" type="search" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200" placeholder="Search by name or description" x-model.trim="q" @input.debounce.250ms="syncUrl()" />
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm font-medium text-slate-900">Type</p>
+          <div class="mt-2 space-y-2 text-sm">
+            <template x-for="t in typeOptions" :key="t">
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" :value="t" x-model="selectedTypes" @change="syncUrl()" />
+                <span x-text="t"></span>
+              </label>
+            </template>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm font-medium text-slate-900">Interests</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-sm">
+            <template x-for="i in interestOptions" :key="i">
+              <label class="flex items-center gap-2">
+                <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" :value="i" x-model="selectedInterests" @change="syncUrl()" />
+                <span x-text="i"></span>
+              </label>
+            </template>
+          </div>
+        </div>
+
+        <fieldset class="mt-4">
+          <legend class="text-sm font-medium text-slate-900">Interest matching</legend>
+          <div class="mt-2 flex flex-wrap gap-3 text-sm">
+            <label class="flex items-center gap-2">
+              <input type="radio" class="h-4 w-4 border-slate-300 text-slate-900 focus:ring-slate-400" name="interestMode" value="any" x-model="interestMode" @change="syncUrl()" />
+              <span>Match any</span>
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="radio" class="h-4 w-4 border-slate-300 text-slate-900 focus:ring-slate-400" name="interestMode" value="all" x-model="interestMode" @change="syncUrl()" />
+              <span>Match all</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="mt-4">
+          <p class="text-sm font-medium text-slate-900">Meeting format</p>
+          <select class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200" x-model="meetingFormat" @change="syncUrl()">
+            <option value="">Any</option>
+            <template x-for="m in meetingFormatOptions" :key="m">
+              <option :value="m" x-text="m"></option>
+            </template>
+          </select>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm font-medium text-slate-900">Location</p>
+          <select class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200" x-model="locationArea" @change="syncUrl()">
+            <option value="">Any</option>
+            <template x-for="l in locationAreaOptions" :key="l">
+              <option :value="l" x-text="l"></option>
+            </template>
+          </select>
+        </div>
+
+        <div class="mt-4">
+          <label class="flex items-center gap-2 text-sm">
+            <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" x-model="identityFocused" @change="syncUrl()" />
+            <span class="font-medium text-slate-900">Identity-focused</span>
+          </label>
+        </div>
+
+        <div class="mt-4 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700" aria-live="polite">
+          <span class="font-medium" x-text="filtered.length"></span>
+          <span>results</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="lg:col-span-8">
+      <div class="grid gap-4 sm:grid-cols-2">
+        <template x-for="org in filtered" :key="org.url">
+          <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+            <div class="flex items-start justify-between gap-3">
+              <h2 class="text-lg font-semibold leading-snug">
+                <a class="rounded hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" :href="org.url" x-text="org.name"></a>
+              </h2>
+              <span class="shrink-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700" x-text="org.type"></span>
+            </div>
+            <p class="mt-2 text-sm text-slate-700" x-text="org.excerpt"></p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <template x-for="tag in (org.interests || []).slice(0, 3)" :key="tag">
+                <span class="rounded-full bg-slate-50 px-2 py-1 text-xs font-medium text-slate-700" x-text="tag"></span>
+              </template>
+            </div>
+          </article>
+        </template>
+      </div>
+
+      <div class="mt-6 rounded-lg border border-slate-200 bg-white p-6 text-sm text-slate-700 shadow-sm" x-show="filtered.length === 0" x-cloak>
+        <p class="font-medium text-slate-900">No results</p>
+        <p class="mt-1">Try clearing filters or using a broader search.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function getOrganizations() {
+    const el = document.getElementById("organizations-data");
+    if (!el) return [];
+    try {
+      return JSON.parse(el.innerHTML || "[]");
+    } catch {
+      return [];
+    }
+  }
+
+  function directory(initialOrganizations) {
+    return {
+      organizations: Array.isArray(initialOrganizations) ? initialOrganizations : [],
+      q: "",
+      selectedTypes: [],
+      selectedInterests: [],
+      interestMode: "any",
+      meetingFormat: "",
+      locationArea: "",
+      identityFocused: false,
+      init() {
+        this.hydrateFromUrl();
+      },
+      get typeOptions() {
+        return [...new Set(this.organizations.map((o) => o.type).filter(Boolean))].sort();
+      },
+      get interestOptions() {
+        const all = [];
+        for (const org of this.organizations) {
+          for (const tag of org.interests || []) all.push(tag);
+        }
+        return [...new Set(all.filter(Boolean))].sort();
+      },
+      get meetingFormatOptions() {
+        return [...new Set(this.organizations.map((o) => o.meeting_format).filter(Boolean))].sort();
+      },
+      get locationAreaOptions() {
+        return [...new Set(this.organizations.map((o) => o.location_area).filter(Boolean))].sort();
+      },
+      get filtered() {
+        const q = (this.q || "").toLowerCase();
+        return this.organizations.filter((org) => {
+          if (q) {
+            const haystack = `${org.name || ""} ${org.excerpt || ""}`.toLowerCase();
+            if (!haystack.includes(q)) return false;
+          }
+
+          if (this.selectedTypes.length > 0 && !this.selectedTypes.includes(org.type)) return false;
+
+          if (this.selectedInterests.length > 0) {
+            const orgTags = Array.isArray(org.interests) ? org.interests : [];
+            const ok = this.interestMode === "all"
+              ? this.selectedInterests.every((t) => orgTags.includes(t))
+              : this.selectedInterests.some((t) => orgTags.includes(t));
+            if (!ok) return false;
+          }
+
+          if (this.meetingFormat && org.meeting_format !== this.meetingFormat) return false;
+          if (this.locationArea && org.location_area !== this.locationArea) return false;
+
+          if (this.identityFocused) {
+            if (!org.identity_focused) return false;
+          }
+
+          return true;
+        });
+      },
+      clearAll() {
+        this.q = "";
+        this.selectedTypes = [];
+        this.selectedInterests = [];
+        this.interestMode = "any";
+        this.meetingFormat = "";
+        this.locationArea = "";
+        this.identityFocused = false;
+        this.syncUrl();
+      },
+      hydrateFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        this.q = params.get("q") || "";
+        this.selectedTypes = params.getAll("type");
+        this.selectedInterests = params.getAll("interest");
+        this.interestMode = params.get("interestMode") === "all" ? "all" : "any";
+        this.meetingFormat = params.get("format") || "";
+        this.locationArea = params.get("location") || "";
+        this.identityFocused = params.get("identity") === "1";
+      },
+      syncUrl() {
+        const params = new URLSearchParams();
+        if (this.q) params.set("q", this.q);
+        for (const t of this.selectedTypes) params.append("type", t);
+        for (const i of this.selectedInterests) params.append("interest", i);
+        if (this.interestMode === "all") params.set("interestMode", "all");
+        if (this.meetingFormat) params.set("format", this.meetingFormat);
+        if (this.locationArea) params.set("location", this.locationArea);
+        if (this.identityFocused) params.set("identity", "1");
+        const qs = params.toString();
+        const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+        window.history.replaceState(null, "", url);
+      }
+    };
+  }
+</script>

@@ -1,0 +1,121 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "organizations_activist_groups"
+    label: "Organizations (Activist Groups)"
+    label_singular: "Organization"
+    folder: "src/content/organizations/activist-groups"
+    create: true
+    identifier_field: "name"
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "activist-group" }
+      - { label: "Interests", name: "interests", widget: "list", required: false }
+      - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
+      - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
+      - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
+      - { label: "Location area", name: "location_area", widget: "string", required: false, default: "city-wide" }
+      - { label: "Status", name: "status", widget: "select", required: false, options: ["active", "inactive", "unknown"], default: "active" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "organizations_clubs"
+    label: "Organizations (Clubs)"
+    label_singular: "Organization"
+    folder: "src/content/organizations/clubs"
+    create: true
+    identifier_field: "name"
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "club" }
+      - { label: "Interests", name: "interests", widget: "list", required: false }
+      - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
+      - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
+      - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
+      - { label: "Location area", name: "location_area", widget: "string", required: false, default: "city-wide" }
+      - { label: "Status", name: "status", widget: "select", required: false, options: ["active", "inactive", "unknown"], default: "active" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "organizations_grassroots_initiatives"
+    label: "Organizations (Grassroots Initiatives)"
+    label_singular: "Organization"
+    folder: "src/content/organizations/grassroots-initiatives"
+    create: true
+    identifier_field: "name"
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "grassroots-initiative" }
+      - { label: "Interests", name: "interests", widget: "list", required: false }
+      - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
+      - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
+      - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
+      - { label: "Location area", name: "location_area", widget: "string", required: false, default: "city-wide" }
+      - { label: "Status", name: "status", widget: "select", required: false, options: ["active", "inactive", "unknown"], default: "active" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "organizations_resources"
+    label: "Organizations (Resources)"
+    label_singular: "Organization"
+    folder: "src/content/organizations/resources"
+    create: true
+    identifier_field: "name"
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "resource" }
+      - { label: "Interests", name: "interests", widget: "list", required: false }
+      - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
+      - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
+      - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
+      - { label: "Location area", name: "location_area", widget: "string", required: false, default: "city-wide" }
+      - { label: "Status", name: "status", widget: "select", required: false, options: ["active", "inactive", "unknown"], default: "active" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "src/pages/about.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Submit"
+        name: "submit"
+        file: "src/pages/submit.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/submit/" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/pages/contact.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/contact/" }
+          - { label: "Body", name: "body", widget: "markdown" }

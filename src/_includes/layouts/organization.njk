@@ -2,29 +2,29 @@
 layout: layouts/base.njk
 ---
 
-<article class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+<article class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
   <header>
-    <p class="text-sm font-medium text-slate-600">{{ type }}</p>
+    <p class="text-sm font-medium text-slate-600 dark:text-slate-300">{{ type }}</p>
     <h1 class="mt-1 text-2xl font-semibold tracking-tight">{{ name }}</h1>
 
     <div class="mt-4 flex flex-wrap gap-2">
       {% if interests %}
         {% for tag in interests %}
-          <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">{{ tag }}</span>
+          <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:bg-slate-950 dark:text-slate-200">{{ tag }}</span>
         {% endfor %}
       {% endif %}
     </div>
 
-    <dl class="mt-4 grid grid-cols-1 gap-2 text-sm text-slate-700 sm:grid-cols-2">
-      {% if age_range %}<div><dt class="font-medium text-slate-900">Age range</dt><dd>{{ age_range }}</dd></div>{% endif %}
-      {% if meeting_format %}<div><dt class="font-medium text-slate-900">Meeting format</dt><dd>{{ meeting_format }}</dd></div>{% endif %}
-      {% if location_area %}<div><dt class="font-medium text-slate-900">Location</dt><dd>{{ location_area }}</dd></div>{% endif %}
-      {% if status %}<div><dt class="font-medium text-slate-900">Status</dt><dd>{{ status }}</dd></div>{% endif %}
-      {% if identity_focused is not undefined %}<div><dt class="font-medium text-slate-900">Identity-focused</dt><dd>{% if identity_focused %}Yes{% else %}No{% endif %}</dd></div>{% endif %}
+    <dl class="mt-4 grid grid-cols-1 gap-2 text-sm text-slate-700 dark:text-slate-300 sm:grid-cols-2">
+      {% if age_range %}<div><dt class="font-medium text-slate-900 dark:text-slate-100">Age range</dt><dd>{{ age_range }}</dd></div>{% endif %}
+      {% if meeting_format %}<div><dt class="font-medium text-slate-900 dark:text-slate-100">Meeting format</dt><dd>{{ meeting_format }}</dd></div>{% endif %}
+      {% if location_area %}<div><dt class="font-medium text-slate-900 dark:text-slate-100">Location</dt><dd>{{ location_area }}</dd></div>{% endif %}
+      {% if status %}<div><dt class="font-medium text-slate-900 dark:text-slate-100">Status</dt><dd>{{ status }}</dd></div>{% endif %}
+      {% if identity_focused is not undefined %}<div><dt class="font-medium text-slate-900 dark:text-slate-100">Identity-focused</dt><dd>{% if identity_focused %}Yes{% else %}No{% endif %}</dd></div>{% endif %}
     </dl>
   </header>
 
-  <div class="prose prose-slate mt-6 max-w-none">
+  <div class="prose mt-6 max-w-none">
     {{ content | safe }}
   </div>
 </article>

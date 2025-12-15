@@ -1,34 +1,34 @@
-<footer class="border-t border-slate-200 bg-white">
+<footer class="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
   <div class="mx-auto max-w-6xl px-4 py-10">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
       <div class="space-y-3">
-        <p class="text-sm font-semibold text-slate-900">{{ site.name }}</p>
-        <p class="text-sm text-slate-600">{{ site.description }}</p>
-        <p class="text-sm text-slate-600">Made by <a class="font-medium text-slate-900 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="https://berryhouse.ca/" target="_blank" rel="noopener noreferrer">Berry House</a>.</p>
+        <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">{{ site.name }}</p>
+        <p class="text-sm text-slate-600 dark:text-slate-300">{{ site.description }}</p>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Made by <a class="fun-link font-medium text-slate-900 hover:bg-slate-100 dark:text-slate-100 dark:hover:bg-slate-900" href="https://berryhouse.ca/" target="_blank" rel="noopener noreferrer">Berry House</a>.</p>
       </div>
 
       <div class="space-y-3">
-        <p class="text-sm font-semibold text-slate-900">Explore</p>
-        <ul class="space-y-2 text-sm text-slate-600">
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/">Directory</a></li>
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/about/">About</a></li>
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/submit/">Submit a group</a></li>
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/contact/">Contact</a></li>
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/sitemap/">Sitemap</a></li>
-          <li><a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/feed.xml">RSS feed</a></li>
+        <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">Explore</p>
+        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/">Directory</a></li>
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/about/">About</a></li>
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/submit/">Submit a group</a></li>
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/contact/">Contact</a></li>
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/sitemap/">Sitemap</a></li>
+          <li><a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/feed.xml">RSS feed</a></li>
         </ul>
       </div>
 
       <div class="space-y-3">
-        <p class="text-sm font-semibold text-slate-900">Support & legal</p>
+        <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">Support & legal</p>
 
         {% if funding and funding.supportLinks and funding.supportLinks.length %}
           <div>
-            <p class="text-sm font-medium text-slate-900">Support financially</p>
-            <ul class="mt-2 space-y-2 text-sm text-slate-600">
+            <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Support financially</p>
+            <ul class="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
               {% for link in funding.supportLinks %}
                 <li>
-                  <a class="inline-flex items-center gap-2 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  <a class="fun-link inline-flex items-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-900" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i aria-hidden="true" class="fa-solid fa-heart text-rose-600"></i>
                     <span>{{ link.label }}</span>
                   </a>
@@ -38,44 +38,44 @@
           </div>
         {% endif %}
 
-        <ul class="space-y-2 text-sm text-slate-600">
+        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
           <li>
-            <a class="inline-flex items-center gap-2 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="https://github.com/Berry-House-YYC/calgarygroups" target="_blank" rel="noopener noreferrer">
+            <a class="fun-link inline-flex items-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-900" href="https://github.com/Berry-House-YYC/calgarygroups" target="_blank" rel="noopener noreferrer">
               <i aria-hidden="true" class="fa-brands fa-github"></i>
               <span>Source code</span>
             </a>
           </li>
           <li>
-            <a class="inline-flex items-center gap-2 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="https://github.com/Berry-House-YYC/calgarygroups/issues" target="_blank" rel="noopener noreferrer">
+            <a class="fun-link inline-flex items-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-900" href="https://github.com/Berry-House-YYC/calgarygroups/issues" target="_blank" rel="noopener noreferrer">
               <i aria-hidden="true" class="fa-regular fa-flag"></i>
               <span>Report an issue</span>
             </a>
           </li>
           <li>
-            <a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="https://opensource.org/license/mit/" target="_blank" rel="noopener noreferrer">Code license: MIT</a>
+            <a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="https://opensource.org/license/mit/" target="_blank" rel="noopener noreferrer">Code license: MIT</a>
           </li>
           <li>
-            <a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Content license: CC BY 4.0</a>
+            <a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Content license: CC BY 4.0</a>
           </li>
           <li>
-            <a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/sitemap.xml">XML sitemap</a>
+            <a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/sitemap.xml">XML sitemap</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="mt-10 border-t border-slate-200 pt-6">
-      <p class="text-sm font-medium text-slate-900">Land acknowledgement</p>
-      <p class="mt-2 max-w-4xl text-sm text-slate-600">
+      <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Land acknowledgement</p>
+      <p class="mt-2 max-w-4xl text-sm text-slate-600 dark:text-slate-300">
         We acknowledge that Calgary (Mohkínstsis) is located on the traditional territories of the peoples of Treaty 7, including the Blackfoot Confederacy (Siksika, Piikani, and Kainai), the Tsuut’ina Nation, and the Stoney Nakoda Nations (Îyârhe Nakoda). We also recognize the Métis Nation of Alberta, Region 3. We honour and respect the diverse histories, languages, and cultures of First Nations, Métis, and Inuit peoples.
       </p>
 
       <div class="mt-4 flex flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>© {{ build.year }} {{ site.name }}</p>
+        <p class="text-slate-500 dark:text-slate-400">© {{ build.year }} {{ site.name }}</p>
         <p>
-          <a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/feed.xml">RSS</a>
+          <a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/feed.xml">RSS</a>
           <span aria-hidden="true"> · </span>
-          <a class="hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" href="/sitemap/">Sitemap</a>
+          <a class="fun-link hover:bg-slate-100 dark:hover:bg-slate-900" href="/sitemap/">Sitemap</a>
         </p>
       </div>
     </div>

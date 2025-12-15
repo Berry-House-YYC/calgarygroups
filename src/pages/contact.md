@@ -2,6 +2,7 @@
 layout: layouts/page.njk
 title: Contact & Feedback
 permalink: /contact/
+page_icon: fa-solid fa-envelope
 ---
 
 ## Contact

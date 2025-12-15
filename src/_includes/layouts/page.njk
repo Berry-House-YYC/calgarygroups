@@ -3,7 +3,18 @@ layout: layouts/base.njk
 ---
 
 <article class="mx-auto max-w-3xl">
-  <div class="prose max-w-none">
+  <header class="mb-8 flex items-center gap-3">
+    {% if page_icon %}
+      <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+        <i aria-hidden="true" class="{{ page_icon }}"></i>
+      </span>
+    {% endif %}
+    <div class="min-w-0">
+      <h1 class="break-words text-3xl font-semibold tracking-tight">{{ title or name }}</h1>
+      {% if description %}<p class="mt-1 text-sm text-slate-600 dark:text-slate-300">{{ description }}</p>{% endif %}
+    </div>
+  </header>
+  <div class="prose max-w-none dark:text-slate-100">
     {{ content | safe }}
   </div>
 </article>

@@ -1,13 +1,27 @@
-<header class="border-b border-slate-200 bg-white">
+<header class="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
   <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-    <a class="inline-flex items-center gap-2 break-words text-lg font-semibold tracking-tight" href="/">
+    <a class="fun-link inline-flex items-center gap-2 break-words text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-100" href="/">
       <img src="/favicon/favicon-32x32.png" width="20" height="20" alt="" class="h-5 w-5" />
       <span>{{ site.name }}</span>
     </a>
-    <nav aria-label="Primary" class="flex flex-wrap items-center gap-2 text-sm sm:gap-4">
-      <a class="rounded px-2 py-1 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400" href="/about/">About</a>
-      <a class="rounded px-2 py-1 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400" href="/submit/">Submit</a>
-      <a class="rounded px-2 py-1 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-400" href="/contact/">Contact</a>
+    <nav aria-label="Primary" class="flex flex-wrap items-center gap-1 text-sm sm:gap-2">
+      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900" href="/about/">
+        <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
+        <span>About</span>
+      </a>
+      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900" href="/submit/">
+        <i aria-hidden="true" class="fa-solid fa-paper-plane"></i>
+        <span>Submit</span>
+      </a>
+      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900" href="/contact/">
+        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+
+      <button id="theme-toggle" type="button" class="fun-link ml-1 text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900" aria-pressed="false" aria-label="Toggle theme">
+        <i id="theme-toggle-icon" aria-hidden="true" class="fa-solid fa-moon"></i>
+        <span class="sr-only">Toggle theme</span>
+      </button>
     </nav>
   </div>
 </header>

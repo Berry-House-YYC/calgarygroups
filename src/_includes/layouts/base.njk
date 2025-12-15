@@ -3,8 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% if title %}{{ title }} | {% elseif name %}{{ name }} | {% endif %}{{ site.name }}</title>
-    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    {% set pageLabel = title or name %}
+    {% set metaTitle = site.name %}
+    {% if pageLabel %}
+      {% set metaTitle = pageLabel ~ " | " ~ site.name %}
+    {% endif %}
+    {% set metaDescription = site.description %}
+    {% if description %}
+      {% set metaDescription = description %}
+    {% endif %}
+    {% set canonicalUrl = site.url ~ page.url %}
+    <title>{{ metaTitle }}</title>
+    <meta name="description" content="{{ metaDescription }}" />
+    <link rel="canonical" href="{{ canonicalUrl }}" />
+
+    <meta property="og:site_name" content="{{ site.name }}" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:title" content="{{ metaTitle }}" />
+    <meta property="og:description" content="{{ metaDescription }}" />
+    <meta property="og:url" content="{{ canonicalUrl }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ site.url }}/favicon/android-chrome-512x512.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ metaTitle }}" />
+    <meta name="twitter:description" content="{{ metaDescription }}" />
+    <meta name="twitter:image" content="{{ site.url }}/favicon/android-chrome-512x512.png" />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

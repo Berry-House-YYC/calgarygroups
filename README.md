@@ -1,3 +1,7 @@
+<p align="center">
+   <img src="src/static/favicon/android-chrome-512x512.png" alt="Calgary Groups" width="128" height="128" />
+ </p>
+
 # Calgary Groups
 
 Calgary Groups is a centralized, searchable directory to help Calgarians find grassroots organizations, clubs, activist groups, and community initiatives.

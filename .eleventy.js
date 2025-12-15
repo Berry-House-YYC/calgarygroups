@@ -29,8 +29,19 @@ module.exports = function (eleventyConfig) {
     return match ? match[0] : null;
   });
 
+  eleventyConfig.addFilter("toRfc822", (value) => {
+    const date = value instanceof Date ? value : new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return date.toUTCString();
+  });
+
   eleventyConfig.addCollection("organizations", (collectionApi) => {
     return collectionApi.getFilteredByGlob("./src/content/organizations/**/*.md");
+  });
+
+  eleventyConfig.addCollection("feed", (collectionApi) => {
+    const items = collectionApi.getFilteredByGlob("./src/content/organizations/**/*.md");
+    return items.slice().sort((a, b) => (b.date || 0) - (a.date || 0)).slice(0, 50);
   });
 
   return {

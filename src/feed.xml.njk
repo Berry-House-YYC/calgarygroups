@@ -1,0 +1,24 @@
+---
+permalink: /feed.xml
+layout: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.name | escape }}</title>
+    <link>{{ site.url | escape }}</link>
+    <description>{{ site.description | escape }}</description>
+    <language>en</language>
+    <lastBuildDate>{{ build.generatedAt | toRfc822 }}</lastBuildDate>
+
+    {%- for item in collections.feed %}
+    <item>
+      <title>{{ (item.data.name or item.data.title or item.url) | escape }}</title>
+      <link>{{ (site.url + item.url) | escape }}</link>
+      <guid isPermaLink="true">{{ (site.url + item.url) | escape }}</guid>
+      <pubDate>{{ item.date | toRfc822 }}</pubDate>
+      <description><![CDATA[{{ (item.templateContent | stripHtml | truncate(320)) | safe }}]]></description>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>

@@ -15,6 +15,7 @@ title: Directory
     "meeting_format": {{ org.data.meeting_format | json | safe }},
     "location_area": {{ org.data.location_area | json | safe }},
     "status": {{ org.data.status | json | safe }},
+    "website": {{ (org.templateContent | extractFirstUrl) | json | safe }},
     "excerpt": {{ (org.templateContent | stripHtml | truncate(220)) | json | safe }},
     "url": {{ org.url | json | safe }}
   }{% if not loop.last %},{% endif %}
@@ -51,7 +52,8 @@ title: Directory
             <template x-for="t in typeOptions" :key="t">
               <label class="flex min-w-0 items-center gap-2">
                 <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" :value="t" x-model="selectedTypes" @change="syncUrl()" />
-                <span class="min-w-0 break-words" x-text="t"></span>
+                <i aria-hidden="true" class="shrink-0" :class="[typeMeta(t).icon, typeMeta(t).iconColor]"></i>
+                <span class="min-w-0 break-words" x-text="typeMeta(t).label"></span>
               </label>
             </template>
           </div>
@@ -63,7 +65,8 @@ title: Directory
             <template x-for="i in interestOptions" :key="i">
               <label class="flex min-w-0 items-center gap-2">
                 <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" :value="i" x-model="selectedInterests" @change="syncUrl()" />
-                <span class="min-w-0 break-words" x-text="i"></span>
+                <i aria-hidden="true" class="shrink-0" :class="[interestMeta(i).icon, interestMeta(i).iconColor]"></i>
+                <span class="min-w-0 break-words" x-text="interestMeta(i).label"></span>
               </label>
             </template>
           </div>
@@ -123,15 +126,33 @@ title: Directory
           <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
             <div class="flex min-w-0 flex-wrap items-start gap-3">
               <h2 class="min-w-0 flex-1 break-words text-lg font-semibold leading-snug">
-                <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" :href="org.url" x-text="org.name"></a>
+                <template x-if="org.website">
+                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" :href="org.website" target="_blank" rel="noopener noreferrer" x-text="org.name"></a>
+                </template>
+                <template x-if="!org.website">
+                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" :href="org.url" x-text="org.name"></a>
+                </template>
               </h2>
-              <span class="min-w-0 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700" x-text="org.type"></span>
+              <span class="inline-flex min-w-0 items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset" :class="typeMeta(org.type).pill">
+                <i aria-hidden="true" :class="typeMeta(org.type).icon"></i>
+                <span class="min-w-0 break-words" x-text="typeMeta(org.type).label"></span>
+              </span>
             </div>
             <p class="mt-2 break-words text-sm text-slate-700" x-text="org.excerpt"></p>
             <div class="mt-3 flex flex-wrap gap-2">
               <template x-for="tag in (org.interests || []).slice(0, 3)" :key="tag">
-                <span class="min-w-0 rounded-full bg-slate-50 px-2 py-1 text-xs font-medium text-slate-700 break-words" x-text="tag"></span>
+                <span class="inline-flex min-w-0 items-center gap-2 rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset" :class="interestMeta(tag).pill">
+                  <i aria-hidden="true" :class="interestMeta(tag).icon"></i>
+                  <span class="min-w-0 break-words" x-text="interestMeta(tag).label"></span>
+                </span>
               </template>
+            </div>
+
+            <div class="mt-4">
+              <a class="inline-flex items-center gap-2 rounded text-sm font-medium text-slate-900 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-400" :href="org.url">
+                <span>Learn More</span>
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </article>
         </template>
@@ -166,8 +187,108 @@ title: Directory
       meetingFormat: "",
       locationArea: "",
       identityFocused: false,
+      typeStyles: {
+        "activist-group": {
+          label: "Activist group",
+          icon: "fa-solid fa-bullhorn",
+          iconColor: "text-indigo-600",
+          pill: "bg-indigo-50 text-indigo-800 ring-indigo-200"
+        },
+        "club": {
+          label: "Club",
+          icon: "fa-solid fa-user-group",
+          iconColor: "text-blue-600",
+          pill: "bg-blue-50 text-blue-800 ring-blue-200"
+        },
+        "grassroots-initiative": {
+          label: "Grassroots",
+          icon: "fa-solid fa-seedling",
+          iconColor: "text-emerald-600",
+          pill: "bg-emerald-50 text-emerald-800 ring-emerald-200"
+        },
+        "resource": {
+          label: "Resource",
+          icon: "fa-solid fa-circle-info",
+          iconColor: "text-amber-700",
+          pill: "bg-amber-50 text-amber-900 ring-amber-200"
+        }
+      },
+      interestStyles: {
+        "anti-racism": {
+          label: "Anti-racism",
+          icon: "fa-solid fa-hand-fist",
+          iconColor: "text-amber-800",
+          pill: "bg-amber-100 text-amber-900 ring-amber-200"
+        },
+        "arts-culture": {
+          label: "Arts & culture",
+          icon: "fa-solid fa-palette",
+          iconColor: "text-fuchsia-700",
+          pill: "bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"
+        },
+        "education": {
+          label: "Education",
+          icon: "fa-solid fa-graduation-cap",
+          iconColor: "text-sky-700",
+          pill: "bg-sky-50 text-sky-800 ring-sky-200"
+        },
+        "environment": {
+          label: "Environment",
+          icon: "fa-solid fa-leaf",
+          iconColor: "text-green-700",
+          pill: "bg-green-50 text-green-800 ring-green-200"
+        },
+        "events": {
+          label: "Events",
+          icon: "fa-solid fa-calendar-days",
+          iconColor: "text-violet-700",
+          pill: "bg-violet-50 text-violet-800 ring-violet-200"
+        },
+        "health-wellness": {
+          label: "Health & wellness",
+          icon: "fa-solid fa-heart-pulse",
+          iconColor: "text-rose-700",
+          pill: "bg-rose-50 text-rose-800 ring-rose-200"
+        },
+        "hobby": {
+          label: "Hobby",
+          icon: "fa-solid fa-puzzle-piece",
+          iconColor: "text-slate-700",
+          pill: "bg-slate-100 text-slate-800 ring-slate-200"
+        },
+        "lgbtq2s": {
+          label: "LGBTQ2S+",
+          icon: "fa-solid fa-flag",
+          iconColor: "text-slate-900",
+          pill: "bg-gradient-to-r from-rose-200 via-amber-200 to-sky-200 text-slate-900 ring-slate-200"
+        },
+        "rec": {
+          label: "Recreation",
+          icon: "fa-solid fa-person-hiking",
+          iconColor: "text-teal-700",
+          pill: "bg-teal-50 text-teal-800 ring-teal-200"
+        },
+        "social-impact": {
+          label: "Social impact",
+          icon: "fa-solid fa-hands-holding-circle",
+          iconColor: "text-cyan-700",
+          pill: "bg-cyan-50 text-cyan-800 ring-cyan-200"
+        },
+        "sports-rec": {
+          label: "Sports & rec",
+          icon: "fa-solid fa-dumbbell",
+          iconColor: "text-orange-700",
+          pill: "bg-orange-50 text-orange-800 ring-orange-200"
+        }
+      },
       init() {
         this.hydrateFromUrl();
+      },
+      typeMeta(value) {
+        return this.typeStyles[value] || { label: value || "", icon: "fa-regular fa-circle", iconColor: "text-slate-500", pill: "bg-slate-100 text-slate-800 ring-slate-200" };
+      },
+      interestMeta(value) {
+        return this.interestStyles[value] || { label: value || "", icon: "fa-regular fa-circle", iconColor: "text-slate-500", pill: "bg-slate-100 text-slate-800 ring-slate-200" };
       },
       get typeOptions() {
         return [...new Set(this.organizations.map((o) => o.type).filter(Boolean))].sort();

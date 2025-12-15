@@ -23,6 +23,12 @@ module.exports = function (eleventyConfig) {
     return str.slice(0, Math.max(0, maxLength - 1)).trimEnd() + "…";
   });
 
+  eleventyConfig.addFilter("extractFirstUrl", (value) => {
+    const str = typeof value === "string" ? value : "";
+    const match = str.match(/https?:\/\/[^\s"'<>]+/i);
+    return match ? match[0] : null;
+  });
+
   eleventyConfig.addCollection("organizations", (collectionApi) => {
     return collectionApi.getFilteredByGlob("./src/content/organizations/**/*.md");
   });

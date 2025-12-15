@@ -3,3 +3,19 @@
 @tailwind utilities;
 
  [x-cloak] { display: none !important; }
+
+ @layer base {
+  h1, h2, h3, h4, h5, h6 { @apply font-semibold; }
+ }
+
+ @layer components {
+  a[href^="http://"]:not([href^="tel:"]):not([href^="mailto:"]):after,
+  a[href^="https://"]:not([href^="tel:"]):not([href^="mailto:"]):after {
+    content: "↗";
+    display: inline-block;
+    margin-left: 0.25rem;
+    font-size: 0.75em;
+    line-height: 1;
+    vertical-align: text-top;
+  }
+ }

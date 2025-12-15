@@ -11,7 +11,7 @@ location_area: city-wide
 status: active
 permalink: /organizations/{{ page.fileSlug }}/
 ---
-Focused on Environment. Audience: Working Professionals. TEST!
+Focused on Environment. Audience: Working Professionals.
 
 **Contact Info:**
 

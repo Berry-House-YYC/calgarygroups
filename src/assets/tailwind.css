@@ -9,6 +9,20 @@
  }
 
  @layer components {
+  .prose { @apply text-base leading-relaxed text-slate-800; }
+  .prose > * + * { @apply mt-4; }
+  .prose h1 { @apply text-3xl tracking-tight; }
+  .prose h2 { @apply text-2xl tracking-tight; }
+  .prose h3 { @apply text-xl tracking-tight; }
+  .prose h4 { @apply text-lg tracking-tight; }
+  .prose ul { @apply list-disc pl-6; }
+  .prose ol { @apply list-decimal pl-6; }
+  .prose li { @apply mt-1; }
+  .prose a { @apply font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900; }
+  .prose code { @apply rounded bg-slate-100 px-1 py-0.5 text-sm; }
+  .prose pre { @apply overflow-x-auto rounded-lg bg-slate-950 p-4 text-sm text-slate-50; }
+  .prose pre code { @apply bg-transparent p-0 text-slate-50; }
+
   a[href^="http://"]:not([href^="tel:"]):not([href^="mailto:"]):after,
   a[href^="https://"]:not([href^="tel:"]):not([href^="mailto:"]):after {
     content: "↗";

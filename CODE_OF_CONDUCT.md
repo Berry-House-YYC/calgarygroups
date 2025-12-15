@@ -26,7 +26,7 @@ Project maintainers are responsible for clarifying the standards of acceptable b
 
 If you experience or witness unacceptable behavior, please contact the maintainers via:
 
-- contact@calgarygroups.ca
+- calgary@berryhouse.ca
 
 ## Attribution
 

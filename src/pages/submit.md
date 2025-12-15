@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Submit an Organization
-permalink: /submit/
+permalink: false
 ---
 
 ## Submit a listing

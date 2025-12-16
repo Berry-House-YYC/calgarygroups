@@ -1,27 +1,29 @@
-<header class="border-b border-slate-200 bg-white dark:border-brand-cyan/20 dark:bg-slate-950">
-  <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-    <a class="fun-link inline-flex items-center gap-2 break-words text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-100" href="/">
-      <img src="/favicon/favicon-32x32.png" width="20" height="20" alt="" class="h-5 w-5" />
-      <span>{{ site.name }}</span>
-    </a>
-    <nav aria-label="Primary" class="flex flex-wrap items-center gap-1 text-sm sm:gap-2">
-      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/about/">
-        <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
-        <span>About</span>
+<div class="sticky top-0 z-50 flex justify-center px-[5%] py-3">
+  <header class="w-full max-w-6xl rounded-xl border border-slate-200 bg-white/95 shadow-md backdrop-blur-sm dark:border-brand-cyan/20 dark:bg-slate-950/95">
+    <div class="flex flex-col gap-2 px-4 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+      <a class="fun-link inline-flex items-center gap-2 break-words text-base font-semibold tracking-tight text-slate-900 dark:text-slate-100" href="/">
+        <img src="/favicon/favicon-32x32.png" width="20" height="20" alt="" class="h-5 w-5" />
+        <span>{{ site.name }}</span>
       </a>
-      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/submit/">
-        <i aria-hidden="true" class="fa-solid fa-paper-plane"></i>
-        <span>Submit</span>
-      </a>
-      <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/contact/">
-        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-        <span>Contact</span>
-      </a>
+      <nav aria-label="Primary" class="flex flex-wrap items-center gap-1 text-sm sm:gap-2">
+        <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/about/">
+          <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
+          <span>About</span>
+        </a>
+        <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/submit/">
+          <i aria-hidden="true" class="fa-solid fa-paper-plane"></i>
+          <span>Submit</span>
+        </a>
+        <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/contact/">
+          <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
 
-      <button id="theme-toggle" type="button" class="fun-link ml-1 text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" aria-pressed="false" aria-label="Toggle theme">
-        <i id="theme-toggle-icon" aria-hidden="true" class="fa-solid fa-moon"></i>
-        <span class="sr-only">Toggle theme</span>
-      </button>
-    </nav>
-  </div>
-</header>
+        <button id="theme-toggle" type="button" class="fun-link ml-1 text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" aria-pressed="false" aria-label="Toggle theme">
+          <i id="theme-toggle-icon" aria-hidden="true" class="fa-solid fa-moon"></i>
+          <span class="sr-only">Toggle theme</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+</div>

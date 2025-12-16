@@ -6,6 +6,8 @@
 
 Calgary Groups is a centralized, searchable directory to help Calgarians find grassroots organizations, clubs, activist groups, and community initiatives.
 
+![Calgary Groups Screenshot](src/screenshot.png)
+
 This repo contains:
 
 - A static website built with **11ty + Tailwind CSS + Alpine.js**

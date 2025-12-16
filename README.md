@@ -12,12 +12,25 @@ Calgary Groups is a centralized, searchable directory designed to help Calgarian
 
 ## Features
 
+### Core Functionality
 - 🔍 **Advanced search & filtering** - Search by name, description, organization type, interests, meeting format, and location
 - 🏷️ **Rich taxonomy** - Organizations categorized by type (Nonprofit, Grassroots, Social Club, Chapter, Cooperative, Small Business) and interests (Environment, Social Impact, LGBTQ2S+, Anti-Racism, Tech, Urban Issues, and more)
-- 🎨 **Beautiful UI** - Clean, modern interface with dark mode support
 - 📱 **Fully responsive** - Works seamlessly on desktop, tablet, and mobile
 - ⚡ **Fast & lightweight** - Static site with no database or backend required
 - 🌐 **Open source** - Full transparency and community contributions welcome
+
+### Design & User Experience
+- 🎨 **Custom color palette** - Warm cream (light mode) and coffee (dark mode) backgrounds with orange/cyan brand accents
+- 🌙 **Dark mode support** - Optimized color variation and text contrast for comfortable reading in both modes
+- 🎯 **Modern UI** - Floating sticky navigation, rounded cards, subtle shadows, and backdrop blur effects
+- 📐 **Responsive filters** - Collapsible type and interests filters (open on desktop, closed on mobile)
+- ✨ **Enhanced detail pages** - Prominent type badges, colorful interest tags, and clickable organization titles
+
+### Progressive Web App (PWA)
+- 📲 **Installable** - Add to home screen on iOS, Android, and desktop
+- 🔌 **Offline support** - Service worker caches assets for offline functionality
+- ⚡ **Fast loading** - Cached resources load instantly
+- 🎯 **App-like experience** - Standalone mode without browser chrome
 
 ## About This Repository
 

@@ -4,9 +4,22 @@
 
 # Calgary Groups
 
-Calgary Groups is a centralized, searchable directory to help Calgarians find grassroots organizations, clubs, activist groups, and community initiatives.
+**Search and filter grassroots organizations, clubs, activist groups, and community initiatives in Calgary.**
+
+Calgary Groups is a centralized, searchable directory designed to help Calgarians discover and connect with local organizations that match their interests. Whether you're looking for activist groups, social clubs, nonprofits, or community initiatives, this directory makes it easy to find organizations working on the issues you care about.
 
 ![Calgary Groups Screenshot](src/screenshot.png)
+
+## Features
+
+- 🔍 **Advanced search & filtering** - Search by name, description, organization type, interests, meeting format, and location
+- 🏷️ **Rich taxonomy** - Organizations categorized by type (Nonprofit, Grassroots, Social Club, Chapter, Cooperative, Small Business) and interests (Environment, Social Impact, LGBTQ2S+, Anti-Racism, Tech, Urban Issues, and more)
+- 🎨 **Beautiful UI** - Clean, modern interface with dark mode support
+- 📱 **Fully responsive** - Works seamlessly on desktop, tablet, and mobile
+- ⚡ **Fast & lightweight** - Static site with no database or backend required
+- 🌐 **Open source** - Full transparency and community contributions welcome
+
+## About This Repository
 
 This repo contains:
 
@@ -67,8 +80,8 @@ Example:
 ```md
 ---
 name: "Organization Name"
-type: "club" # club, activist-group, resource, grassroots-initiative
-interests: ["arts-culture", "social-impact"]
+type: "Nonprofit" # Nonprofit, Grassroots, Social Club, Chapter, Cooperative, Small Business
+interests: ["environment", "social-impact", "tech"]
 age_range: "all-ages" # youth, young-adult, all-ages, seniors
 identity_focused: false
 meeting_format: "in-person" # in-person, online, hybrid
@@ -83,12 +96,32 @@ Short description here.
 - Email: contact@example.com
 ```
 
+### Organization Types
+
+- **Nonprofit** - Registered nonprofits and charitable organizations
+- **Grassroots** - Community-driven initiatives and grassroots movements
+- **Social Club** - Social groups and book clubs
+- **Chapter** - Local chapters of national/international organizations
+- **Cooperative** - Member-owned cooperatives
+- **Small Business** - Community-oriented small businesses
+
+### Interests/Tags
+
+Organizations can be tagged with multiple interests including:
+- Anti-racism, Arts & culture, Disability/Neurodivergent, Education, Environment
+- Health & wellness, Indigenous, LGBTQ2S+, Low-income, Seniors
+- Social impact, Sports & rec, Tech, Urban Issues, Women+, Youth
+
 ### Folder conventions
 
-- `src/content/organizations/clubs/`
-- `src/content/organizations/activist-groups/`
-- `src/content/organizations/grassroots-initiatives/`
-- `src/content/organizations/resources/`
+Organizations are organized by type:
+
+- `src/content/organizations/nonprofit/`
+- `src/content/organizations/grassroots/`
+- `src/content/organizations/social-club/`
+- `src/content/organizations/chapter/`
+- `src/content/organizations/cooperative/`
+- `src/content/organizations/small-business/`
 
 File naming convention:
 

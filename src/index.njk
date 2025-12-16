@@ -62,9 +62,12 @@ title: Directory
           </div>
         </div>
 
-        <div class="mt-4">
-          <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Interests</p>
-          <div class="mt-2 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+        <div class="mt-4" x-data="{ interestsOpen: false }">
+          <button type="button" class="flex w-full items-center justify-between text-left text-sm font-medium text-slate-900 hover:text-brand-orange dark:text-slate-100 dark:hover:text-brand-cyan" @click="interestsOpen = !interestsOpen">
+            <span>Interests</span>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down transition-transform" :class="{ 'rotate-180': interestsOpen }"></i>
+          </button>
+          <div x-show="interestsOpen" x-collapse class="mt-2 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
             <template x-for="i in interestOptions" :key="i">
               <label class="flex min-w-0 items-center gap-2">
                 <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" :value="i" x-model="selectedInterests" @change="syncUrl()" />

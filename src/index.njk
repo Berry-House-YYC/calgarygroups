@@ -191,29 +191,41 @@ title: Directory
       locationArea: "",
       identityFocused: false,
       typeStyles: {
-        "activist-group": {
-          label: "Activist group",
-          icon: "fa-solid fa-bullhorn",
-          iconColor: "text-indigo-600",
-          pill: "bg-indigo-50 text-indigo-800 ring-indigo-200"
-        },
-        "club": {
-          label: "Club",
-          icon: "fa-solid fa-user-group",
-          iconColor: "text-blue-600",
+        "Nonprofit": {
+          label: "Nonprofit",
+          icon: "fa-solid fa-hand-holding-heart",
+          iconColor: "text-blue-700",
           pill: "bg-blue-50 text-blue-800 ring-blue-200"
         },
-        "grassroots-initiative": {
+        "Grassroots": {
           label: "Grassroots",
           icon: "fa-solid fa-seedling",
           iconColor: "text-emerald-600",
           pill: "bg-emerald-50 text-emerald-800 ring-emerald-200"
         },
-        "resource": {
-          label: "Resource",
-          icon: "fa-solid fa-circle-info",
+        "Social Club": {
+          label: "Social Club",
+          icon: "fa-solid fa-user-group",
+          iconColor: "text-purple-600",
+          pill: "bg-purple-50 text-purple-800 ring-purple-200"
+        },
+        "Chapter": {
+          label: "Chapter",
+          icon: "fa-solid fa-network-wired",
+          iconColor: "text-indigo-600",
+          pill: "bg-indigo-50 text-indigo-800 ring-indigo-200"
+        },
+        "Cooperative": {
+          label: "Cooperative",
+          icon: "fa-solid fa-handshake",
+          iconColor: "text-teal-700",
+          pill: "bg-teal-50 text-teal-800 ring-teal-200"
+        },
+        "Small Business": {
+          label: "Small Business",
+          icon: "fa-solid fa-store",
           iconColor: "text-amber-700",
-          pill: "bg-amber-50 text-amber-900 ring-amber-200"
+          pill: "bg-amber-50 text-amber-800 ring-amber-200"
         }
       },
       interestStyles: {
@@ -229,6 +241,12 @@ title: Directory
           iconColor: "text-fuchsia-700",
           pill: "bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"
         },
+        "disability/neurodivergent": {
+          label: "Disability/Neurodivergent",
+          icon: "fa-solid fa-universal-access",
+          iconColor: "text-violet-700",
+          pill: "bg-violet-50 text-violet-800 ring-violet-200"
+        },
         "education": {
           label: "Education",
           icon: "fa-solid fa-graduation-cap",
@@ -241,23 +259,17 @@ title: Directory
           iconColor: "text-green-700",
           pill: "bg-green-50 text-green-800 ring-green-200"
         },
-        "events": {
-          label: "Events",
-          icon: "fa-solid fa-calendar-days",
-          iconColor: "text-violet-700",
-          pill: "bg-violet-50 text-violet-800 ring-violet-200"
-        },
         "health-wellness": {
           label: "Health & wellness",
           icon: "fa-solid fa-heart-pulse",
           iconColor: "text-rose-700",
           pill: "bg-rose-50 text-rose-800 ring-rose-200"
         },
-        "hobby": {
-          label: "Hobby",
-          icon: "fa-solid fa-puzzle-piece",
-          iconColor: "text-slate-700",
-          pill: "bg-slate-100 text-slate-800 ring-slate-200"
+        "indigenous": {
+          label: "Indigenous",
+          icon: "fa-solid fa-feather",
+          iconColor: "text-orange-800",
+          pill: "bg-orange-50 text-orange-900 ring-orange-200"
         },
         "lgbtq2s": {
           label: "LGBTQ2S+",
@@ -265,11 +277,17 @@ title: Directory
           iconColor: "text-slate-900",
           pill: "bg-gradient-to-r from-rose-200 via-amber-200 to-sky-200 text-slate-900 ring-slate-200"
         },
-        "rec": {
-          label: "Recreation",
-          icon: "fa-solid fa-person-hiking",
-          iconColor: "text-teal-700",
-          pill: "bg-teal-50 text-teal-800 ring-teal-200"
+        "low-income": {
+          label: "Low-income",
+          icon: "fa-solid fa-hand-holding-dollar",
+          iconColor: "text-lime-800",
+          pill: "bg-lime-50 text-lime-900 ring-lime-200"
+        },
+        "seniors": {
+          label: "Seniors",
+          icon: "fa-solid fa-person-cane",
+          iconColor: "text-stone-700",
+          pill: "bg-stone-50 text-stone-800 ring-stone-200"
         },
         "social-impact": {
           label: "Social impact",
@@ -282,6 +300,30 @@ title: Directory
           icon: "fa-solid fa-dumbbell",
           iconColor: "text-orange-700",
           pill: "bg-orange-50 text-orange-800 ring-orange-200"
+        },
+        "tech": {
+          label: "Tech",
+          icon: "fa-solid fa-microchip",
+          iconColor: "text-slate-700",
+          pill: "bg-slate-50 text-slate-800 ring-slate-200"
+        },
+        "urban-issues": {
+          label: "Urban Issues",
+          icon: "fa-solid fa-city",
+          iconColor: "text-zinc-700",
+          pill: "bg-zinc-50 text-zinc-800 ring-zinc-200"
+        },
+        "women+": {
+          label: "Women+",
+          icon: "fa-solid fa-venus",
+          iconColor: "text-pink-700",
+          pill: "bg-pink-50 text-pink-800 ring-pink-200"
+        },
+        "youth": {
+          label: "Youth",
+          icon: "fa-solid fa-child-reaching",
+          iconColor: "text-indigo-700",
+          pill: "bg-indigo-50 text-indigo-800 ring-indigo-200"
         }
       },
       init() {

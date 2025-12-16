@@ -20,11 +20,10 @@
       </div>
 
       <div class="space-y-3">
-        <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">Support & legal</p>
+        <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">Support & Legal</p>
 
         {% if funding and funding.supportLinks and funding.supportLinks.length %}
           <div>
-            <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Support financially</p>
             <ul class="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
               {% for link in funding.supportLinks %}
                 <li>

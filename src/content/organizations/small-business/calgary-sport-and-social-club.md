@@ -7,8 +7,8 @@ interests:
 age_range: all-ages
 identity_focused: false
 meeting_format: in-person
-location_area: city-wide
-status: active
+location_area: ""
+status: null
 permalink: /organizations/{{ page.fileSlug }}/
 ---
 Focused on Hobby/Rec. Audience: General.

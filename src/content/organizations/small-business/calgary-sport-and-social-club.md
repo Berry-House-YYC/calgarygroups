@@ -1,20 +1,21 @@
 ---
 layout: layouts/organization.njk
-name: "Calgary Sport & Social Club"
-type: "Small Business"
-interests: ["sports-rec"]
-age_range: "all-ages"
+name: Calgary Sport & Social Club (CSSC)
+type: Small Business
+interests:
+  - sports-rec
+age_range: all-ages
 identity_focused: false
-meeting_format: "in-person"
-location_area: "city-wide"
-status: "active"
-permalink: "/organizations/{{ page.fileSlug }}/"
+meeting_format: in-person
+location_area: city-wide
+status: active
+permalink: /organizations/{{ page.fileSlug }}/
 ---
-
 Focused on Hobby/Rec. Audience: General.
 
 **Contact Info:**
-- Website: https://www.calgarysportsclub.com/
+
+* Website: https://www.calgarysportsclub.com/
 
 **Notes:**
-sports leagues. Has BIPOC LGBTQ+ flag on site
+sports leagues.

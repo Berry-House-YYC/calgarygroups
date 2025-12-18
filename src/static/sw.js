@@ -1,6 +1,6 @@
-const CACHE_NAME = 'calgary-groups-v1';
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const CACHE_NAME = 'calgary-groups-v2';
+const STATIC_CACHE = 'static-v2';
+const DYNAMIC_CACHE = 'dynamic-v2';
 
 // Assets to cache on install
 const STATIC_ASSETS = [
@@ -38,9 +38,16 @@ self.addEventListener('activate', (event) => {
 // Fetch event - serve from cache, fallback to network
 self.addEventListener('fetch', (event) => {
   const { request } = event;
+  const url = new URL(request.url);
   
   // Skip cross-origin requests
   if (!request.url.startsWith(self.location.origin)) {
+    return;
+  }
+
+  // Never cache Decap CMS admin assets; stale caching breaks /admin/config.yml updates.
+  if (url.pathname.startsWith('/admin/')) {
+    event.respondWith(fetch(request));
     return;
   }
 

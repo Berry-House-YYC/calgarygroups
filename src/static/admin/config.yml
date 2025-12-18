@@ -8,10 +8,10 @@ media_folder: "src/static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "organizations_activist_groups"
-    label: "Organizations (Activist Groups)"
+  - name: "organizations_chapter"
+    label: "Organizations (Chapter)"
     label_singular: "Organization"
-    folder: "src/content/organizations/activist-groups"
+    folder: "src/content/organizations/chapter"
     create: true
     identifier_field: "name"
     slug: "{{slug}}"
@@ -19,7 +19,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "activist-group" }
+      - { label: "Type", name: "type", widget: "hidden", default: "chapter" }
       - { label: "Interests", name: "interests", widget: "list", required: false }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
@@ -29,10 +29,10 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "organizations_clubs"
-    label: "Organizations (Clubs)"
+  - name: "organizations_grassroots"
+    label: "Organizations (Grassroots)"
     label_singular: "Organization"
-    folder: "src/content/organizations/clubs"
+    folder: "src/content/organizations/grassroots"
     create: true
     identifier_field: "name"
     slug: "{{slug}}"
@@ -40,7 +40,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "club" }
+      - { label: "Type", name: "type", widget: "hidden", default: "grassroots" }
       - { label: "Interests", name: "interests", widget: "list", required: false }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
@@ -50,10 +50,10 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "organizations_grassroots_initiatives"
-    label: "Organizations (Grassroots Initiatives)"
+  - name: "organizations_nonprofit"
+    label: "Organizations (Nonprofit)"
     label_singular: "Organization"
-    folder: "src/content/organizations/grassroots-initiatives"
+    folder: "src/content/organizations/nonprofit"
     create: true
     identifier_field: "name"
     slug: "{{slug}}"
@@ -61,7 +61,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "grassroots-initiative" }
+      - { label: "Type", name: "type", widget: "hidden", default: "nonprofit" }
       - { label: "Interests", name: "interests", widget: "list", required: false }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
@@ -71,10 +71,10 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "organizations_resources"
-    label: "Organizations (Resources)"
+  - name: "organizations_small_business"
+    label: "Organizations (Small Business)"
     label_singular: "Organization"
-    folder: "src/content/organizations/resources"
+    folder: "src/content/organizations/small-business"
     create: true
     identifier_field: "name"
     slug: "{{slug}}"
@@ -82,7 +82,28 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "resource" }
+      - { label: "Type", name: "type", widget: "hidden", default: "small-business" }
+      - { label: "Interests", name: "interests", widget: "list", required: false }
+      - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
+      - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
+      - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
+      - { label: "Location area", name: "location_area", widget: "string", required: false, default: "city-wide" }
+      - { label: "Status", name: "status", widget: "select", required: false, options: ["active", "inactive", "unknown"], default: "active" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: "/organizations/{{ page.fileSlug }}/" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "organizations_social_club"
+    label: "Organizations (Social Club)"
+    label_singular: "Organization"
+    folder: "src/content/organizations/social-club"
+    create: true
+    identifier_field: "name"
+    slug: "{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "social-club" }
       - { label: "Interests", name: "interests", widget: "list", required: false }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }

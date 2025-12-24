@@ -9,9 +9,19 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+
+description: "A book club for 'deep thinkers' that meets on Sundays. They engage in meaningful discussions about selected reads, fostering intellectual connection and community."
 ---
+
+A book club for 'deep thinkers' that meets on Sundays. They engage in meaningful discussions about selected reads, fostering intellectual connection and community.
 
 Community organization in Calgary.
 
-**Contact Info:**
-- Website: https://www.instagram.com/thesundaybookclubyyc/
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://www.instagram.com/thesundaybookclubyyc/" target="_blank">https://www.instagram.com/thesundaybookclubyyc/</a></li>
+  </ul>
+</div>

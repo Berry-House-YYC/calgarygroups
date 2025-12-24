@@ -6,25 +6,25 @@ title: Directory
 {% set organizationsData %}
 [
 {% for org in collections.organizations %}
-  {
-    "name": {{ org.data.name | json | safe }},
-    "type": {{ org.data.type | json | safe }},
-    "interests": {{ (org.data.interests or []) | json | safe }},
-    "age_range": {{ org.data.age_range | json | safe }},
-    "identity_focused": {{ org.data.identity_focused | json | safe }},
-    "meeting_format": {{ org.data.meeting_format | json | safe }},
-    "location_area": {{ org.data.location_area | json | safe }},
-    "status": {{ org.data.status | json | safe }},
-    "website": {{ (org.templateContent | extractFirstUrl) | json | safe }},
-    "excerpt": {{ (org.templateContent | stripHtml | truncate(220)) | json | safe }},
-    "url": {{ org.url | json | safe }}
-  }{% if not loop.last %},{% endif %}
+{
+"name": {{ org.data.name | json | safe }},
+"type": {{ org.data.type | json | safe }},
+"interests": {{ (org.data.interests or []) | json | safe }},
+"age_range": {{ org.data.age_range | json | safe }},
+"identity_focused": {{ org.data.identity_focused | json | safe }},
+"meeting_format": {{ org.data.meeting_format | json | safe }},
+"location_area": {{ org.data.location_area | json | safe }},
+"status": {{ org.data.status | json | safe }},
+"website": {{ (org.templateContent | extractFirstUrl) | json | safe }},
+"excerpt": {{ (org.templateContent | stripHtml | truncate(220)) | json | safe }},
+"url": {{ org.url | json | safe }}
+}{% if not loop.last %},{% endif %}
 {% endfor %}
 ]
 {% endset %}
 
 <template id="organizations-data">
-{{ organizationsData | safe }}
+  {{ organizationsData | safe }}
 </template>
 
 <section class="space-y-6" x-data="directory(getOrganizations())">
@@ -33,34 +33,45 @@ title: Directory
       <i aria-hidden="true" class="fa-solid fa-magnifying-glass text-brand-orange dark:text-brand-orange"></i>
       <span>Calgary Groups Directory</span>
     </h1>
-    <p class="max-w-2xl text-slate-700 dark:text-slate-300">Search and filter grassroots organizations, clubs, activist groups, and community initiatives in Calgary.</p>
+    <p class="max-w-2xl text-slate-700 dark:text-slate-300">Search and filter grassroots organizations, clubs, activist
+      groups, and community initiatives in Calgary.</p>
   </header>
 
   <div class="grid gap-4 xl:grid-cols-12">
     <aside class="min-w-0 xl:col-span-4">
-      <div class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
+      <div
+        class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
         <div class="flex items-center justify-between gap-2">
           <h2 class="text-base font-semibold">Filters</h2>
-          <button type="button" class="rounded px-2 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:text-slate-200 dark:hover:bg-brand-cyan/10" @click="clearAll()">Clear</button>
+          <button type="button"
+            class="rounded px-2 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:text-slate-200 dark:hover:bg-brand-cyan/10"
+            @click="clearAll()">Clear</button>
         </div>
 
         <div class="mt-4">
           <label class="text-sm font-medium text-slate-900 dark:text-slate-100" for="search">Search</label>
-          <input id="search" type="search" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20" placeholder="Search by name or description" x-model.trim="q" @input.debounce.250ms="syncUrl()" />
+          <input id="search" type="search"
+            class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20"
+            placeholder="Search by name or description" x-model.trim="q" @input.debounce.250ms="syncUrl()" />
         </div>
 
         <div class="mt-4" x-data="{ typeOpen: window.innerWidth >= 768 }">
-          <button type="button" class="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-brand-orange dark:text-slate-100 dark:hover:bg-brand-cyan/10 md:dark:hover:bg-transparent md:dark:hover:text-brand-cyan" @click="typeOpen = !typeOpen">
+          <button type="button"
+            class="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-brand-orange dark:text-slate-100 dark:hover:bg-brand-cyan/10 md:dark:hover:bg-transparent md:dark:hover:text-brand-cyan"
+            @click="typeOpen = !typeOpen">
             <span class="flex items-center gap-2">
               <i aria-hidden="true" class="fa-solid fa-filter text-xs md:hidden"></i>
               <span>Type</span>
             </span>
-            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs transition-transform" :class="{ 'rotate-180': typeOpen }"></i>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs transition-transform"
+              :class="{ 'rotate-180': typeOpen }"></i>
           </button>
           <div x-show="typeOpen" x-collapse class="mt-2 space-y-2 text-sm">
             <template x-for="t in typeOptions" :key="t">
               <label class="flex min-w-0 items-center gap-2">
-                <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" :value="t" x-model="selectedTypes" @change="syncUrl()" />
+                <input type="checkbox"
+                  class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50"
+                  :value="t" x-model="selectedTypes" @change="syncUrl()" />
                 <i aria-hidden="true" class="shrink-0" :class="[typeMeta(t).icon, typeMeta(t).iconColor]"></i>
                 <span class="min-w-0 break-words" x-text="typeMeta(t).label"></span>
               </label>
@@ -69,17 +80,22 @@ title: Directory
         </div>
 
         <div class="mt-4" x-data="{ interestsOpen: window.innerWidth >= 768 }">
-          <button type="button" class="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-brand-orange dark:text-slate-100 dark:hover:bg-brand-cyan/10 md:dark:hover:bg-transparent md:dark:hover:text-brand-cyan" @click="interestsOpen = !interestsOpen">
+          <button type="button"
+            class="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-100 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-brand-orange dark:text-slate-100 dark:hover:bg-brand-cyan/10 md:dark:hover:bg-transparent md:dark:hover:text-brand-cyan"
+            @click="interestsOpen = !interestsOpen">
             <span class="flex items-center gap-2">
               <i aria-hidden="true" class="fa-solid fa-filter text-xs md:hidden"></i>
               <span>Interests</span>
             </span>
-            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs transition-transform" :class="{ 'rotate-180': interestsOpen }"></i>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs transition-transform"
+              :class="{ 'rotate-180': interestsOpen }"></i>
           </button>
           <div x-show="interestsOpen" x-collapse class="mt-2 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
             <template x-for="i in interestOptions" :key="i">
               <label class="flex min-w-0 items-center gap-2">
-                <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" :value="i" x-model="selectedInterests" @change="syncUrl()" />
+                <input type="checkbox"
+                  class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50"
+                  :value="i" x-model="selectedInterests" @change="syncUrl()" />
                 <i aria-hidden="true" class="shrink-0" :class="[interestMeta(i).icon, interestMeta(i).iconColor]"></i>
                 <span class="min-w-0 break-words" x-text="interestMeta(i).label"></span>
               </label>
@@ -91,11 +107,15 @@ title: Directory
           <legend class="text-sm font-medium text-slate-900 dark:text-slate-100">Interest matching</legend>
           <div class="mt-2 flex flex-wrap gap-3 text-sm">
             <label class="flex min-w-0 items-center gap-2">
-              <input type="radio" class="h-4 w-4 border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" name="interestMode" value="any" x-model="interestMode" @change="syncUrl()" />
+              <input type="radio"
+                class="h-4 w-4 border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50"
+                name="interestMode" value="any" x-model="interestMode" @change="syncUrl()" />
               <span class="min-w-0 break-words">Match any</span>
             </label>
             <label class="flex min-w-0 items-center gap-2">
-              <input type="radio" class="h-4 w-4 border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" name="interestMode" value="all" x-model="interestMode" @change="syncUrl()" />
+              <input type="radio"
+                class="h-4 w-4 border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50"
+                name="interestMode" value="all" x-model="interestMode" @change="syncUrl()" />
               <span class="min-w-0 break-words">Match all</span>
             </label>
           </div>
@@ -103,7 +123,9 @@ title: Directory
 
         <div class="mt-4">
           <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Meeting format</p>
-          <select class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20" x-model="meetingFormat" @change="syncUrl()">
+          <select
+            class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20"
+            x-model="meetingFormat" @change="syncUrl()">
             <option value="">Any</option>
             <template x-for="m in meetingFormatOptions" :key="m">
               <option :value="m" x-text="m"></option>
@@ -113,7 +135,9 @@ title: Directory
 
         <div class="mt-4">
           <p class="text-sm font-medium text-slate-900 dark:text-slate-100">Location</p>
-          <select class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20" x-model="locationArea" @change="syncUrl()">
+          <select
+            class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:border-brand-cyan dark:focus:ring-brand-cyan/20"
+            x-model="locationArea" @change="syncUrl()">
             <option value="">Any</option>
             <template x-for="l in locationAreaOptions" :key="l">
               <option :value="l" x-text="l"></option>
@@ -123,12 +147,15 @@ title: Directory
 
         <div class="mt-4">
           <label class="flex items-center gap-2 text-sm">
-            <input type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" x-model="identityFocused" @change="syncUrl()" />
+            <input type="checkbox"
+              class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50"
+              x-model="identityFocused" @change="syncUrl()" />
             <span class="font-medium text-slate-900 dark:text-slate-100">Identity-focused</span>
           </label>
         </div>
 
-        <div class="mt-4 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700 dark:bg-slate-700 dark:text-slate-200" aria-live="polite">
+        <div class="mt-4 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700 dark:bg-slate-700 dark:text-slate-200"
+          aria-live="polite">
           <span class="font-medium" x-text="filtered.length"></span>
           <span>results</span>
         </div>
@@ -138,17 +165,22 @@ title: Directory
     <div class="min-w-0 xl:col-span-8">
       <div class="grid gap-4 md:grid-cols-2">
         <template x-for="org in filtered" :key="org.url">
-          <article class="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
+          <article
+            class="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
             <div class="flex min-w-0 flex-wrap items-start gap-3">
               <h2 class="min-w-0 flex-1 break-words text-lg font-semibold leading-snug">
                 <template x-if="org.website">
-                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50" :href="org.website" target="_blank" rel="noopener noreferrer" x-text="org.name"></a>
+                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
+                    :href="org.website" target="_blank" rel="noopener noreferrer" x-text="org.name"></a>
                 </template>
                 <template x-if="!org.website">
-                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50" :href="org.url" x-text="org.name"></a>
+                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
+                    :href="org.url" x-text="org.name"></a>
                 </template>
               </h2>
-              <span class="inline-flex min-w-0 items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset" :class="typeMeta(org.type).pill">
+              <span
+                class="inline-flex min-w-0 items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset"
+                :class="typeMeta(org.type).pill">
                 <i aria-hidden="true" :class="typeMeta(org.type).icon"></i>
                 <span class="min-w-0 break-words" x-text="typeMeta(org.type).label"></span>
               </span>
@@ -156,7 +188,9 @@ title: Directory
             <p class="mt-2 break-words text-sm text-slate-700 dark:text-slate-300" x-text="org.excerpt"></p>
             <div class="mt-3 flex flex-wrap gap-2">
               <template x-for="tag in (org.interests || []).slice(0, 3)" :key="tag">
-                <span class="inline-flex min-w-0 items-center gap-2 rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset" :class="interestMeta(tag).pill">
+                <span
+                  class="inline-flex min-w-0 items-center gap-2 rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
+                  :class="interestMeta(tag).pill">
                   <i aria-hidden="true" :class="interestMeta(tag).icon"></i>
                   <span class="min-w-0 break-words" x-text="interestMeta(tag).label"></span>
                 </span>
@@ -164,7 +198,8 @@ title: Directory
             </div>
 
             <div class="mt-4">
-              <a class="fun-link inline-flex items-center gap-2 text-sm font-medium text-brand-orange hover:bg-brand-orange/10 dark:text-cyan-400 dark:hover:bg-cyan-400/10" :href="org.url">
+              <a class="fun-link inline-flex items-center gap-2 text-sm font-medium text-brand-orange hover:bg-brand-orange/10 dark:text-cyan-400 dark:hover:bg-cyan-400/10"
+                :href="org.url">
                 <span>Learn More</span>
                 <span aria-hidden="true">→</span>
               </a>
@@ -173,7 +208,9 @@ title: Directory
         </template>
       </div>
 
-      <div class="mt-6 rounded-lg border border-slate-200 bg-white p-6 text-sm text-slate-700 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800 dark:text-slate-300" x-show="filtered.length === 0" x-cloak>
+      <div
+        class="mt-6 rounded-lg border border-slate-200 bg-white p-6 text-sm text-slate-700 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800 dark:text-slate-300"
+        x-show="filtered.length === 0" x-cloak>
         <p class="font-medium text-slate-900 dark:text-slate-100">No results</p>
         <p class="mt-1">Try clearing filters or using a broader search.</p>
       </div>
@@ -242,13 +279,13 @@ title: Directory
       },
       interestStyles: {
         "anti-racism": {
-          label: "Anti-racism",
+          label: "Anti-Racism",
           icon: "fa-solid fa-hand-fist",
           iconColor: "text-amber-800 dark:text-amber-400",
           pill: "bg-amber-100 text-amber-900 ring-amber-200"
         },
         "arts-culture": {
-          label: "Arts & culture",
+          label: "Arts & Culture",
           icon: "fa-solid fa-palette",
           iconColor: "text-fuchsia-700 dark:text-fuchsia-400",
           pill: "bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"
@@ -272,7 +309,7 @@ title: Directory
           pill: "bg-green-50 text-green-800 ring-green-200"
         },
         "health-wellness": {
-          label: "Health & wellness",
+          label: "Health & Wellness",
           icon: "fa-solid fa-heart-pulse",
           iconColor: "text-rose-700 dark:text-rose-400",
           pill: "bg-rose-50 text-rose-800 ring-rose-200"
@@ -302,13 +339,13 @@ title: Directory
           pill: "bg-stone-50 text-stone-800 ring-stone-200"
         },
         "social-impact": {
-          label: "Social impact",
+          label: "Social Impact",
           icon: "fa-solid fa-hands-holding-circle",
           iconColor: "text-cyan-700 dark:text-cyan-400",
           pill: "bg-cyan-50 text-cyan-800 ring-cyan-200"
         },
         "sports-rec": {
-          label: "Sports & rec",
+          label: "Sports & Rec",
           icon: "fa-solid fa-dumbbell",
           iconColor: "text-orange-700 dark:text-orange-400",
           pill: "bg-orange-50 text-orange-800 ring-orange-200"
@@ -336,6 +373,18 @@ title: Directory
           icon: "fa-solid fa-child-reaching",
           iconColor: "text-indigo-700 dark:text-indigo-400",
           pill: "bg-indigo-50 text-indigo-800 ring-indigo-200"
+        },
+        "book": {
+          label: "Book Clubs",
+          icon: "fa-solid fa-book",
+          iconColor: "text-brown-700 dark:text-brown-400",
+          pill: "bg-amber-50 text-amber-900 ring-amber-300"
+        },
+        "general": {
+          label: "General",
+          icon: "fa-solid fa-users",
+          iconColor: "text-gray-700 dark:text-gray-400",
+          pill: "bg-gray-50 text-gray-800 ring-gray-200"
         }
       },
       init() {

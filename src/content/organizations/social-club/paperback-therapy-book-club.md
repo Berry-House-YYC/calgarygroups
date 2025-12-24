@@ -9,9 +9,17 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+
+description: "A book club focused on mental health, self-development, and wellness. They discuss literature that offers tools for personal growth, emotional regulation, and healing."
 ---
 
-Focused on Anti-Racism. Audience: Immigrants/POC.
+A book club focused on mental health, self-development, and wellness. They discuss literature that offers tools for personal growth, emotional regulation, and healing.
 
-**Contact Info:**
-- Website: https://www.instagram.com/p/DR7sQnLklyY/
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://www.instagram.com/p/DR7sQnLklyY/" target="_blank">https://www.instagram.com/p/DR7sQnLklyY/</a></li>
+  </ul>
+</div>

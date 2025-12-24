@@ -1,0 +1,28 @@
+---
+layout: layouts/organization.njk
+name: "Calgary Missfits"
+type: "Grassroots"
+interests: ["anti-racism", "arts-culture", "low-income"]
+age_range: "all-ages"
+identity_focused: true
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "active"
+permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+
+description: "A social club for women and gender-diverse folks (or general social group) dedicated to building lasting friendships through fun activities and regular meetups."
+---
+
+A social club for women and gender-diverse folks (or general social group) dedicated to building lasting friendships through fun activities and regular meetups.
+
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://www.instagram.com/calgarymissfits/" target="_blank">https://www.instagram.com/calgarymissfits/</a></li>
+  </ul>
+</div>
+
+**Notes:**
+All marginalized identities welcome.

@@ -9,9 +9,17 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+
+description: "A grassroots community organization for lesbian, sapphic, and queer women in Calgary. They host diverse, often sober, events like markets and movie nights to foster safe and inclusive connections."
 ---
 
-Focused on 2SLGBTQ+. Audience: 2SLGBTQ+.
+A grassroots community organization for lesbian, sapphic, and queer women in Calgary. They host diverse, often sober, events like markets and movie nights to foster safe and inclusive connections.
 
-**Contact Info:**
-- Website: https://www.instagram.com/lavenderclubyyc/?hl=en
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://www.instagram.com/lavenderclubyyc/?hl=en" target="_blank">https://www.instagram.com/lavenderclubyyc/?hl=en</a></li>
+  </ul>
+</div>

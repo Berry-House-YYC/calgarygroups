@@ -9,9 +9,17 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+
+description: "A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship."
 ---
 
-Focused on 2SLGBTQ+. Audience: 2SLGBTQ+.
+A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship.
 
-**Contact Info:**
-- Website: https://www.instagram.com/yycsapphics/
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://www.instagram.com/yycsapphics/" target="_blank">https://www.instagram.com/yycsapphics/</a></li>
+  </ul>
+</div>

@@ -9,9 +9,16 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+description: "A book club focused on reading and discussing literature by queer authors and featuring queer themes. Hosted in partnership with local independent bookstores to promote diverse voices."
 ---
 
-Focused on 2SLGBTQ+. Audience: 2SLGBTQ+.
+A book club focused on reading and discussing literature by queer authors and featuring queer themes. Hosted in partnership with local independent bookstores to promote diverse voices.
 
-**Contact Info:**
-- Website: https://owlsnestbooks.com/book-clubs/queereads-yyc
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://owlsnestbooks.com/book-clubs/queereads-yyc" target="_blank">https://owlsnestbooks.com/book-clubs/queereads-yyc</a></li>
+  </ul>
+</div>

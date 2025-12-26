@@ -9,9 +9,16 @@ meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+description: "A queer event collective hosting home-grown events like art experiences, dance parties, and advocacy nights. They create inclusive spaces for the 2SLGBTQ+ community to celebrate, connect, and advocate for trans rights."
 ---
 
-Focused on 2SLGBTQ+. Audience: 2SLGBTQ+.
+A queer event collective hosting home-grown events like art experiences, dance parties, and advocacy nights. They create inclusive spaces for the 2SLGBTQ+ community to celebrate, connect, and advocate for trans rights.
 
-**Contact Info:**
-- Website: https://pansy.club/
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://pansy.club/" target="_blank">https://pansy.club/</a></li>
+  </ul>
+</div>

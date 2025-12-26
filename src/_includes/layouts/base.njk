@@ -44,66 +44,71 @@
     <meta name="twitter:image" content="{{ site.url }}/assets/screenshot.png" />
     <meta name="twitter:image:alt" content="Calgary Groups - A directory of community organizations in Calgary" />
 
-    <meta name="theme-color" content="#18020c" />
+  <meta name="theme-color" content="#18020c" />
 
-    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <body class="min-h-screen bg-brand-cream font-sans text-slate-900 dark:bg-brand-coffee dark:text-slate-100">
-    <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow dark:focus:bg-slate-900 dark:focus:text-slate-100" href="#content">Skip to content</a>
-    {% include "partials/header.njk" %}
-    <main id="content" class="mx-auto max-w-6xl px-4 py-8">
-      {{ content | safe }}
-    </main>
-    {% include "partials/footer.njk" %}
-    <script>
-      (function () {
-        const btn = document.getElementById("theme-toggle");
-        const icon = document.getElementById("theme-toggle-icon");
-        if (!btn || !icon) return;
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 
-        function currentTheme() {
-          return document.documentElement.classList.contains("dark") ? "dark" : "light";
-        }
+<body class="min-h-screen bg-brand-cream font-sans text-slate-900 dark:bg-brand-coffee dark:text-slate-100">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:shadow dark:focus:bg-slate-900 dark:focus:text-slate-100"
+    href="#content">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="content" class="mx-auto max-w-6xl px-4 py-8">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script>
+    (function () {
+      const btn = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-toggle-icon");
+      if (!btn || !icon) return;
 
-        function apply(theme) {
-          document.documentElement.classList.toggle("dark", theme === "dark");
-          try { localStorage.setItem("theme", theme); } catch {}
-          const isDark = theme === "dark";
-          btn.setAttribute("aria-pressed", String(isDark));
-          btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-          icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
-        }
-
-        apply(currentTheme());
-        btn.addEventListener("click", function () {
-          apply(currentTheme() === "dark" ? "light" : "dark");
-        });
-      })();
-    </script>
-    <script>
-      // Register service worker for PWA functionality
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-              console.log('Service Worker registered:', registration);
-            })
-            .catch(error => {
-              console.log('Service Worker registration failed:', error);
-            });
-        });
+      function currentTheme() {
+        return document.documentElement.classList.contains("dark") ? "dark" : "light";
       }
-    </script>
-  </body>
+
+      function apply(theme) {
+        document.documentElement.classList.toggle("dark", theme === "dark");
+        try { localStorage.setItem("theme", theme); } catch { }
+        const isDark = theme === "dark";
+        btn.setAttribute("aria-pressed", String(isDark));
+        btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+        icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+      }
+
+      apply(currentTheme());
+      btn.addEventListener("click", function () {
+        apply(currentTheme() === "dark" ? "light" : "dark");
+      });
+    })();
+  </script>
+  <script>
+    // Register service worker for PWA functionality
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch(error => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+
 </html>

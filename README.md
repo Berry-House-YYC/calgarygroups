@@ -8,7 +8,7 @@
 
 Calgary Groups is a centralized, searchable directory designed to help Calgarians discover and connect with local organizations that match their interests. Whether you're looking for activist groups, social clubs, nonprofits, or community initiatives, this directory makes it easy to find organizations working on the issues you care about.
 
-![Calgary Groups Screenshot](src/screenshot.png)
+![Calgary Groups Screenshot](src/assets/screenshot.png)
 
 ## Features
 

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Yalla Socials Calgary"
 type: "Social Club"
-interests: ["anti-racism"]
+interests: ["anti-racism", "international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Muslim Voice for Palestine"
 type: "Grassroots"
-interests: ["social-impact", "anti-racism"]
+interests: ["social-impact", "anti-racism", "international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

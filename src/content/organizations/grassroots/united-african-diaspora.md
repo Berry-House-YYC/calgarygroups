@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "United African Diaspora"
 type: "Grassroots"
-interests: ["anti-racism", "social-impact"]
+interests: ["anti-racism", "social-impact", "international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

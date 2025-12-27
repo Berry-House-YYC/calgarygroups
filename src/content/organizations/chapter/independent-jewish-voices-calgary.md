@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Independent Jewish Voices Calgary"
 type: "Chapter"
-interests: ["social-impact"]
+interests: ["social-impact", "international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

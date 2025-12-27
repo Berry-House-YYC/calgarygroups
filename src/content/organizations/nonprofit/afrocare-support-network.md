@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Afrocare Support Network"
 type: "Nonprofit"
-interests: ["health-wellness", "women+", "anti-racism"]
+interests: ["health-wellness", "women+", "anti-racism", "international"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

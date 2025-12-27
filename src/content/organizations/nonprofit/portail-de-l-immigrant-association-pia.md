@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Portail de l'Immigrant Association (PIA)"
 type: "Nonprofit"
-interests: ["arts-culture"]
+interests: ["arts-culture", "international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Rang De Pride"
 type: "Grassroots"
-interests: ["lgbtq2s", "anti-racism"]
+interests: ["lgbtq2s", "anti-racism", "international"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

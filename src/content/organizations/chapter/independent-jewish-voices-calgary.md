@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "The local chapter of a national organization advocating for justice and peace in Israel-Palestine. They support Palestinian rights and oppose all forms of racism, including antisemitism and Islamophobia."
+description: "The local chapter of a national organization advocating for justice and peace in Palestine. They support Palestinian rights and oppose all forms of racism, including antisemitism and Islamophobia."
 ---
 
-The local chapter of a national organization advocating for justice and peace in Israel-Palestine. They support Palestinian rights and oppose all forms of racism, including antisemitism and Islamophobia.
+The local chapter of a national organization advocating for justice and peace in Palestine. They support Palestinian rights and oppose all forms of racism, including antisemitism and Islamophobia.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

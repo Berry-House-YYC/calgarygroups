@@ -9,7 +9,7 @@ age_range: all-ages
 identity_focused: true
 meeting_format: in-person
 location_area: city-wide
-status: active
+status: unknown
 permalink: /organizations/{{ page.fileSlug }}/
 description: An Indigenous-led grassroots safety initiative. Volunteers patrol
   streets to provide support, harm reduction, and a sense of safety for
@@ -25,4 +25,4 @@ Focused on Health and Wellness (safety).
 </div>
 
 **Notes:**
-Unclear if Active in Calgary. Organization started in Winnipeg. Dedicated to keeping Indigenous peoples and other marginalized individuals safe, providing an alternative phone number to call instead of involving the police.
+Unclear if Active in Calgary. Organization started in Winnipeg. Dedicated to keeping Indigenous peoples and other marginalized individuals safe, providing an alternative phone number to call instead of involving the police: [(403) 608-2401](https://www.google.com/search?gs_ssp=eJwFwTsOgCAMANC4mrg7sjhTMHzkCN6iFspC1BAS4fa-Ny8yS6U-btW4kWEKG3SzO2UZQEOK5DUH6OQSW42WfDQHsD7XK2EVVPAWL7b6FEFYMtbxA6XWGJo&q=bear+clan+patrol+calgary&rlz=1C1CHBF_enCA1153CA1153&oq=bear&gs_lcrp=EgZjaHJvbWUqEggCEC4YQxivARjHARiABBiKBTIGCAAQRRg5Mg8IARAuGEMYsQMYgAQYigUyEggCEC4YQxivARjHARiABBiKBTIICAMQRRgnGDsyDAgEEAAYQxiABBiKBTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDMyNTdqMGo3qAIIsAIB8QU7lUi_d7W4IA&sourceid=chrome&ie=UTF-8#)

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: Gay Book Cult
-type: social-club
+type: "Social-Club"
 interests: ["book","lgbtq2s"]
 age_range: all-ages
 identity_focused: true

@@ -1,20 +1,21 @@
 ---
 layout: layouts/organization.njk
-name: "Bear Clan Patrol"
-type: "Chapter"
-interests: ["health-wellness"]
-age_range: "all-ages"
+name: Bear Clan Patrol
+type: Chapter
+interests:
+  - health-wellness
+  - Indigenous
+age_range: all-ages
 identity_focused: true
-meeting_format: "in-person"
-location_area: "city-wide"
-status: "active"
-permalink: "/organizations/{{ page.fileSlug }}/"
-
-
-description: "An Indigenous-led grassroots safety initiative. Volunteers patrol streets to provide support, harm reduction, and a sense of safety for vulnerable community members."
+meeting_format: in-person
+location_area: city-wide
+status: active
+permalink: /organizations/{{ page.fileSlug }}/
+description: An Indigenous-led grassroots safety initiative. Volunteers patrol
+  streets to provide support, harm reduction, and a sense of safety for
+  vulnerable community members.
 ---
-
-Focused on Health and Wellness.
+Focused on Health and Wellness (safety). 
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -24,4 +25,4 @@ Focused on Health and Wellness.
 </div>
 
 **Notes:**
-Unclear if Active
+Unclear if Active in Calgary. Organization started in Winnipeg. Dedicated to keeping Indigenous peoples and other marginalized individuals safe, providing an alternative phone number to call instead of involving the police.

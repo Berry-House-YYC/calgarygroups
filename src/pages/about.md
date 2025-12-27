@@ -27,7 +27,7 @@ We built Calgary Groups to be a simple, durable “public index” for local org
 
 ## How it works
 
-Each organization listing is a Markdown file in this repository (under `src/content/organizations/**`). The site is generated with Eleventy and styled with Tailwind CSS.
+Each organization listing is a Markdown file in this repository (under `src/content/organizations/`). The site is generated with Eleventy and styled with Tailwind CSS.
 
 - **Directory page**: filter/search across all listings.
 - **Organization pages**: one page per org, generated from its Markdown file.
@@ -58,4 +58,4 @@ Berry House builds fast, accessible JAMstack websites and thoughtful, effective 
 - **Accessible and fast**: semantic HTML and performance baked in.
 - **Calm, sustainable websites**: low overhead and easy maintenance.
 
-Learn more at https://berryhouse.ca/.
+Learn more at <https://berryhouse.ca/>.

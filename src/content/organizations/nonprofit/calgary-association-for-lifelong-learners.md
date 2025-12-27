@@ -5,6 +5,7 @@ type: Nonprofit
 interests:
   - sports-rec
   - seniors
+  - book
 age_range: seniors
 identity_focused: true
 meeting_format: in-person

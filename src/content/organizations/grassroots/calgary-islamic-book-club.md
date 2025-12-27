@@ -1,21 +1,21 @@
 ---
 layout: layouts/organization.njk
-name: "Calgary Islamic Book Club"
-type: "Grassroots"
-interests: ["anti-racism", "book"]
-age_range: "all-ages"
-identity_focused: false
-meeting_format: "in-person"
-location_area: "city-wide"
-status: "active"
-permalink: "/organizations/{{ page.fileSlug }}/"
-
-
-
-description: "A community initiative, potentially linked to the IISC or Muslim Space, fostering connection through the discussion of Islamic literature, faith, and current events."
+name: Calgary Islamic Book Club
+type: Grassroots
+interests:
+  - anti-racism
+  - book
+age_range: all-ages
+identity_focused: true
+meeting_format: in-person
+location_area: city-wide
+status: active
+permalink: /organizations/{{ page.fileSlug }}/
+description: A community initiative, potentially linked to the IISC or Muslim
+  Space, fostering connection through the discussion of Islamic literature,
+  faith, and current events.
 ---
-
-A community initiative, potentially linked to the IISC or Muslim Space, fostering connection through the discussion of Islamic literature, faith, and current events.
+A community initiative fostering connection through the discussion of Islamic literature, faith, and current events.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

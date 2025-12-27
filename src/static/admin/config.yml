@@ -10,7 +10,7 @@ public_folder: "/uploads"
 collections:
   - name: "organizations_chapter"
     label: "Organizations (Chapter)"
-    label_singular: "Organization"
+    label_singular: "Chapter Organization"
     folder: "src/content/organizations/chapter"
     create: true
     identifier_field: "name"
@@ -31,7 +31,7 @@ collections:
 
   - name: "organizations_grassroots"
     label: "Organizations (Grassroots)"
-    label_singular: "Organization"
+    label_singular: "Grassroots Organization"
     folder: "src/content/organizations/grassroots"
     create: true
     identifier_field: "name"
@@ -52,7 +52,7 @@ collections:
 
   - name: "organizations_nonprofit"
     label: "Organizations (Nonprofit)"
-    label_singular: "Organization"
+    label_singular: "Nonprofit Organization"
     folder: "src/content/organizations/nonprofit"
     create: true
     identifier_field: "name"
@@ -73,7 +73,7 @@ collections:
 
   - name: "organizations_small_business"
     label: "Organizations (Small Business)"
-    label_singular: "Organization"
+    label_singular: "Small Business"
     folder: "src/content/organizations/small-business"
     create: true
     identifier_field: "name"
@@ -94,7 +94,7 @@ collections:
 
   - name: "organizations_social_club"
     label: "Organizations (Social Club)"
-    label_singular: "Organization"
+    label_singular: "Social Club"
     folder: "src/content/organizations/social-club"
     create: true
     identifier_field: "name"

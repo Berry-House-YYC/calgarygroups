@@ -20,7 +20,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "hidden", default: "chapter" }
-      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "disability/neurodivergent", "education", "environment", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
+      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "book", "disability/neurodivergent", "education", "environment", "general", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
       - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
@@ -41,7 +41,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "hidden", default: "grassroots" }
-      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "disability/neurodivergent", "education", "environment", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
+      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "book", "disability/neurodivergent", "education", "environment", "general", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
       - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
@@ -62,7 +62,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "hidden", default: "nonprofit" }
-      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "disability/neurodivergent", "education", "environment", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
+      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "book", "disability/neurodivergent", "education", "environment", "general", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
       - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
@@ -83,7 +83,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "hidden", default: "small-business" }
-      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "disability/neurodivergent", "education", "environment", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
+      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "book", "disability/neurodivergent", "education", "environment", "general", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
       - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }
@@ -104,7 +104,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/organization.njk" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Type", name: "type", widget: "hidden", default: "social-club" }
-      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "disability/neurodivergent", "education", "environment", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
+      - { label: "Interests", name: "interests", widget: "select", required: false, multiple: true, options: ["anti-racism", "arts-culture", "book", "disability/neurodivergent", "education", "environment", "general", "health-wellness", "indigenous", "international", "lgbtq2s", "low-income", "seniors", "social-impact", "sports-rec", "tech", "urban-issues", "women+", "youth"] }
       - { label: "Age range", name: "age_range", widget: "select", required: false, options: ["all-ages", "youth", "adults", "seniors"], default: "all-ages" }
       - { label: "Identity-focused", name: "identity_focused", widget: "boolean", required: false, default: false }
       - { label: "Meeting format", name: "meeting_format", widget: "select", required: false, options: ["in-person", "online", "hybrid"], default: "in-person" }

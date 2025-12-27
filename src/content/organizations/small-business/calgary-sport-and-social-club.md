@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: Calgary Sport & Social Club (CSSC)
+name: Calgary Sport and Social Club (CSSC)
 type: Small Business
 interests:
   - sports-rec

@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "A non-profit providing inclusive services and research for people with disabilities. They operate a therapeutic pool, housing support, and social enterprises to foster community well-being."
 ---
 
-Focused on Disability, Sports & Rec, Children & Youth.
+Focused on Disability, Sports and Rec, Children and Youth.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

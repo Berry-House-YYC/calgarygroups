@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "Calgary's original member-driven makerspace. They provide tools, workshops, and a collaborative community for makers, artists, and creators to build their projects."
 ---
 
-Focused on Arts & Culture, Science & Tech.
+Focused on Arts and Culture, Science and Tech.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

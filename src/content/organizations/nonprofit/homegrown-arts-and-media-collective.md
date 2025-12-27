@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Homegrown Arts & Media Collective"
+name: "Homegrown Arts and Media Collective"
 type: "Nonprofit"
 interests: ["arts-culture"]
 age_range: "all-ages"

@@ -25,4 +25,4 @@ A series of networking events designed for authentic connection. They offer alte
 </div>
 
 **Notes:**
-For immigrants & locals
+For immigrants and locals

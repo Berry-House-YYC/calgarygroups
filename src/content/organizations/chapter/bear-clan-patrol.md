@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "An Indigenous-led grassroots safety initiative. Volunteers patrol streets to provide support, harm reduction, and a sense of safety for vulnerable community members."
 ---
 
-Focused on Health & Wellness.
+Focused on Health and Wellness.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

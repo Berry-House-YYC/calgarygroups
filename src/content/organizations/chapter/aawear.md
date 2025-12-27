@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "A peer-led collective advocating for the rights and well-being of people who use drugs. They provide harm reduction supplies, peer support, and education to combat stigma."
 ---
 
-Focused on Health & Wellness.
+Focused on Health and Wellness.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

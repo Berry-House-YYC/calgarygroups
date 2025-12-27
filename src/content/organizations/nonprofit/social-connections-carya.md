@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "A program by Carya offering diverse community-building activities. They focus on reducing isolation and fostering natural support networks through art, cooking, and wellness groups."
 ---
 
-Focused on Low-Income, Arts & Culture, Health & Wellness.
+Focused on Low-Income, Arts and Culture, Health and Wellness.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

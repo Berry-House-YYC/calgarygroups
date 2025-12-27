@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "A non-profit organization focused on community service, sobriety, and healing. They support members in recovery and engage in initiatives like feeding those in need."
 ---
 
-Focused on Indigenous, Health & Wellness.
+Focused on Indigenous, Health and Wellness.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

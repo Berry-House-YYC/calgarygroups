@@ -4,8 +4,7 @@ name: Bear Clan Patrol
 type: Chapter
 interests:
   - health-wellness
-  - Indigenous
-age_range: all-ages
+  - indigenous
 identity_focused: true
 meeting_format: in-person
 location_area: city-wide
@@ -14,6 +13,7 @@ permalink: /organizations/{{ page.fileSlug }}/
 description: An Indigenous-led grassroots safety initiative. Volunteers patrol
   streets to provide support, harm reduction, and a sense of safety for
   vulnerable community members.
+age_range: all-ages
 ---
 Focused on Health and Wellness (safety). 
 

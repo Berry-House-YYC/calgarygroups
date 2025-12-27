@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Women's Literary Club"
 type: "Social Club"
-interests: ["anti-racism", "women+"]
+interests: ["anti-racism", "women+", "book"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

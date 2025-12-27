@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Paperback Therapy Book Club"
 type: "Social Club"
-interests: ["anti-racism"]
+interests: ["anti-racism", "book"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

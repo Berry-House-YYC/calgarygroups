@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Intentional Book Club YYC"
 type: "Social Club"
-interests: ["anti-racism"]
+interests: ["anti-racism", "book"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

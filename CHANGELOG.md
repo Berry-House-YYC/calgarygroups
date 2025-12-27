@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2025-12-26
+
+### Admin Panel Improvements
+- Fixed organization type labels to show specific names instead of generic "organization" tabs
+- Added proper singular labels for each organization type (Chapter Organization, Grassroots Organization, Nonprofit Organization, Small Business, Social Club)
+- Changed interests field from free-text list to predefined select dropdown to prevent typos and case mismatches
+- Added all 19 predefined interests to admin config including "book" and "general" interests
+- Made interests case-insensitive by enforcing lowercase values across all organization types
+
+### Content Updates
+- Added "book" interest to 12 book clubs that were missing this tag
+- Updated Bear Clan Patrol to use correct lowercase "indigenous" interest
+- Added "book" interest to Calgary Association for Lifelong Learners (CALL)
+- Added "international" interest tag to organizations with global focus
+- Cleaned up organization data by removing duplicate and inactive organizations
+- Replaced ampersands (&) with 'and' in organization names and descriptions for better consistency
+- Fixed HTML entity encoding in organization excerpts to display special characters correctly
+
+### Bug Fixes
+- Fixed issue where adding interests through admin panel would create duplicate entries with different capitalization
+- Resolved problem with interests not appearing on site due to case sensitivity
+- Fixed Decap CMS collection paths for proper organization display
+
+### Maintenance
+- Added script to check for invalid interests across all organizations
+- Added git sync scripts for easier repository management
+- Updated screenshot with new site preview
+- Updated service worker caching strategy for better performance
+
 ## [0.2.0] - 2025-12-16
 
 ### Design & Branding

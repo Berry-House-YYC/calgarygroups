@@ -15,7 +15,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "Calgary book club for birthworkers reading women’s stories and growing through shared wisdom. All birthworkers welcome."
 ---
 
-An initiative by the Calgary Doula Association to connect expectant parents with birth and postpartum doulas. They provide education and opportunities to meet doulas in a relaxed setting.
+Calgary book club for birthworkers reading women’s stories and growing through shared wisdom. All birthworkers welcome.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

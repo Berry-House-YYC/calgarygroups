@@ -1,21 +1,23 @@
 ---
 layout: layouts/organization.njk
-name: "Gay Book Cult"
-type: "Grassroots"
-interests: ["book"]
-age_range: "all-ages"
-identity_focused: false
-meeting_format: "in-person"
-location_area: "city-wide"
-status: "active"
-permalink: "/organizations/{{ page.fileSlug }}/"
-
-
-
-description: "Also known as QUEEReads YYC, this book club focuses on LGBTQ2S+ literature. They meet monthly at Owl's Nest Books to discuss diverse queer voices and themes."
+name: Gay Book Cult
+type: Grassroots
+interests:
+  - book
+  - lgbtq2s
+age_range: all-ages
+identity_focused: true
+meeting_format: in-person
+location_area: city-wide
+status: active
+permalink: /organizations/{{ page.fileSlug }}/
+description: Also known as QUEEReads YYC, this book club focuses on LGBTQ2S+
+  literature. They meet monthly at Owl's Nest Books to discuss diverse queer
+  voices and themes.
 ---
+"Fiction, non-fiction, and a whole lot of women loving women." Monthly book club.
 
-Also known as QUEEReads YYC, this book club focuses on LGBTQ2S+ literature. They meet monthly at Owl's Nest Books to discuss diverse queer voices and themes.
+Have clubs in both Calgary and Red Deer, Alberta
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

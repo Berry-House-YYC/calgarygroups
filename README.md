@@ -190,3 +190,4 @@ This repository is dual-licensed:
 
 - **Code** (site source, scripts, configuration): **MIT** (see `LICENSE`)
 - **Content/data** (organization listings and related data): **CC BY 4.0** (see `LICENSE-CONTENT`)
+# Updated Fri Dec 26 17:26:36 SST 2025

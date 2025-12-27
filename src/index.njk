@@ -16,7 +16,7 @@ title: Directory
 "location_area": {{ org.data.location_area | json | safe }},
 "status": {{ org.data.status | json | safe }},
 "website": {{ (org.templateContent | extractFirstUrl) | json | safe }},
-"excerpt": {{ (org.templateContent | stripHtml | truncate(220)) | json | safe }},
+"excerpt": {{ (org.templateContent | stripHtml | truncate(220) | unescape) | json | safe }},
 "url": {{ org.url | json | safe }}
 }{% if not loop.last %},{% endif %}
 {% endfor %}

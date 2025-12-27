@@ -29,6 +29,11 @@ module.exports = function (eleventyConfig) {
     return match ? match[0] : null;
   });
 
+  eleventyConfig.addFilter("unescape", (value) => {
+    const str = typeof value === "string" ? value : "";
+    return str.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  });
+
   eleventyConfig.addFilter("toRfc822", (value) => {
     const date = value instanceof Date ? value : new Date(value);
     if (Number.isNaN(date.getTime())) return "";

@@ -4,7 +4,7 @@ name: "Watermelon Foundation for Justice"
 type: "Nonprofit"
 interests: ["social-impact", "international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"

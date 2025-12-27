@@ -4,7 +4,7 @@ name: "Crescent Justice Collective"
 type: "Grassroots"
 interests: ["international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "online"
 location_area: "city-wide"
 status: "active"

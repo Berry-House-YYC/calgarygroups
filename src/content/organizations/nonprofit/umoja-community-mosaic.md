@@ -2,9 +2,9 @@
 layout: layouts/organization.njk
 name: "Umoja Community Mosaic"
 type: "Nonprofit"
-interests: ["anti-racism", "youth", "international"]
+interests: ["youth", "international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"

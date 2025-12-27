@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A grassroots organization bringing together Calgary's vegan and plant-curious community. They promote compassionate living through events like the Vegan Holiday Harvest Festival and provide support for those exploring a plant-based lifestyle."
+description: "A grassroots-style organization bringing together Calgary's vegan and plant-curious community. They promote compassionate living through events like the Vegan Holiday Harvest Festival and provide support for those exploring a plant-based lifestyle."
 ---
 
-A grassroots organization bringing together Calgary's vegan and plant-curious community. They promote compassionate living through events like the Vegan Holiday Harvest Festival and provide support for those exploring a plant-based lifestyle.
+A grassroots-style organization bringing together Calgary's vegan and plant-curious community. They promote compassionate living through events like the Vegan Holiday Harvest Festival and provide support for those exploring a plant-based lifestyle.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

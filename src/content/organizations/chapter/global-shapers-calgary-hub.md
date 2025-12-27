@@ -4,7 +4,7 @@ name: "Global Shapers Calgary Hub"
 type: "Chapter"
 interests: ["urban-issues"]
 age_range: "young-adult"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"

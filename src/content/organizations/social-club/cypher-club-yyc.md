@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community group focused on freestyle rap and hip hop culture. They likely organize cyphers and events for MCs and hip hop fans."
+description: "A community group focused on freestyle rap and hip hop culture."
 ---
 
-A community group focused on freestyle rap and hip hop culture. They likely organize cyphers and events for MCs and hip hop fans.
+A community group focused on freestyle rap and hip hop culture.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

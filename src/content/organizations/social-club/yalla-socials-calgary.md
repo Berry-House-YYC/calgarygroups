@@ -4,7 +4,7 @@ name: "Yalla Socials Calgary"
 type: "Social Club"
 interests: ["anti-racism", "international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "Associated with the Yalla! Party Project, engaging the community through energetic social events and parties. They create inclusive spaces for celebration and connection."
+description: "A social club for people who identify as Arabian. They create inclusive spaces for celebration and connection."
 ---
 
-Associated with the Yalla! Party Project, engaging the community through energetic social events and parties. They create inclusive spaces for celebration and connection.
+A social club for people who identify as Arabian. They create inclusive spaces for celebration and connection.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

@@ -22,3 +22,5 @@ A large community of craft beer lovers exploring Calgary's brewery scene. They o
     <li>Website: <a href="https://www.meetup.com/calgary-craft-beer-club/" target="_blank">https://www.meetup.com/calgary-craft-beer-club/</a></li>
   </ul>
 </div>
+
+**Notes** Some social networks are inactive, but the club itself is still very much active!

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Justice for Palestinians"
 type: "Grassroots"
-interests: ["social-impact", "international"]
+interests: ["international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

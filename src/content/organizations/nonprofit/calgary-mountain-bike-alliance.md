@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Mountain Bike Alliance"
 type: "Nonprofit"
-interests: ["environment"]
+interests: ["environment", "sports-rec"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

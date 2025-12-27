@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Downtown Chess Meetup"
 type: "Social Club"
-interests: ["sports-rec"]
+interests: ["sports-rec", "general"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

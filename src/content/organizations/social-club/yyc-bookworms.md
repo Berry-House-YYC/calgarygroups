@@ -12,12 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A community initiative for book lovers in Calgary, likely associated with the 'Busy Bookworms' program or local book swaps. They encourage reading and sharing stories among all ages."
+description: "A book club in Calgary, largely reading contemporary, literary, and historical fiction."
 ---
 
-A community initiative for book lovers in Calgary, likely associated with the 'Busy Bookworms' program or local book swaps. They encourage reading and sharing stories among all ages.
-
-Community organization in Calgary.
+A book club in Calgary, largely reading contemporary, literary, and historical fiction.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

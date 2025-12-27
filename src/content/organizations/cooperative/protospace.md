@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Protospace"
-type: "Nonprofit"
+type: "Cooperative"
 interests: ["arts-culture", "tech"]
 age_range: "all-ages"
 identity_focused: false
@@ -13,8 +13,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 description: "Calgary's original member-driven makerspace. They provide tools, workshops, and a collaborative community for makers, artists, and creators to build their projects."
 ---
-
-Focused on Arts and Culture, Science and Tech.
+Calgary's original member-driven makerspace. They provide tools, workshops, and a collaborative community for makers, artists, and creators to build their projects.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

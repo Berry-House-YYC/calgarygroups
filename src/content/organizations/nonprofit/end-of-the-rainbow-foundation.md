@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "End of the Rainbow Foundation"
 type: "Nonprofit"
-interests: ["lgbtq2s", "social-impact"]
+interests: ["lgbtq2s", "international"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

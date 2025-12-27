@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Lavender Club YYC"
 type: "Social Club"
-interests: ["lgbtq2s"]
+interests: ["lgbtq2s","women+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A grassroots community organization for lesbian, sapphic, and queer women in Calgary. They host diverse, often sober, events like markets and movie nights to foster safe and inclusive connections."
+description: "A club for lesbian, sapphic, and queer people in Calgary. They host events, markets, and protests to foster safe and inclusive connections."
 ---
 
-A grassroots community organization for lesbian, sapphic, and queer women in Calgary. They host diverse, often sober, events like markets and movie nights to foster safe and inclusive connections.
+A club for lesbian, sapphic, and queer people in Calgary. They host events, markets, and protests to foster safe and inclusive connections.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

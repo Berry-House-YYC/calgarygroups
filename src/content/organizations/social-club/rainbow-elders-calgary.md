@@ -1,20 +1,20 @@
 ---
 layout: layouts/organization.njk
 name: "Rainbow Elders Calgary"
-type: "Social Club"
-interests: ["lgbtq2s", "seniors"]
+type: "nonprofit"
+interests: ["lgbtq2s","seniors"]
 age_range: "seniors"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A volunteer-run non-profit organization dedicated to supporting 2SLGBTQ+ seniors in Calgary. They work to combat social isolation by organizing safe social events, picnics, coffee socials, and monthly meetups where members can connect and be themselves."
+description: "A volunteer-run non-profit organization for 2SLGBTQ+ seniors in Calgary. They work to combat social isolation by organizing safe social events, picnics, coffee socials, and monthly meetups where members can connect and be themselves."
 ---
 
-A volunteer-run non-profit organization dedicated to supporting 2SLGBTQ+ seniors in Calgary. They work to combat social isolation by organizing safe social events, picnics, coffee socials, and monthly meetups where members can connect and be themselves.
+A volunteer-run non-profit organization for 2SLGBTQ+ seniors in Calgary. They work to combat social isolation by organizing safe social events, picnics, coffee socials, and monthly meetups where members can connect and be themselves.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

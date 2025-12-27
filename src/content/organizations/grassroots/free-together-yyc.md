@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Free Together YYC"
 type: "Grassroots"
-interests: ["social-impact"]
+interests: ["international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A concept representing various initiatives in Calgary that offer free community activities. It encompasses events, transit options, and public spaces that allow Calgarians to gather without cost."
+description: "A group supporting Palestine joined by an anti-colonial perspective."
 ---
 
-A concept representing various initiatives in Calgary that offer free community activities. It encompasses events, transit options, and public spaces that allow Calgarians to gather without cost.
+A group supporting Palestine joined by an anti-colonial perspective.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

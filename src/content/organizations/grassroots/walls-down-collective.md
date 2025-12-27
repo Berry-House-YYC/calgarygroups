@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Walls Down Collective"
 type: "Grassroots"
-interests: ["anti-racism"]
+interests: ["anti-racism", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community care initiative providing crisis support and peer advocacy. They operate a support line and organize events to foster safety and connection, prioritizing care over policing."
+description: "A community care initiative providing crisis support and pop-up resource distribution events for the homeless population. They are abolitionist, anti-police, and focus heavily on combating anti-Black racism."
 ---
 
-A community care initiative providing crisis support and peer advocacy. They operate a support line and organize events to foster safety and connection, prioritizing care over policing.
+A community care initiative providing crisis support and pop-up resource distribution events for the homeless population. They are abolitionist, anti-police, and focus heavily on combating anti-Black racism.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

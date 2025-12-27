@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A social book club for women in Calgary to connect through their shared love of literature. They serve as a space for discussion, friendship, and community building."
+description: "A social book club for women in Calgary to connect through their shared love of literature. They serve as a space for discussion, friendship, and community building. Hosted at Deville on 17th Ave."
 ---
 
-A social book club for women in Calgary to connect through their shared love of literature. They serve as a space for discussion, friendship, and community building.
+A social book club for women in Calgary to connect through their shared love of literature. They serve as a space for discussion, friendship, and community building. Hosted at Deville on 17th Ave.
 
 Audience: Women.
 

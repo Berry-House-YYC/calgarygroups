@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A peer-led social group for autistic and neurodivergent adults. They organize low-pressure events to help members make friends and feel safe being themselves."
+description: "A peer-led social group for low-support needs autistic and neurodivergent adults. They organize low-pressure events to help members make friends and feel safe being themselves."
 ---
 
-A peer-led social group for autistic and neurodivergent adults. They organize low-pressure events to help members make friends and feel safe being themselves.
+A peer-led social group for low-support needs autistic and neurodivergent adults. They organize low-pressure events to help members make friends and feel safe being themselves.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

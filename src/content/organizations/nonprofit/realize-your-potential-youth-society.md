@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Realize Your Potential Youth Society"
+name: "Realize Your Potential (RYP) Youth Society"
 type: "Nonprofit"
 interests: ["youth", "anti-racism"]
 age_range: "all-ages"
@@ -24,4 +24,4 @@ A mentorship organization dealing with African Diaspora youth. They guide and em
 </div>
 
 **Notes:**
-For ages 7-26.
+For ages 7-26. Largely based out of Calgary.

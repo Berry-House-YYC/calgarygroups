@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Skipping Stone"
+name: "Skipping Stone Foundation"
 type: "Nonprofit"
 interests: ["lgbtq2s"]
 age_range: "all-ages"

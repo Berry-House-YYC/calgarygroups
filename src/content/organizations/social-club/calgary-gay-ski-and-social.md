@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "An outdoor club primarily for gay men and the LGBTQ+ community. They organize cross-country ski outings and social events, promoting fitness and inclusivity."
+description: "A ski club for the 2SLGBTQ+ community, largely populated by queer men."
 ---
 
-An outdoor club primarily for gay men and the LGBTQ+ community. They organize cross-country ski outings and social events, promoting fitness and inclusivity.
+A ski club for the 2SLGBTQ+ community, largely populated by queer men.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

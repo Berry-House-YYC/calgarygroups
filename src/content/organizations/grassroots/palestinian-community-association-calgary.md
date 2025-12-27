@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Palestinian Community Association Calgary"
 type: "Grassroots"
-interests: ["social-impact", "international"]
+interests: ["international"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"
@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "An association dedicated to the Palestinian community in Calgary, likely focusing on cultural preservation and community support."
+description: "An association dedicated to advocacy for Palestine, organizing movie nights, boycotts, and protests."
 ---
 
-An association dedicated to the Palestinian community in Calgary, likely focusing on cultural preservation and community support.
+An association dedicated to advocacy for Palestine, organizing movie nights, boycotts, and protests.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

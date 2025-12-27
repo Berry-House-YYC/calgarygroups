@@ -4,7 +4,7 @@ name: "Black Social Club"
 type: "Social Club"
 interests: ["anti-racism"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "Refers to networking and social initiatives for the Black community in Calgary, such as NIDOA events. These gatherings foster professional growth and community connection."
+description: "Refers to networking and social initiatives for the Black community in Calgary."
 ---
 
-Refers to networking and social initiatives for the Black community in Calgary, such as NIDOA events. These gatherings foster professional growth and community connection.
+Refers to networking and social initiatives for the Black community in Calgary.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

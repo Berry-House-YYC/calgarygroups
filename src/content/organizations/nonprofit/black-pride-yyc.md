@@ -19,5 +19,6 @@ A platform dedicated to celebrating and empowering the Black 2SLGBTQ+ community.
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
+   <li>Website: <a href="https://www.blackprideyyc.org/" target="_blank">https://www.blackprideyyc.org/</a></li>
   </ul>
 </div>

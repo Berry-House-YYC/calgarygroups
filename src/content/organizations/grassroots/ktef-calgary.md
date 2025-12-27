@@ -2,8 +2,7 @@
 layout: layouts/organization.njk
 name: Keep the Earth Fresh (KTEF) Calgary
 type: Grassroots
-interests:
-  - environment
+interests: ["environment"]
 age_range: all-ages
 identity_focused: false
 meeting_format: in-person

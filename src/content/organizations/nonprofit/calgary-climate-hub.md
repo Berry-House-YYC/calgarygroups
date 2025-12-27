@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A volunteer-led non-profit that educates and empowers Calgarians to take action on climate change. They run campaigns and events to advocate for meaningful climate policy at the local level."
+description: "A volunteer-led non-profit that educates and empowers Calgarians to take action on climate change. They run campaigns and events to advocate for meaningful climate policy and urban development at the local level."
 ---
 
-A volunteer-led non-profit that educates and empowers Calgarians to take action on climate change. They run campaigns and events to advocate for meaningful climate policy at the local level.
+A volunteer-led non-profit that educates and empowers Calgarians to take action on climate change. They run campaigns and events to advocate for meaningful climate policy and urban development at the local level.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

@@ -12,12 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A book club for 'deep thinkers' that meets on Sundays. They engage in meaningful discussions about selected reads, fostering intellectual connection and community."
+description: "A book club that engages in meaningful discussions about intentionally-selected reads, fostering intellectual connection and community."
 ---
 
-A book club for 'deep thinkers' that meets on Sundays. They engage in meaningful discussions about selected reads, fostering intellectual connection and community.
-
-Community organization in Calgary.
+A book club that engages in meaningful discussions about intentionally-selected reads, fostering intellectual connection and community.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

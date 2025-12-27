@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A grassroots group organizing for the rights and visibility of queer citizens. They likely focus on advocacy and community mobilization around 2SLGBTQ+ issues."
+description: "A grassroots group organizing for the rights and visibility of queer citizens. \"Queer Citizens uniting to defend queer spaces, events, livelihoods, happiness/Building solidarity between marginalized groups/Sharing calls to action.\""
 ---
 
-A grassroots group organizing for the rights and visibility of queer citizens. They likely focus on advocacy and community mobilization around 2SLGBTQ+ issues.
+A grassroots group organizing for the rights and visibility of queer citizens. "Queer Citizens uniting to defend queer spaces, events, livelihoods, happiness/Building solidarity between marginalized groups/Sharing calls to action."
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

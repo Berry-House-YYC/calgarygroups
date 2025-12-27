@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community for women and gender-diverse folks who use public transit. They likely advocate for safer transit and building community among riders."
+description: "A community for \"anyone who identifies as a girl.\" Fun events and donation drives." 
 ---
 
-A community for women and gender-diverse folks who use public transit. They likely advocate for safer transit and building community among riders.
+A community for "anyone who identifies as a girl." Fun events and donation drives. 
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

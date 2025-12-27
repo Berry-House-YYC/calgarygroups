@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community group for longboarding enthusiasts. They host weekly clinics and group rides to teach skills, promote safety, and build camaraderie among riders."
+description: "A community group for longboarding enthusiasts, both on snow and concrete. They host weekly clinics and group rides to teach skills, promote safety, and build camaraderie among riders."
 ---
 
-Focused on Sports and Rec.
+A community group for longboarding enthusiasts, both on snow and concrete. They host weekly clinics and group rides to teach skills, promote safety, and build camaraderie among riders.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

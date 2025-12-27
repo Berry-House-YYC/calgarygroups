@@ -25,4 +25,4 @@ An Indigenous-led charitable organization guided by Elders and Knowledge Keepers
 </div>
 
 **Notes:**
-Check activity
+You do not have to be Indigenous to join!

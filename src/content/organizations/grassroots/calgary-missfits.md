@@ -12,9 +12,7 @@ meeting_format: in-person
 location_area: city-wide
 status: active
 permalink: /organizations/{{ page.fileSlug }}/
-description: A social club for women and gender-diverse folks (or general social
-  group) dedicated to building lasting friendships through fun activities and
-  regular meetups.
+description: A social club for systemically-marginalized folks, specifically disabled and trans-inclusive, dedicated to building lasting friendships through fun activities and events.
 ---
 A social club for systemically-marginalized folks, specifically disabled and trans-inclusive, dedicated to building lasting friendships through fun activities and events.
 

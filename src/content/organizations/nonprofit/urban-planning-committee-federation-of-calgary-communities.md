@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Urban Planning Committee, Federation of Calgary Communities"
+name: "Federation of Calgary Communities"
 type: "Nonprofit"
 interests: ["urban-issues"]
 age_range: "all-ages"
@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A committee providing a forum for community associations to discuss planning issues. They facilitate learning and dialogue on urban development trends in Calgary."
+description: "Offers an Urban Planning Committee providing a forum for community and neighbourhood associations to discuss planning issues. They facilitate learning and dialogue on urban development trends in Calgary."
 ---
 
-A committee providing a forum for community associations to discuss planning issues. They facilitate learning and dialogue on urban development trends in Calgary.
+Offers an Urban Planning Committee providing a forum for community and neighbourhood associations to discuss planning issues. They facilitate learning and dialogue on urban development trends in Calgary.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -24,4 +24,4 @@ A committee providing a forum for community associations to discuss planning iss
 </div>
 
 **Notes:**
-Part of the Federation of Calgary Communities. Meet every 2 months around a general urban topic.
+Meet every 2 months around a general urban topic.

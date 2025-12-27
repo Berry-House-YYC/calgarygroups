@@ -2,9 +2,9 @@
 layout: layouts/organization.njk
 name: "Calgary Blend"
 type: "Social Club"
-interests: ["anti-racism", "social-impact"]
+interests: ["international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A series of networking events designed for authentic connection. They offer alternatives to traditional mixers, focusing on meaningful conversation in relaxed settings."
+description: "Fun events hosted for the purpose of bringing newcomers and locals together."
 ---
 
-A series of networking events designed for authentic connection. They offer alternatives to traditional mixers, focusing on meaningful conversation in relaxed settings.
+Fun events hosted for the purpose of bringing newcomers and locals together.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

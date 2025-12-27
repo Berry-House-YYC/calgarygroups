@@ -24,4 +24,4 @@ A volunteer group dedicated to supporting and representing asexual and aromantic
 </div>
 
 **Notes:**
-also has book club
+also has a book club!

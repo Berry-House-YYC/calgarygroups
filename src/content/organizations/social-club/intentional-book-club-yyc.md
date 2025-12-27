@@ -5,17 +5,17 @@ type: "Social Club"
 interests: ["anti-racism", "book"]
 age_range: "all-ages"
 identity_focused: false
-meeting_format: "in-person"
+meeting_format: "online"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A book club focusing on books that inspire mindfulness, personal growth, and intentional living. They curate readings to support a purpose-driven lifestyle."
+description: "A book club focusing on fiction and non-fiction books by diverse authors. Meets on zoom."
 ---
 
-A book club focusing on books that inspire mindfulness, personal growth, and intentional living. They curate readings to support a purpose-driven lifestyle.
+A book club focusing on fiction and non-fiction books by diverse authors. Meets on zoom.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "CMHA Recovery College Welcome Centre Peer Support"
 type: "Nonprofit"
-interests: ["health-wellness", "disability/neurodivergent"]
+interests: ["health-wellness", "disability/neurodivergent", "arts-culture"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -24,4 +24,4 @@ A welcoming space offering peer support for mental health and well-being. Staffe
 </div>
 
 **Notes:**
-Recovery college offers a peer support group at the welcome centre; they have monthly activities or drop-in sessions for peer support for people with mental health challenges / mental illnesses.
+Programs are led by the Calgary Mental Health Association. Recovery college offers a peer support group at the welcome centre; they have monthly activities like arts and crafts or board games, or drop-in sessions for peer support for people with mental health challenges / mental illnesses.

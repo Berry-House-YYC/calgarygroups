@@ -2,9 +2,9 @@
 layout: layouts/organization.njk
 name: "Paperback Therapy Book Club"
 type: "Social Club"
-interests: ["anti-racism", "book"]
+interests: ["book"]
 age_range: "all-ages"
-identity_focused: true
+identity_focused: false
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
@@ -12,14 +12,14 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A book club focused on mental health, self-development, and wellness. They discuss literature that offers tools for personal growth, emotional regulation, and healing."
+description: "A general book club in calgary, reading a variety of genres."
 ---
 
-A book club focused on mental health, self-development, and wellness. They discuss literature that offers tools for personal growth, emotional regulation, and healing.
+A general book club in calgary, reading a variety of genres.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
-    <li>Website: <a href="https://www.instagram.com/p/DR7sQnLklyY/" target="_blank">https://www.instagram.com/p/DR7sQnLklyY/</a></li>
+    <li>Website: <a href="https://www.instagram.com/pbt.bookclub/" target="_blank">https://www.instagram.com/pbt.bookclub/</a></li>
   </ul>
 </div>

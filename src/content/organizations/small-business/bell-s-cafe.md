@@ -16,8 +16,6 @@ description: "A local bookstore cafe offering a cozy space for coffee, books, an
 
 A local bookstore cafe offering a cozy space for coffee, books, and community. A gathering place for neighbors to relax, work, or meet up in a welcoming atmosphere.
 
-Community organization in Calgary.
-
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
@@ -26,4 +24,3 @@ Community organization in Calgary.
 </div>
 
 **Notes:**
-support local groups

@@ -13,8 +13,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 description: "A collaborative hub connecting artists and organizations using art for social transformation. They facilitate resource sharing and community building among practitioners."
 ---
-
-Focused on Arts and Culture.
+A collaborative hub connecting artists and organizations using art for social transformation. They facilitate resource sharing and community building among practitioners.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

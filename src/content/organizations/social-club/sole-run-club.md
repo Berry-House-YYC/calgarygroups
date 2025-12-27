@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A local run club bringing people together for fitness and community. They likely host regular group runs for various skill levels."
+description: "A local run club bringing people together for fitness and community. They run 5K every Saturday at 9 AM (weather permitting) at the same location, and welcome beginners."
 ---
 
-A local run club bringing people together for fitness and community. They likely host regular group runs for various skill levels.
+A local run club bringing people together for fitness and community. They run 5K every Saturday at 9 AM (weather permitting) at the same location, and welcome beginners.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

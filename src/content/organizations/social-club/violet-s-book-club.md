@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Violet's Book Club"
 type: "Social Club"
-interests: ["lgbtq2s", "book"]
+interests: ["lgbtq2s", "book", "women+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A local book club bringing readers together to discuss a variety of literary works. They meet regularly to share their love of reading and build community through books."
+description: "A local book club bringing lesbian/sapphic readers together to discuss books with lesbian/sapphic main characters and themes."
 ---
 
-A local book club bringing readers together to discuss a variety of literary works. They meet regularly to share their love of reading and build community through books.
+"A local book club bringing lesbian/sapphic readers together to discuss books with lesbian/sapphic main characters and themes."
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

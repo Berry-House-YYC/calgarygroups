@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Page Turners YYC"
 type: "Social Club"
-interests: ["women+", "book"]
+interests: ["women+","book"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -12,12 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A community of avid readers in Calgary. They celebrate the joy of reading and likely organize events or discussions to share book recommendations and meet fellow bibliophiles."
+description: "\"YYC based book club for women who love romance, thrillers, fantasy & more. Uplifting stories, indie authors & each other.\""
 ---
 
-A community of avid readers in Calgary. They celebrate the joy of reading and likely organize events or discussions to share book recommendations and meet fellow bibliophiles.
-
-Audience: Women.
+YYC based book club for women who love romance, thrillers, fantasy & more. Uplifting stories, indie authors & each other.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -27,4 +25,3 @@ Audience: Women.
 </div>
 
 **Notes:**
-romance/thrillers/fic

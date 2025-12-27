@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Pansy Club YYC"
 type: "Social Club"
-interests: ["lgbtq2s"]
+interests: ["lgbtq2s","women+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

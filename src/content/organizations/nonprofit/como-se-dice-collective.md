@@ -4,7 +4,7 @@ name: "Como Se Dice Collective"
 type: "Nonprofit"
 interests: ["arts-culture", "anti-racism", "international"]
 age_range: "all-ages"
-identity_focused: false
+identity_focused: true
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A Latine art collective in Calgary fostering connection among the diaspora. They organize 'Plazas' and events celebrating Latin American culture, indigeneity, and community."
+description: "A Latine art collective in Calgary fostering connection among the diaspora. They organize markets and events celebrating Latin American culture, indigeneity, and community."
 ---
 
-A Latine art collective in Calgary fostering connection among the diaspora. They organize 'Plazas' and events celebrating Latin American culture, indigeneity, and community.
+A Latine art collective in Calgary fostering connection among the diaspora. They organize markets and events celebrating Latin American culture, indigeneity, and community.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -23,3 +23,5 @@ A Latine art collective in Calgary fostering connection among the diaspora. They
     <li>Website: <a href="https://www.instagram.com/comosedicecollective/?hl=en" target="_blank">https://www.instagram.com/comosedicecollective/?hl=en</a></li>
   </ul>
 </div>
+
+**Notes** You do not have to be Latine to join or support their events and markets!

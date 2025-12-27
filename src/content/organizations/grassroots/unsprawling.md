@@ -10,8 +10,6 @@ location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
-
-
 description: "A Calgary-based initiative advocating for a more compact, sustainable, and vibrant city. They focus on combating urban sprawl and promoting smart growth principles like increased density and better public transit."
 ---
 

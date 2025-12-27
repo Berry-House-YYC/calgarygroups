@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Urban Society for Aboriginal Youth (USAY)"
 type: "Nonprofit"
-interests: ["indigenous"]
+interests: ["indigenous", "youth"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

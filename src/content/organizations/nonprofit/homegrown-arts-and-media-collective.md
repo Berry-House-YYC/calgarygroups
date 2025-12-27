@@ -25,4 +25,6 @@ A non-profit empowering young and diverse professional artists. They provide men
 </div>
 
 **Notes:**
-Homegrown supports creators and communities through shared resources, education, and collaborative projects — helping grassroots ideas take root and thrive.
+Homegrown supports creators and communities through shared resources, education, and collaborative projects, helping grassroots ideas take root and thrive.
+
+Suggestion from a community member!

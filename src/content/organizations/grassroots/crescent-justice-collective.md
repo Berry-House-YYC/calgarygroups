@@ -2,19 +2,19 @@
 layout: layouts/organization.njk
 name: "Crescent Justice Collective"
 type: "Grassroots"
-interests: ["social-impact"]
+interests: ["international"]
 age_range: "all-ages"
 identity_focused: false
-meeting_format: "in-person"
+meeting_format: "online"
 location_area: "city-wide"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community group focused on justice and equity, likely based in the Crescent Heights area or focused on specific social justice causes."
+description: "A community group focused on justice and equity for Palestine."
 ---
 
-A community group focused on justice and equity, likely based in the Crescent Heights area or focused on specific social justice causes.
+A community group focused on justice and equity for Palestine.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -22,3 +22,5 @@ A community group focused on justice and equity, likely based in the Crescent He
     <li>Website: <a href="https://www.instagram.com/crescentjusticecollective" target="_blank">https://www.instagram.com/crescentjusticecollective</a></li>
   </ul>
 </div>
+
+**Notes** Operating from Calgary and Vancouver.

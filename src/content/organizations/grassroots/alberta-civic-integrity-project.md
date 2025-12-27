@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "An initiative monitoring and advocating for integrity in local governance. They likely focus on transparency, accountability, and civic engagement."
+description: "An initiative monitoring and advocating for integrity in local governance. They support trans people, and groups targeted by UCP policies."
 ---
 
-An initiative monitoring and advocating for integrity in local governance. They likely focus on transparency, accountability, and civic engagement.
+An initiative monitoring and advocating for integrity in local governance. They support trans people, and groups targeted by UCP policies.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

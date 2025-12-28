@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Rocky Mountain Atheists"
-type: "Nonprofit"
-interests: ["book", "education", "social-impact"]
+type: "Social Club"
+interests: ["book", "education", "health-wellness"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "hybrid"
@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "Our mission is to be a safe and supportive secular community dedicated to serving society; to support those who have been marginalized or traumatized as a result of faith-based beliefs; and to provide and promote evidence-based learning opportunities."
+description: "A supportive secular community for atheists, skeptics, and humanists. Our mission is to be a safe and supportive secular community dedicated to serving society; to support those who have been marginalized or traumatized as a result of faith-based beliefs; and to provide and promote evidence-based learning opportunities."
 ---
 
-Our mission is to be a safe and supportive secular community dedicated to serving society; to support those who have been marginalized or traumatized as a result of faith-based beliefs; and to provide and promote evidence-based learning opportunities.
+A supportive secular community for atheists, skeptics, and humanists. Our mission is to be a safe and supportive secular community dedicated to serving society; to support those who have been marginalized or traumatized as a result of faith-based beliefs; and to provide and promote evidence-based learning opportunities.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

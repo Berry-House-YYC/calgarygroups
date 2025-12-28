@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: About
+permalink: /about/
 ---
 
 {% include "partials/breadcrumb.njk" %}

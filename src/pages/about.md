@@ -1,26 +1,19 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: About
 permalink: /about/
+page_icon: fa-solid fa-circle-info
+description: Learn about Calgary Groups' mission to connect Calgarians with community organizations, clubs, and grassroots initiatives.
 ---
 
 {% include "partials/breadcrumb.njk" %}
 
-<section class="space-y-6">
-  <header class="space-y-2">
-    <h1 class="inline-flex items-center gap-3 text-3xl font-semibold tracking-tight">
-      <i aria-hidden="true" class="fa-solid fa-circle-info text-slate-900 dark:text-slate-100"></i>
-      <span>About Calgary Groups</span>
-    </h1>
-    <p class="max-w-2xl text-slate-700 dark:text-slate-300">Learn more about {{ site.name }} and our mission to connect Calgarians with community organizations.</p>
-  </header>
-
-  <div class="prose prose-slate max-w-none dark:prose-invert">
-    <p>Calgary Groups is a community-driven directory to help people discover and connect with grassroots organizations, clubs, activist groups, and community initiatives across Calgary. We believe in making it easier for everyone to find their community.</p>
+<div class="prose prose-slate max-w-none dark:prose-invert">
+    <p>Welcome to Calgary Groups! We're a community-driven directory dedicated to helping Calgarians discover and connect with the amazing grassroots organizations, clubs, activist groups, and community initiatives that make our city special. We believe that finding your community shouldn't be a treasure hunt - it should be as simple as a click away.</p>
     
     <h2>Why we created this</h2>
 
-    <p>Calgary has so much community energy—but it's scattered across Instagram, Facebook Groups, newsletters, old websites, and word-of-mouth. That fragmentation makes it harder for people to:</p>
+    <p>Calgary is bursting with community energy! But we noticed something frustrating - all these incredible groups were scattered across dozens of platforms: Instagram posts, Facebook Groups, old websites, community newsletters, and mostly word-of-mouth. This fragmentation makes it harder for people to:</p>
 
     <ul>
       <li>discover groups that match their values and interests</li>
@@ -29,7 +22,7 @@ permalink: /about/
       <li>keep a community resource up-to-date over time</li>
     </ul>
 
-    <p>We built Calgary Groups to be a simple, welcoming "public index" for local organizing and community life:</p>
+    <p>That's why we built Calgary Groups - to be a warm, welcoming "public square" where all of Calgary's community energy can gather in one place. We wanted to create something that's:</p>
 
     <ul>
       <li><strong>Searchable</strong>: you can filter by type and interests.</li>
@@ -40,20 +33,20 @@ permalink: /about/
 
     <h2>How it works</h2>
 
-    <p>Each organization listing is a Markdown file in this repository (under <code>src/content/organizations/</code>). The site is generated with Eleventy and styled with Tailwind CSS.</p>
+    <p>It's beautifully simple! Each organization listing lives as a Markdown file right in this repository (under <code>src/content/organizations/</code>). The site is built with Eleventy and styled with Tailwind CSS - modern, fast, and accessible to everyone.</p>
 
     <h2>Add or update a listing</h2>
 
-    <p><strong>Submit a group</strong>: use the form on <a href="/submit/">/submit/</a>.</p>
-    <p><strong>Fix a listing</strong>: open a GitHub issue or submit a pull request.</p>
+    <p><strong>Share a group with the community:</strong> Use our friendly <a href="/submit/">submission form</a> to tell us about a group.</p>
+    <p><strong>Fix something that's not quite right:</strong> Open a GitHub issue or submit a pull request - every correction helps!</p>
 
-    <p>We try to keep listings factual and link to primary sources (official site, social profiles, etc.). If something looks wrong, please flag it.</p>
+    <p>We strive to keep all listings factual and linked to official sources. If you spot something that seems off, please flag it - community eyes make this resource better for everyone.</p>
 
     <h2>About Berry House</h2>
 
-    <p>Calgary Groups is made by <strong><a href="https://berryhouse.ca/" target="_blank" rel="noopener noreferrer">Berry House</a></strong>.</p>
+    <p>Calgary Groups is created with love by <strong><a href="https://berryhouse.ca/" target="_blank" rel="noopener noreferrer">Berry House</a></strong> - your friendly neighborhood web builders.</p>
 
-    <p>Berry House builds fast, accessible JAMstack websites and thoughtful, effective writing. We help independent creators, non-profits, and small teams communicate clearly and own their platform.</p>
+    <p>We're passionate about creating fast, accessible websites and crafting clear, thoughtful communication. Whether you're an independent creator, a non-profit organization, or a small team with big dreams, we're here to help you communicate clearly and own your digital platform.</p>
 
     <h3>What we do</h3>
 
@@ -64,5 +57,4 @@ permalink: /about/
     </ul>
 
     <p><a href="https://berryhouse.ca/" target="_blank" rel="noopener noreferrer">Visit Berry House</a> to learn more or work with us.</p>
-  </div>
-</section>
+</div>

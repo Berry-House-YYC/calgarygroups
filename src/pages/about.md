@@ -7,18 +7,18 @@ page_icon: fa-solid fa-circle-info
 
 ## About Calgary Groups
 
-Calgary Groups is a centralized, searchable directory to help people find grassroots organizations, clubs, activist groups, and community initiatives in Calgary.
+Calgary Groups is a community-driven directory to help people discover and connect with grassroots organizations, clubs, activist groups, and community initiatives across Calgary. We believe in making it easier for everyone to find their community.
 
 ## Why we created this
 
-Calgary has a lot of community energy—but the information is scattered across Instagram, Facebook Groups, newsletters, old websites, and word-of-mouth. That fragmentation makes it harder for people to:
+Calgary has so much community energy—but it's scattered across Instagram, Facebook Groups, newsletters, old websites, and word-of-mouth. That fragmentation makes it harder for people to:
 
 - discover groups that match their values and interests
 - find where/when things happen
 - share reliable links with friends
 - keep a community resource up-to-date over time
 
-We built Calgary Groups to be a simple, durable “public index” for local organizing and community life:
+We built Calgary Groups to be a simple, welcoming "public index" for local organizing and community life:
 
 - **Searchable**: you can filter by type and interests.
 - **Fast & accessible**: static site, minimal dependencies, readable on any device.

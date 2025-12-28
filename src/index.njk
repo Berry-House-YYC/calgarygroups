@@ -28,6 +28,46 @@ title: Directory
 </template>
 
 <section class="space-y-6" x-data="directory(getOrganizations())">
+  <!-- Welcome note - appears only on first visit -->
+  <div x-data="{ 
+    showWelcome: false,
+    init() {
+      // Check if this is the first visit
+      const hasVisited = localStorage.getItem('calgary-groups-visited');
+      if (!hasVisited) {
+        this.showWelcome = true;
+        // Mark as visited
+        localStorage.setItem('calgary-groups-visited', 'true');
+      }
+    },
+    close() {
+      this.showWelcome = false;
+    }
+  }" x-show="showWelcome" x-transition:enter="transition ease-out duration-300" 
+       x-transition:enter-start="opacity-0 transform -translate-y-2"
+       x-transition:enter-end="opacity-100 transform translate-y-0"
+       x-transition:leave="transition ease-in duration-200"
+       x-transition:leave-start="opacity-100"
+       x-transition:leave-end="opacity-0"
+       class="relative rounded-lg border border-slate-200 bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 p-4 shadow-sm dark:border-brand-cyan/30 dark:from-purple-900/30 dark:via-pink-900/20 dark:to-indigo-900/30 dark:backdrop-blur-sm">
+    <button type="button" @click="close()" 
+            class="absolute right-2 top-2 rounded-md p-1 text-slate-400 hover:bg-slate-200/50 hover:text-slate-600 dark:hover:bg-slate-700/50 dark:hover:text-slate-300">
+      <i class="fa-solid fa-times text-sm"></i>
+    </button>
+    <div class="pr-8">
+      <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+        <span class="text-lg mr-2">(≧◡≦) ♡</span>
+        Welcome! This is a <strong>free and accessible directory</strong> of a wide variety of different groups in Calgary. 
+        Made with ♡ by <a href="https://brennankbrown.com" class="font-medium text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Brennan Kenneth Brown</a> and <a href="https://yvonneberger.ca" class="font-medium text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Yvonne Berger</a> of <a href="https://berryhouse.ca" class="font-medium text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Berry House</a>. 
+        You can toggle any of the org types or interests to filter the directory. 
+        <a href="/submit/" class="font-medium text-brand-orange hover:underline dark:text-cyan-400">Submit your own group here</a>!
+      </p>
+      <p class="mt-2 text-xs text-slate-600 dark:text-slate-400">
+        (ﾉ>ω<)ﾉ :｡･:*:･'★,｡･:*:･' Go and do some good, today!~
+      </p>
+    </div>
+  </div>
+
   <header class="space-y-2">
     <h1 class="inline-flex items-center gap-3 text-3xl font-semibold tracking-tight">
       <i aria-hidden="true" class="fa-solid fa-magnifying-glass text-brand-orange dark:text-brand-orange"></i>

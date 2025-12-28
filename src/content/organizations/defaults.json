@@ -1,0 +1,9 @@
+{
+  "layout": "layouts/organization.njk",
+  "community_submitted": false,
+  "age_range": "all-ages",
+  "identity_focused": false,
+  "status": "active",
+  "interests": ["general"],
+  "permalink": "/organizations/{{ page.fileSlug }}/"
+}

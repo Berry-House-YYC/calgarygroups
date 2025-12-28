@@ -1,14 +1,22 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base.njk
 title: Contact & Feedback
 permalink: /contact/
 page_icon: fa-solid fa-envelope
 ---
 
-## Contact
+{% include "partials/breadcrumb.njk" %}
 
-Email: [calgary@berryhouse.ca](mailto:calgary@berryhouse.ca)
+<section class="space-y-6">
+  <header class="space-y-2">
+    <h1 class="inline-flex items-center gap-3 text-3xl font-semibold tracking-tight">
+      <i aria-hidden="true" class="fa-solid fa-envelope text-slate-900 dark:text-slate-100"></i>
+      <span>Contact & Feedback</span>
+    </h1>
+    <p class="max-w-2xl text-slate-700 dark:text-slate-300">Get in touch with the {{ site.name }} team.</p>
+  </header>
 
+  <h2>Contact</h2>
 ## What to include
 
 To help us respond quickly, please include:

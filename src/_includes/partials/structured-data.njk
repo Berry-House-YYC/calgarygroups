@@ -1,0 +1,122 @@
+<!-- Structured Data for SEO -->
+{% if page.url == "/" %}
+<!-- Homepage Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.name }}",
+  "alternateName": "Calgary Groups Directory",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Berry House",
+    "url": "https://berryhouse.ca"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Calgary Organizations Directory",
+  "description": "A comprehensive list of community organizations, clubs, and groups in Calgary",
+  "url": "{{ site.url }}/",
+  "numberOfItems": "{{ collections.organizations.length }}",
+  "itemListElement": [
+    {%- for org in collections.organizations limit: 10 %}
+    {
+      "@type": "ListItem",
+      "position": "{{ loop.index }}",
+      "item": {
+        "@type": "Organization",
+        "name": "{{ org.data.name }}",
+        "url": "{{ site.url }}{{ org.url }}",
+        "description": "{{ org.templateContent | stripHtml | truncate(160) | escape }}"
+      }
+    }{%- if not loop.last %},{% endif -%}
+    {%- endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if layout == "layouts/organization.njk" %}
+<!-- Organization Page Structured Data -->
+{% set websiteUrl = content | extractFirstUrl %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if type == 'Nonprofit' %}NonprofitOrganization{% elif type == 'Small Business' %}LocalBusiness{% else %}Organization{% endif %}",
+  "name": "{{ name | escape }}",
+  "url": "{{ websiteUrl or (site.url + page.url) }}",
+  "description": "{{ description or (content | stripHtml | truncate(160) | escape) }}",
+  {% if websiteUrl %}"sameAs": "{{ websiteUrl }}",{% endif %}
+  "areaServed": {
+    "@type": "City",
+    "name": "Calgary",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA",
+      "addressRegion": "AB"
+    }
+  },
+  {% if type %}"category": "{{ type }}",{% endif %}
+  {% if interests and interests.length > 0 %}
+  "keywords": "{{ interests | join(', ') }}",
+  {% endif %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if title == "About" %}
+<!-- About Page Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About {{ site.name }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}/about/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if title == "Contact" %}
+<!-- Contact Page Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact {{ site.name }}",
+  "url": "{{ site.url }}/contact/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+{% endif %}

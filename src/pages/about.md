@@ -1,14 +1,14 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base.njk
 title: About
-permalink: /about/
-page_icon: fa-solid fa-circle-info
 ---
 
-## About Calgary Groups
+{% include "partials/breadcrumb.njk" %}
 
-Calgary Groups is a community-driven directory to help people discover and connect with grassroots organizations, clubs, activist groups, and community initiatives across Calgary. We believe in making it easier for everyone to find their community.
+<section class="space-y-6">
+  <h1 class="page-icon fa-solid fa-circle-info">About Calgary Groups</h1>
 
+  <p>Calgary Groups is a community-driven directory to help people discover and connect with grassroots organizations, clubs, activist groups, and community initiatives across Calgary. We believe in making it easier for everyone to find their community.</p>
 ## Why we created this
 
 Calgary has so much community energy—but it's scattered across Instagram, Facebook Groups, newsletters, old websites, and word-of-mouth. That fragmentation makes it harder for people to:

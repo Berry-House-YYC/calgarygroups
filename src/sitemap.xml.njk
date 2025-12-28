@@ -8,9 +8,9 @@ layout: false
   {%- if item.url and item.url != "/404.html" and item.url != "/sitemap.xml" and item.url != "/robots.txt" %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
-    <lastmod>{{ item.date | default: build.generatedAt | toRfc822 }}</lastmod>
-    <changefreq>{% if item.url == "/" %}daily{% elsif item.url starts with "/organizations/" %}monthly{% else %}weekly{% endif %}</changefreq>
-    <priority>{% if item.url == "/" %}1.0{% elsif item.url starts with "/organizations/" %}0.7{% else %}0.8{% endif %}</priority>
+    <lastmod>{{ (item.date or build.generatedAt) | toRfc822 }}</lastmod>
+    <changefreq>{% if item.url == "/" %}daily{% else %}weekly{% endif %}</changefreq>
+    <priority>{% if item.url == "/" %}1.0{% else %}0.8{% endif %}</priority>
   </url>
   {%- endif %}
 {%- endfor %}

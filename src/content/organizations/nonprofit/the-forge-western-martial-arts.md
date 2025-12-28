@@ -8,6 +8,7 @@ identity_focused: false
 meeting_format: "in-person"
 location_area: "North Central"
 status: "active"
+community_submitted: true
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 

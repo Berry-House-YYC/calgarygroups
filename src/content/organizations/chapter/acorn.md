@@ -8,6 +8,7 @@ identity_focused: false
 meeting_format: ""
 location_area: ""
 status: "active"
+community_submitted: true
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 

@@ -119,8 +119,8 @@
     transform: scaleX(1);
   }
 
-  a[href^="http://"]:not([href^="tel:"]):not([href^="mailto:"]):not(:has(.fa-solid)):after,
-  a[href^="https://"]:not([href^="tel:"]):not([href^="mailto:"]):not(:has(.fa-solid)):after {
+  a[href^="http://"]:not([href^="tel:"]):not([href^="mailto:"]):not(:has(.fa-solid)):not(.no-arrow):after,
+  a[href^="https://"]:not([href^="tel:"]):not([href^="mailto:"]):not(:has(.fa-solid)):not(.no-arrow):after {
     content: "↗";
     display: inline-block;
     margin-left: 0.25rem;

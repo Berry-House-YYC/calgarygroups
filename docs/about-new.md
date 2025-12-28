@@ -1,7 +1,5 @@
 
-### Types
-
-
+### Types of Organizations
 
 **Nonprofit** - Registered organizations (societies, charities, etc.) according to the [Government of Alberta's Nonprofit Listings](https://open.alberta.ca/opendata/alberta-non-profit-listing). The nonprofits we include may be staff or volunteer-run. 
 
@@ -18,8 +16,6 @@
 
 
 ### Interests
-
-
 
 * 2SLGBTQ+ - Queer, gender diverse, and trans community groups and advocacy
 * Anti-Racism - Groups open to Black identity or People of Colour, often spanning multiple ethnicities, or groups which engage in anti-racist initiatives as a topical focus
@@ -49,14 +45,10 @@
 
 Organizations may exclusively serve one or more specific identities or may be spaces where a particular identity is a primary topic of discussion/education.
 
-
-
 Please use discretion and review the organization's description before joining an identity-focused space.
 
 
 Identities included:
-
-
 
 * Anti-Racism (Black, POC)\*
 * Disability/Neurodivergent
@@ -66,8 +58,6 @@ Identities included:
 * Seniors
 * Women+
 * Youth
-
-
 
 *\*See interest descriptions regarding anti-racist vs immigrant interest assignments*
 

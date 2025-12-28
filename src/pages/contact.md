@@ -38,9 +38,17 @@ Please don’t send private phone numbers, home addresses, or other sensitive in
 
 We’re a small team. We usually reply within a few days, depending on volume.
 
-## GitHub
+## GitHub (for technical users)
 
-If you’re comfortable with GitHub, you can also:
+If you're comfortable with GitHub, you can contribute directly:
 
-- report an issue: https://github.com/Berry-House-YYC/calgarygroups/issues
-- submit a pull request with an edit to `src/content/organizations/**`
+- 🐛 **Report an issue or suggest a change**: [Create an issue on GitHub](https://github.com/Berry-House-YYC/calgarygroups/issues/new)
+  - Use this for corrections, outdated info, or suggesting new organizations
+  - You don't need a GitHub account to view issues, but you'll need one to create one
+
+- ✨ **Submit a pull request**: [Edit the site directly on GitHub](https://github.com/Berry-House-YYC/calgarygroups/blob/main/README.md#contributing)
+  - Add new organizations by creating a file in `src/content/organizations/`
+  - Fix typos or update existing organization information
+  - See our [README](https://github.com/Berry-House-YYC/calgarygroups/blob/main/README.md#contributing) for detailed instructions
+
+💡 **Tip**: Pull requests are reviewed before merging. We'll help if anything needs adjustment!

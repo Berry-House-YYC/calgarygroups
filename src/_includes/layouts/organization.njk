@@ -1,12 +1,14 @@
 ---
 layout: layouts/base.njk
-title: {{ name }}
-description: {{ description or (content | stripHtml | truncate(160)) }}
 ---
 
 {% set websiteUrl = content | extractFirstUrl %}
+{% set orgDescription = description or (content | stripHtml | truncate(160)) %}
 
-{% include "partials/breadcrumb.njk" %}
+{# Override meta description for organization pages #}
+{% set description = orgDescription %}
+{# Override og:type for organization pages #}
+{% set ogType = "organization" %}
 
 <article class="mx-auto max-w-3xl">
   <div class="rounded-lg border border-slate-200 bg-white p-8 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">

@@ -27,7 +27,7 @@ title: Directory
   {{ organizationsData | safe }}
 </template>
 
-<section class="space-y-6" x-data="directory(getOrganizations())">
+<section class="h-feed space-y-6" x-data="directory(getOrganizations())">
   <!-- Welcome note - appears only on first visit -->
   <div x-data="{ 
     showWelcome: false,
@@ -58,7 +58,22 @@ title: Directory
       <p class="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
         <span class="text-lg mr-2">(≧◡≦) ♡</span>
         Welcome! This is a <strong>free and accessible directory</strong> of a wide variety of different groups in Calgary. 
-        Made with ♡ by <a href="https://brennankbrown.com" class="font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Brennan Kenneth Brown</a> and <a href="https://yvonneberger.ca" class="font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Yvonne Berger</a> of <a href="https://berryhouse.ca" class="font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="noopener noreferrer">Berry House</a>. 
+        Made with ♡ by 
+        <span class="h-card vcard">
+          <a href="https://brennankbrown.com" class="u-url font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="me noopener noreferrer">
+            <span class="p-name fn">Brennan Kenneth Brown</span>
+          </a>
+        </span> and 
+        <span class="h-card vcard">
+          <a href="https://yvonneberger.ca" class="u-url font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="me noopener noreferrer">
+            <span class="p-name fn">Yvonne Berger</span>
+          </a>
+        </span> of 
+        <span class="h-card vcard">
+          <a href="https://berryhouse.ca" class="u-url font-bold text-brand-orange hover:underline dark:text-cyan-400" target="_blank" rel="me noopener noreferrer">
+            <span class="p-name fn">Berry House</span>
+          </a>
+        </span>. 
         You can toggle any of the org types or interests to filter the directory. 
         <a href="/submit/" class="font-medium text-brand-orange hover:underline dark:text-cyan-400">Submit your own group here</a>!
       </p>
@@ -203,18 +218,19 @@ title: Directory
     </aside>
 
     <div class="min-w-0 xl:col-span-8">
+      <h2 class="sr-only">Search Results</h2>
       <div class="grid gap-4 md:grid-cols-2">
         <template x-for="org in filtered" :key="org.url">
           <article
-            class="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
+            class="h-entry h-as-org min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-brand-cyan/30 dark:bg-slate-800">
             <div class="flex min-w-0 flex-wrap items-start gap-3">
               <h2 class="min-w-0 flex-1 break-words text-lg font-semibold leading-snug">
                 <template x-if="org.website">
-                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
+                  <a class="p-name u-url block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
                     :href="org.website" target="_blank" rel="noopener noreferrer" x-text="org.name"></a>
                 </template>
                 <template x-if="!org.website">
-                  <a class="block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
+                  <a class="p-name u-url block break-words rounded hover:underline focus:outline-none focus:ring-2 focus:ring-brand-orange/50 dark:focus:ring-brand-cyan/50"
                     :href="org.url" x-text="org.name"></a>
                 </template>
               </h2>
@@ -225,7 +241,7 @@ title: Directory
                 <span class="min-w-0 break-words" x-text="typeMeta(org.type).label"></span>
               </span>
             </div>
-            <p class="mt-2 break-words text-sm text-slate-700 dark:text-slate-300" x-text="org.excerpt"></p>
+            <p class="p-summary mt-2 break-words text-sm text-slate-700 dark:text-slate-300" x-text="org.excerpt"></p>
             <div class="mt-3 flex flex-wrap gap-2">
               <template x-for="tag in (org.interests || []).slice(0, 3)" :key="tag">
                 <span

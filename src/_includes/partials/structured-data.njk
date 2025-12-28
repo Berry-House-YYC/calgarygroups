@@ -1,121 +1,85 @@
-<!-- Structured Data for SEO -->
+{# Structured Data (JSON-LD) #}
 {% if page.url == "/" %}
-<!-- Homepage Structured Data -->
+{# Homepage structured data #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "{{ site.name }}",
-  "alternateName": "Calgary Groups Directory",
-  "url": "{{ site.url }}",
-  "description": "{{ site.description }}",
+  "name": {{ site.name | json | safe }},
+  "description": {{ site.description | json | safe }},
+  "url": {{ site.url | json | safe }},
+  "image": {{ (site.url + "/screenshot.png") | json | safe }},
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "{{ site.url }}/?q={search_term_string}",
+    "target": {{ (site.url + "/?q={search_term_string}") | json | safe }},
     "query-input": "required name=search_term_string"
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Berry House",
-    "url": "https://berryhouse.ca"
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Calgary Organizations Directory",
+    "description": "A directory of community organizations, clubs, and groups in Calgary",
+    "numberOfItems": {{ collections.organizations.length | json | safe }},
+    "itemListElement": [
+      {%- for org in collections.organizations | slice(0, 10) %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index | json | safe }},
+        "item": {
+          "@type": "Organization",
+          "name": {{ (org.data.name or org.data.title) | json | safe }},
+          "url": {{ (site.url + org.url) | json | safe }}
+        }
+      }{%- if not loop.last %},{%- endif %}
+      {%- endfor %}
+    ]
   }
 }
 </script>
-
+{% elif page.url and page.url starts with "/organizations/" %}
+{# Organization page structured data #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Calgary Organizations Directory",
-  "description": "A comprehensive list of community organizations, clubs, and groups in Calgary",
-  "url": "{{ site.url }}/",
-  "numberOfItems": "{{ collections.organizations.length }}",
-  "itemListElement": [
-    {%- for org in collections.organizations.slice(0, 10) %}
-    {
-      "@type": "ListItem",
-      "position": "{{ loop.index }}",
-      "item": {
-        "@type": "Organization",
-        "name": "{{ org.data.name }}",
-        "url": "{{ site.url }}{{ org.url }}",
-        "description": "{{ org.templateContent | stripHtml | truncate(160) | escape }}"
-      }
-    }{%- if not loop.last %},{% endif -%}
-    {%- endfor %}
-  ]
-}
-</script>
-{% endif %}
-
-{% if layout == "layouts/organization.njk" %}
-<!-- Organization Page Structured Data -->
-{% set websiteUrl = content | extractFirstUrl %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{% if type == 'Nonprofit' %}NonprofitOrganization{% elif type == 'Small Business' %}LocalBusiness{% else %}Organization{% endif %}",
-  "name": "{{ name | escape }}",
-  "url": "{{ websiteUrl or (site.url + page.url) }}",
-  "description": "{{ description or (content | stripHtml | truncate(160) | escape) }}",
-  {% if websiteUrl %}"sameAs": "{{ websiteUrl }}",{% endif %}
+  "@type": "Organization",
+  "name": {{ (name or title) | json | safe }},
+  "description": {{ (description or content | stripHtml | truncate(280)) | json | safe }},
+  "url": {{ (site.url + page.url) | json | safe }},
+  {%- if websiteUrl %}
+  "sameAs": {{ websiteUrl | json | safe }},
+  {%- endif %}
   "areaServed": {
     "@type": "City",
     "name": "Calgary",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "CA",
-      "addressRegion": "AB"
+      "addressCountry": "CA"
     }
   },
-  {% if type %}"category": "{{ type }}",{% endif %}
-  {% if interests and interests.length > 0 %}
-  "keywords": "{{ interests | join(', ') }}",
-  {% endif %}
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.name }}",
-    "url": "{{ site.url }}"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url }}"
-  }
+  {%- if type %}
+  "additionalType": {{ type | json | safe }},
+  {%- endif %}
+  {%- if interests and interests.length > 0 %}
+  "keywords": {{ (interests | join(", ")) | json | safe }},
+  {%- endif %}
+  {%- if status %}
+  "status": {{ status | json | safe }},
+  {%- endif %}
+  "foundingDate": "2023"
 }
 </script>
-{% endif %}
-
-{% if title == "About" %}
-<!-- About Page Structured Data -->
+{% else %}
+{# Default page structured data #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "About {{ site.name }}",
-  "description": "{{ site.description }}",
-  "url": "{{ site.url }}/about/",
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "{{ site.name }}",
-    "url": "{{ site.url }}",
-    "description": "{{ site.description }}"
-  }
-}
-</script>
-{% endif %}
-
-{% if title == "Contact" %}
-<!-- Contact Page Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact {{ site.name }}",
-  "url": "{{ site.url }}/contact/",
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "{{ site.name }}",
-    "url": "{{ site.url }}"
+  "@type": "WebPage",
+  "name": {{ (title or name) | json | safe }},
+  "description": {{ (description or site.description) | json | safe }},
+  "url": {{ (site.url + page.url) | json | safe }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.name | json | safe }},
+    "url": {{ site.url | json | safe }}
   }
 }
 </script>

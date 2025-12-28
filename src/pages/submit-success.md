@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Submission received
+title: "Submission Received!"
 permalink: /submit/success/
 page_icon: fa-solid fa-circle-check
 ---

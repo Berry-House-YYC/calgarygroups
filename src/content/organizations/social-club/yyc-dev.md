@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "YYC Dev"
-type: "Social Club"
+type: Club
 interests: ["tech"]
 age_range: "all-ages"
 identity_focused: false

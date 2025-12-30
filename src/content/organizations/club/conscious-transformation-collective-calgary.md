@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Conscious Transformation Collective Calgary"
 type: Club
-interests: ["health-wellness"]
+interests: ["health-wellness", "education"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

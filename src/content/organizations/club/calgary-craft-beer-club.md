@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Craft Beer Club"
 type: Club
-interests: ["general"]
+interests: ["general", "education"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "The Calgary Astronomy Meetup Group"
 type: Club
-interests: ["tech"]
+interests: ["tech", "education"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

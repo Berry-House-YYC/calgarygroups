@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "She Runs YYC"
 type: Club
-interests: ["women+", "sports-rec"]
+interests: ["women+", "sports-rec", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

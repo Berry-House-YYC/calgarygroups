@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Hope WWC"
-type: "Chapter"
+type: Chapter
 interests: ["low-income"]
 age_range: "all-ages"
 identity_focused: false

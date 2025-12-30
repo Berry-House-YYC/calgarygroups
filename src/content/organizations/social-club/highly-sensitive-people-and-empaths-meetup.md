@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Highly Sensitive People and Empaths Meetup"
-type: "Social Club"
+type: Club
 interests: ["health-wellness"]
 age_range: "all-ages"
 identity_focused: false

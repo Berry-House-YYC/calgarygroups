@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Congress Coffee"
-type: "Small Business"
+type: Small Business
 interests: []
 age_range: "all-ages"
 identity_focused: false

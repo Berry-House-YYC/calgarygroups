@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Queer Citizens United"
-type: "Grassroots"
-interests: ["lgbtq2s"]
+type: Grassroots
+interests: ["2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

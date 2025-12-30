@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Canadian Progress Club, Calgary Prairie Rose"
-type: "Chapter"
+type: Chapter
 interests: ["women+", "health-wellness", "low-income"]
 age_range: "all-ages"
 identity_focused: true

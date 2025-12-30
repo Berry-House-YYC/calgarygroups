@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Protospace"
-type: "Cooperative"
+type: Cooperative
 interests: ["arts", "tech"]
 age_range: "all-ages"
 identity_focused: false

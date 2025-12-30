@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Keep the Earth Fresh (KTEF) Calgary"
-type: "Chapter"
+type: Chapter
 interests: ["environment"]
 age_range: "all-ages"
 identity_focused: false

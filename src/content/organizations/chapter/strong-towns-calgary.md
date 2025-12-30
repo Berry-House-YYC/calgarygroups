@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Strong Towns Calgary"
-type: "Chapter"
+type: Chapter
 interests: ["urban-issues", "environment"]
 age_range: "all-ages"
 identity_focused: false

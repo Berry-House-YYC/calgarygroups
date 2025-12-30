@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Gay Ski and Social"
-type: "Social Club"
-interests: ["sports-rec", "lgbtq2s"]
+type: Club
+interests: ["sports-rec", "2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

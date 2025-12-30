@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Palestinian Community Association Calgary"
-type: "Grassroots"
+type: Grassroots
 interests: ["international-solidarity"]
 age_range: "all-ages"
 identity_focused: true

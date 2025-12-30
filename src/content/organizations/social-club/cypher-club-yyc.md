@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Cypher Club YYC"
-type: "Social Club"
+type: Club
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

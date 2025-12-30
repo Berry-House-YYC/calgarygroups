@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "T7 Mask Bloc"
-type: "Grassroots"
+type: Grassroots
 interests: ["disability/neurodivergent", "health-wellness"]
 age_range: "all-ages"
 identity_focused: false

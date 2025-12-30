@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Sportsing Meetup"
-type: "Social Club"
+type: Club
 interests: ["sports-rec"]
 age_range: "all-ages"
 identity_focused: false

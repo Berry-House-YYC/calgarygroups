@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Free Together YYC"
-type: "Grassroots"
+type: Grassroots
 interests: ["international-solidarity"]
 age_range: "all-ages"
 identity_focused: true

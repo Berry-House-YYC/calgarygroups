@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Hash House Harriers"
-type: "Social Club"
+type: Club
 interests: ["sports-rec"]
 age_range: ""
 identity_focused: false

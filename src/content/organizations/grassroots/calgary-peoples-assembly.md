@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Peoples' Assembly"
-type: "Grassroots"
+type: Grassroots
 interests: ["urban-issues","international-solidarity"]
 age_range: "all-ages"
 identity_focused: true

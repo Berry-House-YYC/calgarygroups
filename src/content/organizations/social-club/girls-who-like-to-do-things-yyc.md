@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Girls Who Like to Do Things YYC"
-type: "Social Club"
+type: Club
 interests: ["women+", "book"]
 age_range: "all-ages"
 identity_focused: true

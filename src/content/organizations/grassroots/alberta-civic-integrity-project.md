@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Alberta Civic Integrity Project"
-type: "Grassroots"
+type: Grassroots
 interests: ["urban-issues"]
 age_range: "all-ages"
 identity_focused: false

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Loophole Coffee Bar"
-type: "Small Business"
+type: Small Business
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

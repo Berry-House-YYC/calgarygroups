@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Women Late 20s to 40s Group"
-type: "Social Club"
+type: Club
 interests: ["women+"]
 age_range: "all-ages"
 identity_focused: true

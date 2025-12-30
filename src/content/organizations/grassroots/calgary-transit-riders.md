@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Transit Riders"
-type: "Grassroots"
+type: Grassroots
 interests: ["urban-issues", "disability/neurodivergent", "low-income"]
 age_range: "all-ages"
 identity_focused: false

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "YYC Bookworms"
-type: "Social Club"
+type: Club
 interests: ["book"]
 age_range: "all-ages"
 identity_focused: false

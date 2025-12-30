@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Blend"
-type: "Social Club"
-interests: ["international"]
+type: Club
+interests: ["international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

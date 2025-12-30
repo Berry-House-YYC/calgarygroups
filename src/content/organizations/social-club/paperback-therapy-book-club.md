@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Paperback Therapy Book Club"
-type: "Social Club"
+type: Club
 interests: ["book"]
 age_range: "all-ages"
 identity_focused: false

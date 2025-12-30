@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Together for Sudan"
-type: "Grassroots"
-interests: ["international"]
+type: Grassroots
+interests: ["international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

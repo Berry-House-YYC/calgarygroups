@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "She Runs YYC"
-type: "Social Club"
+type: Club
 interests: ["women+", "sports-rec"]
 age_range: "all-ages"
 identity_focused: true

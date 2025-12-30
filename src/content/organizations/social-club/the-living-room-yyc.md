@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "The Living Room YYC"
-type: "Social Club"
+type: Club
 interests: ["disability/neurodivergent", "health-wellness", "general"]
 age_range: "all-ages"
 identity_focused: true

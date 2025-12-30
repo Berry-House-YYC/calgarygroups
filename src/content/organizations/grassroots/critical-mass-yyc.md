@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Critical Mass YYC"
-type: "Grassroots"
+type: Grassroots
 interests: ["sports-rec", "urban-issues"]
 age_range: "all-ages"
 identity_focused: false

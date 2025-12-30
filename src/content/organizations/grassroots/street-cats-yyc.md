@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Street Cats YYC"
-type: "Grassroots"
+type: Grassroots
 interests: ["health-wellness"]
 age_range: "all-ages"
 identity_focused: false

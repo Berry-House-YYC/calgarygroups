@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: QueeReads YYC
-type: Social Club
-interests: ["lgbtq2s","book"]
+type: Club
+interests: ["2slgbtq+","book"]
 age_range: all-ages
 identity_focused: true
 meeting_format: hybrid

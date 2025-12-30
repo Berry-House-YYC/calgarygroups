@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Walls Down Collective"
-type: "Grassroots"
-interests: ["anti-racism", "health-wellness"]
+type: Grassroots
+interests: ["anti-racism", "justice", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

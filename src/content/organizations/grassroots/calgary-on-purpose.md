@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary on Purpose"
-type: "Grassroots"
+type: Grassroots
 interests: ["arts", "urban-issues"]
 age_range: "all-ages"
 identity_focused: false

@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Black Social Club"
-type: "Social Club"
-interests: ["anti-racism"]
+type: Club
+interests: ["justice"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Mamas for Mamas"
-type: "Chapter"
+type: Chapter
 interests: ["low-income", "women+"]
 age_range: "all-ages"
 identity_focused: true

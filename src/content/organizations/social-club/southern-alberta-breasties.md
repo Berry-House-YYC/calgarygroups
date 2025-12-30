@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Southern Alberta Breasties"
-type: "Social Club"
+type: Club
 interests: ["health-wellness", "women+"]
 age_range: ""
 identity_focused: false

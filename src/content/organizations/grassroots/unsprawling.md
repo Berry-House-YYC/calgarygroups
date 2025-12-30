@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Unsprawling"
-type: "Grassroots"
+type: Grassroots
 interests: ["urban-issues", "environment"]
 age_range: "all-ages"
 identity_focused: false

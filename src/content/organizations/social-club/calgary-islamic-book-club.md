@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: Calgary Islamic Book Club
-type: "Social Club"
-interests: ["book", "international"]
+type: Club
+interests: ["book", "international-solidarity"]
 age_range: all-ages
 identity_focused: true
 meeting_format: in-person

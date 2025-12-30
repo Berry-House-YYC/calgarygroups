@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Social Sector Social Club"
-type: "Social Club"
+type: Club
 interests: ["general"]
 age_range: "all-ages"
 identity_focused: false

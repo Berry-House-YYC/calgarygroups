@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Introverts Grow Together"
-type: "Social Club"
+type: Club
 interests: ["health-wellness"]
 age_range: "all-ages"
 identity_focused: false

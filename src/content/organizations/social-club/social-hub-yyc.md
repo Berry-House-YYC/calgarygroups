@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Social Hub YYC"
-type: "Social Club"
+type: Club
 interests: ["youth"]
 age_range: "all-ages"
 identity_focused: false

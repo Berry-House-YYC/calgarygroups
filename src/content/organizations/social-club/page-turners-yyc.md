@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Page Turners YYC"
-type: "Social Club"
+type: Club
 interests: ["women+","book"]
 age_range: "all-ages"
 identity_focused: true

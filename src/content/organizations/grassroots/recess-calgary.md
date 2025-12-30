@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Recess Calgary"
-type: "Grassroots"
+type: Grassroots
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

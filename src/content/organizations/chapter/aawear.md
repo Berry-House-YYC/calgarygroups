@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "AAWEAR"
-type: "Chapter"
+type: Chapter
 interests: ["health-wellness"]
 age_range: "all-ages"
 identity_focused: false

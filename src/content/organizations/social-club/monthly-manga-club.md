@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Monthly Manga Club"
-type: "Social Club"
-interests: ["arts","book","culture & heritage"]
+type: Club
+interests: ["arts","book","arts"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

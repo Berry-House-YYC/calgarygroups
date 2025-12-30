@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "My Friend Dave"
-type: "Grassroots"
+type: Grassroots
 interests: ["low-income", "arts"]
 age_range: "all-ages"
 identity_focused: true

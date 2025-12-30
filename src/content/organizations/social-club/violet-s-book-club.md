@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Violet's Book Club"
-type: "Social Club"
-interests: ["lgbtq2s", "book", "women+"]
+type: Club
+interests: ["2slgbtq+", "book", "women+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

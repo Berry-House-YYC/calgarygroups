@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Data for Good YYC"
-type: "Chapter"
+type: Chapter
 interests: ["tech"]
 age_range: "all-ages"
 identity_focused: false

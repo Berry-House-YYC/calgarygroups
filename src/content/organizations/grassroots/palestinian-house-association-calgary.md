@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Palestinian House Association Calgary"
-type: "Grassroots"
-interests: ["culture & heritage", "international-solidarity"]
+type: Grassroots
+interests: ["arts", "international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Settlers Book Club"
-type: "Social Club"
-interests: ["anti-racism", "indigenous", "book"]
+type: Club
+interests: ["justice", "indigenous", "book"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

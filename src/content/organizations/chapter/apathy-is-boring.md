@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Apathy is Boring"
-type: "Chapter"
+type: Chapter
 interests: ["urban-issues"]
 age_range: "all-ages"
 identity_focused: false

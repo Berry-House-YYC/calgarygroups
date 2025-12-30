@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "The Sunday Book Club YYC"
-type: "Social Club"
+type: Club
 interests: ["book"]
 age_range: "all-ages"
 identity_focused: false

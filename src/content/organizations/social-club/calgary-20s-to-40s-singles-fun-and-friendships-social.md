@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary 20s to 40s Singles Fun and Friendships Social"
-type: "Social Club"
+type: Club
 interests: ["general"]
 age_range: "all-ages"
 identity_focused: false

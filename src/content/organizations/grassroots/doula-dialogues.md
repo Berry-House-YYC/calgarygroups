@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Doula Dialogues"
-type: "Grassroots"
+type: Grassroots
 interests: ["book", "health-wellness", "women+"]
 age_range: "all-ages"
 identity_focused: true

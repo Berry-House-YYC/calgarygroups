@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Ladies That Read"
-type: "Social Club"
+type: Club
 interests: ["women+", "book"]
 age_range: "all-ages"
 identity_focused: true

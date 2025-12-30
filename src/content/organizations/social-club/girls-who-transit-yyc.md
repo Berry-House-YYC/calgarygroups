@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Girls Who Transit YYC"
-type: "Social Club"
+type: Club
 interests: ["women+"]
 age_range: "all-ages"
 identity_focused: true

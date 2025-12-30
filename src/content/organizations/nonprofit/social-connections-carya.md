@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Carya"
 type: "Nonprofit"
-interests: ["low-income", "arts-culture", "health-wellness"]
+interests: ["low-income", "arts", "health-wellness"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

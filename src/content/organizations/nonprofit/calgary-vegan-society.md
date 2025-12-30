@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Vegan Society"
 type: "Nonprofit"
-interests: ["health-wellness", "environment", "arts-culture"]
+interests: ["health-wellness", "environment"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Sunday Social Club"
 type: "Social Club"
-interests: ["sports-rec", "arts-culture", "women+"]
+interests: ["sports-rec", "women+", "general"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

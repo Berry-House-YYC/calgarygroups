@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Protospace"
 type: "Cooperative"
-interests: ["arts-culture", "tech"]
+interests: ["arts", "tech"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

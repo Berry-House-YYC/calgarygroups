@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Friends of Chinatown YYC"
 type: "Social Club"
-interests: ["arts-culture", "education", "general"]
+interests: ["arts", "education", "general"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

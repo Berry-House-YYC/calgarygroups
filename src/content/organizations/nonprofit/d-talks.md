@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "d.talks"
 type: "Nonprofit"
-interests: ["urban-issues", "arts-culture"]
+interests: ["urban-issues", "arts"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

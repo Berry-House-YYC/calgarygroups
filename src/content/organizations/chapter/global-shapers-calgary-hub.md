@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Global Shapers Calgary Hub"
 type: "Chapter"
-interests: ["urban-issues"]
+interests: ["urban-issues", "youth"]
 age_range: "young-adult"
 identity_focused: true
 meeting_format: "in-person"

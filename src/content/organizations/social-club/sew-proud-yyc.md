@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Sew Proud YYC"
 type: "Social Club"
-interests: ["arts-culture", "lgbtq2s"]
+interests: ["arts", "lgbtq2s"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

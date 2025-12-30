@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "We're Together Ending Poverty (WTEP)"
 type: "Grassroots"
-interests: ["low-income", "anti-racism"]
+interests: ["low-income"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

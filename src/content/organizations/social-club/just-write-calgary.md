@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Just Write Calgary"
 type: "Social Club"
-interests: ["arts-culture"]
+interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

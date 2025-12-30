@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Art for Social Change Network"
 type: "Cooperative"
-interests: ["arts-culture"]
+interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

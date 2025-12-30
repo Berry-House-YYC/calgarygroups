@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Crescent Justice Collective"
 type: "Grassroots"
-interests: ["international"]
+interests: ["international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "online"

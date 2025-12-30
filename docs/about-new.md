@@ -18,8 +18,8 @@
 ### Interests
 
 * 2SLGBTQ+ - Queer, gender diverse, and trans community groups and advocacy
-* Anti-Racism - Groups open to Black identity or People of Colour, often spanning multiple ethnicities, or groups which engage in anti-racist initiatives as a topical focus
-* Arts \& Culture - Arts-based programming, music, food, cultural celebrations, literature and history.
+* Culture & Heritage - Groups that center shared cultural identity, language, food, faith, diaspora experience, or newcomer/refugee communities; includes community preservation, heritage celebrations, and cultural education.
+* Arts - Visual and performing arts, music, theatre, creative workshops, literary programs, and arts-based events.
 * Book Clubs - Reading groups and literary discussion
 * Disability/Neurodivergent - Groups focused on disability justice, accessibility \& accommodation, or a range of disabled identities.
 * Education - School or post-secondary-based, or serving students (e.g. school walkouts). Many organizations have educational elements, so we are not including them in this tag.
@@ -27,7 +27,7 @@
 * General - Broad community focus, general audience demographics with no specific interest (e.g. social club), *or* more than three interest areas.
 * Health \& Wellness - Physical health, mental illness, **public safety\***, mental health and wellness
 * Indigenous - Indigenous-led or Indigenous-focused groups and initiatives
-* International - Groups focused on specific countries, particular ethnicities,  immigrant/newcomer communities, or international issues as a topic of interest.
+* International Solidarity - Groups organising around political change, human rights, or solidarity with communities/countries outside Canada.
 * **Justice - Groups with a focus specific to the legal system, policing, and public safety.**
 * Low-income - Groups focused on poverty relief, economic justice, or workers' rights.
 * Seniors - Programs and community for older adults, seniors, or elders.
@@ -50,16 +50,16 @@ Please use discretion and review the organization's description before joining a
 
 Identities included:
 
-* Anti-Racism (Black, POC)\*
+* Culture & Heritage (Black, POC, diaspora communities)\*
 * Disability/Neurodivergent
 * Indigenous
-* International (specific countries, ethnicities, immigrants or newcomers)\*
+* International Solidarity (specific countries, ethnicities, immigrants or newcomers)\*
 * LGBTQ2S+
 * Seniors
 * Women+
 * Youth
 
-*\*See interest descriptions regarding anti-racist vs immigrant interest assignments*
+*\*See interest descriptions regarding cultural vs international solidarity assignments*
 
 
 

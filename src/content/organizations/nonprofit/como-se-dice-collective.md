@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Como Se Dice Collective"
 type: "Nonprofit"
-interests: ["arts-culture", "anti-racism", "international"]
+interests: ["arts", "culture & heritage", "international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

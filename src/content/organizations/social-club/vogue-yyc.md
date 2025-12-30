@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Vogue YYC"
 type: "Social Club"
-interests: ["arts-culture", "sports-rec"]
+interests: ["arts", "sports-rec"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

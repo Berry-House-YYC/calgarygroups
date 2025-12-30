@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Canadian Indonesian Social Club"
 type: "Nonprofit"
-interests: ["arts-culture", "international"]
+interests: ["arts", "culture & heritage"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

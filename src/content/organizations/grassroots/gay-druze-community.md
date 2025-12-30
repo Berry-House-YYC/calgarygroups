@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Gay Druze Community"
 type: "Grassroots"
-interests: ["lgbtq2s", "arts-culture"]
+interests: ["lgbtq2s", "arts"]
 age_range: "young-adult"
 identity_focused: true
 meeting_format: "online"

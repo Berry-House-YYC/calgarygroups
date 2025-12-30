@@ -4,7 +4,7 @@ name: Calgary Missfits
 type: Grassroots
 interests:
   - anti-racism
-  - arts-culture
+  - arts
   - low-income
 age_range: all-ages
 identity_focused: true

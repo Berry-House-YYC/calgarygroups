@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Aikikai Aikido Club"
 type: "Nonprofit"
-interests: ["arts-culture", "health-wellness", "sports-rec"]
+interests: ["culture & heritage", "health-wellness", "sports-rec"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

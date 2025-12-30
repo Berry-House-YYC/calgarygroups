@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Bow River Basin Council"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["environment"]
 age_range: "all-ages"
 identity_focused: false

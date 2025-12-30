@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Alliance for the Common Good"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["urban-issues", "environment"]
 age_range: "all-ages"
 identity_focused: false

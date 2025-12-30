@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Single Mothers Society"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["women+"]
 age_range: "all-ages"
 identity_focused: true

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Alberta ACORN"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["urban-issues", "low-income"]
 age_range: "all-ages"
 identity_focused: false

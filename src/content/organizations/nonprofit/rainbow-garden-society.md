@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Rainbow Garden Society"
-type: "Nonprofit"
-interests: ["environment", "lgbtq2s", "health-wellness", "education"]
+type: Nonprofit
+interests: ["environment", "2slgbtq+", "health-wellness", "education"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

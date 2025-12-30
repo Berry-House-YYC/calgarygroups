@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Classic Books Meetup Club"
-type: "Social Club"
+type: Club
 interests: ["arts", "book"]
 age_range: "all-ages"
 identity_focused: false

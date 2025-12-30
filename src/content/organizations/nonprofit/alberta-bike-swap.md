@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Alberta Bike Swap"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["education", "sports-rec"]
 age_range: "all-ages"
 identity_focused: false

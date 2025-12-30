@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Miskanawah"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["indigenous", "health-wellness", "youth"]
 age_range: "all-ages"
 identity_focused: true

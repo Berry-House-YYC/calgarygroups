@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Modern Quilt Guild"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

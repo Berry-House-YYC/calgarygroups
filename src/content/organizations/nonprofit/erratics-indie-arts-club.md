@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Erratics Indie Arts Club"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "The Forge: Western Martial Arts Club"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["sports-rec"]
 age_range: "14+"
 identity_focused: false

@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Rainbow Elders Calgary"
-type: "Nonprofit"
-interests: ["lgbtq2s","seniors"]
+type: Nonprofit
+interests: ["2slgbtq+","seniors"]
 age_range: "seniors"
 identity_focused: true
 meeting_format: "in-person"

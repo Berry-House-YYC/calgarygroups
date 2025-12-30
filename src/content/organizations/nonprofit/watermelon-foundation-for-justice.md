@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Watermelon Foundation for Justice"
-type: "Nonprofit"
-interests: ["international-solidarity"]
+type: Nonprofit
+interests: ["culture and heritage", "international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

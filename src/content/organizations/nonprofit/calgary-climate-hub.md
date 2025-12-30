@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Climate Hub"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["environment", "urban-issues", "book"]
 age_range: "all-ages"
 identity_focused: false

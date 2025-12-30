@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Outlink"
-type: "Nonprofit"
-interests: ["lgbtq2s", "health-wellness"]
+type: Nonprofit
+interests: ["2slgbtq+", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

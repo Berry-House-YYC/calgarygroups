@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Writers Guild of Alberta"
-type: "Nonprofit"
-interests: ["arts", "lgbtq2s"]
+type: Nonprofit
+interests: ["arts", "2slgbtq+"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

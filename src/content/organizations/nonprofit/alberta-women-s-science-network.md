@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Alberta Women’s Science Network"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["tech", "women+"]
 age_range: "all-ages"
 identity_focused: true

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Chess Club"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["sports-rec", "general"]
 age_range: "all-ages"
 identity_focused: false

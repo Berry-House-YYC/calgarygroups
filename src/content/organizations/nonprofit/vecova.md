@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Vecova"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["disability/neurodivergent", "sports-rec", "youth"]
 age_range: "all-ages"
 identity_focused: true

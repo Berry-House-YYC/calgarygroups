@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Game Developers"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["tech"]
 age_range: "all-ages"
 identity_focused: false

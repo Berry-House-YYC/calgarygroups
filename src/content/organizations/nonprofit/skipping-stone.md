@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Skipping Stone Foundation"
-type: "Nonprofit"
-interests: ["lgbtq2s"]
+type: Nonprofit
+interests: ["2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Love with Humanity Association"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["urban-issues", "low-income", "youth"]
 age_range: "all-ages"
 identity_focused: false

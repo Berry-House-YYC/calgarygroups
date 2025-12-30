@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Canoe Club"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["health-wellness", "sports-rec", "youth"]
 age_range: "all-ages"
 identity_focused: false

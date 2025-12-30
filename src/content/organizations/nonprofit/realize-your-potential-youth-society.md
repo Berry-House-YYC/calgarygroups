@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Realize Your Potential (RYP) Youth Society"
-type: "Nonprofit"
-interests: ["youth", "anti-racism"]
+type: Nonprofit
+interests: ["youth", "justice"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

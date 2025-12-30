@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Community Development Learning Initiative (CDLI)"
-type: "Nonprofit"
-interests: ["urban-issues", "anti-racism"]
+type: Nonprofit
+interests: ["urban-issues", "justice"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

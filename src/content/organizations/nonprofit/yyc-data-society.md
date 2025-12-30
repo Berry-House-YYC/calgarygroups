@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "YYC Data Society"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["tech"]
 age_range: "all-ages"
 identity_focused: false

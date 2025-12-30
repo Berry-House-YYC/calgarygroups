@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Action Dignity"
-type: "Nonprofit"
-interests: ["anti-racism", "urban-issues", "international"]
+type: Nonprofit
+interests: ["anti-racism", "justice", "urban-issues", "international-solidarity"]
 age_range: "young-adult"
 identity_focused: true
 meeting_format: "in-person"

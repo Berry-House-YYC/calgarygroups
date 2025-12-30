@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "FallCon Gaming Society"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["general", "sports-rec"]
 age_range: "all-ages"
 identity_focused: false

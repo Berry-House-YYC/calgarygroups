@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Alberta Playwrights' Network"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["arts"]
 age_range: "all-ages"
 identity_focused: false

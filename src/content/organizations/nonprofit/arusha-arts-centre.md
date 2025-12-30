@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Arusha Arts Centre"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["arts", "environment"]
 age_range: "all-ages"
 identity_focused: false

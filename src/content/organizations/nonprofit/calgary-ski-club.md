@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Calgary Ski Club"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["sports-rec"]
 age_range: "all-ages"
 identity_focused: false

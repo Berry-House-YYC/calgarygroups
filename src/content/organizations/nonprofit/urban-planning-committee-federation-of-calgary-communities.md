@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Federation of Calgary Communities"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["urban-issues"]
 age_range: "all-ages"
 identity_focused: false

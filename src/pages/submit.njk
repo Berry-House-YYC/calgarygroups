@@ -11,6 +11,7 @@ permalink: /submit/
       <span>Submit an organization</span>
     </h1>
     <p class="text-slate-700 dark:text-slate-300">Help grow our community! If you know a Calgary-based community group that should be in the directory (or want to update an existing listing), we'd love to hear from you.</p>
+    <p class="text-sm text-slate-600 dark:text-slate-300">Need help understanding the types and interests? See our <a href="/info/" class="text-brand-orange hover:underline dark:text-cyan-400">Types & Interests guide</a>.</p>
   </header>
 
   <div class="prose max-w-none">
@@ -25,29 +26,31 @@ permalink: /submit/
 
     <h3>Types</h3>
     <ul>
-      <li><code>Nonprofit</code></li>
-      <li><code>Grassroots</code></li>
-      <li><code>Social Club</code></li>
-      <li><code>Chapter</code></li>
-      <li><code>Cooperative</code></li>
-      <li><code>Small Business</code></li>
+      <li><code>Nonprofit</code> - Registered organizations (societies, charities)</li>
+      <li><code>Grassroots</code> - Activist or advocacy-focused groups</li>
+      <li><code>Club</code> - Social or interest-based groups</li>
+      <li><code>Chapter</code> - Local branch of a larger organization</li>
+      <li><code>Cooperative</code> - Collective run by multiple organizations</li>
+      <li><code>Small Business</code> - For-profit businesses serving community needs</li>
     </ul>
 
     <h3>Interests</h3>
     <ul>
       <li><code>anti-racism</code></li>
-      <li><code>arts-culture</code></li>
-      <li><code>book</code></li>
+      <li><code>arts</code></li>
+      <li><code>book</code> - Book Clubs</li>
+      <li><code>culture and heritage</code></li>
       <li><code>disability/neurodivergent</code></li>
       <li><code>education</code></li>
       <li><code>environment</code></li>
+      <li><code>general</code></li>
       <li><code>health-wellness</code></li>
       <li><code>indigenous</code></li>
-      <li><code>international</code></li>
-      <li><code>lgbtq2s</code></li>
+      <li><code>international-solidarity</code></li>
+      <li><code>justice</code></li>
+      <li><code>2slgbtq+</code></li>
       <li><code>low-income</code></li>
       <li><code>seniors</code></li>
-      <li><code>social-impact</code></li>
       <li><code>sports-rec</code></li>
       <li><code>tech</code></li>
       <li><code>urban-issues</code></li>
@@ -95,7 +98,7 @@ permalink: /submit/
             <option value="">Select…</option>
             <option value="Nonprofit">Nonprofit</option>
             <option value="Grassroots">Grassroots</option>
-            <option value="Social Club">Social Club</option>
+            <option value="Club">Club</option>
             <option value="Chapter">Chapter</option>
             <option value="Cooperative">Cooperative</option>
             <option value="Small Business">Small Business</option>
@@ -144,25 +147,27 @@ permalink: /submit/
 
       <fieldset class="space-y-2">
         <legend class="text-sm font-medium text-slate-900 dark:text-slate-100">Interests (pick up to 3)</legend>
-        <div class="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="anti-racism" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Anti-racism</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="arts-culture" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Arts & culture</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="book" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Book</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="arts" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Arts</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="book" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Book clubs</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="disability/neurodivergent" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Disability/Neurodivergent</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="education" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Education</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="environment" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Environment</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="general" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> General</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="health-wellness" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Health & wellness</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="indigenous" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Indigenous</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="international" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> International</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="lgbtq2s" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> LGBTQ2S+</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="international-solidarity" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> International solidarity</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="justice" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Justice</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="2slgbtq+" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> 2SLGBTQ+</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="low-income" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Low-income</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="seniors" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Seniors</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="social-impact" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Social impact</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="sports-rec" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Sports & rec</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="tech" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Tech</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="urban-issues" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Urban Issues</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="women+" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Women+</label>
           <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="youth" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Youth</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="culture and heritage" class="h-4 w-4 rounded border-slate-300 text-brand-orange focus:ring-brand-orange/50 dark:border-slate-700 dark:bg-slate-950 dark:text-brand-cyan dark:focus:ring-brand-cyan/50" /> Culture and heritage</label>
         </div>
       </fieldset>
 
@@ -191,8 +196,8 @@ permalink: /submit/
     <pre><code>---
 layout: layouts/organization.njk
 name: "Organization Name"
-type: "Nonprofit" # Nonprofit, Grassroots, Social Club, Chapter, Cooperative, Small Business
-interests: ["arts-culture", "social-impact"]
+type: "Club" # Nonprofit, Grassroots, Club, Chapter, Cooperative, Small Business
+interests: ["arts", "education"] # Choose from the list on /info/
 age_range: "all-ages" # all-ages, youth, adults, seniors
 identity_focused: false
 meeting_format: "in-person" # in-person, hybrid

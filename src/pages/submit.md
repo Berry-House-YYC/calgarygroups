@@ -16,26 +16,39 @@ If you know a Calgary-based community group that should be in the directory (or 
 - **Pick 1–3 interests**: use the existing interest tags where possible.
 - **Don’t share private info**: only public contact details.
 
+Need help understanding the types and interests? See our [Types & Interests guide](/info/).
+
 ### Types
 
-- `club`
-- `activist-group`
-- `grassroots-initiative`
-- `resource`
+- `Nonprofit` - Registered organizations (societies, charities)
+- `Club` - Social or interest-based groups
+- `Grassroots` - Activist or advocacy-focused groups
+- `Chapter` - Local branch of a larger organization
+- `Cooperative` - Collective run by multiple organizations
+- `Small Business` - For-profit businesses serving community needs
 
 ### Interests
 
 - `anti-racism`
-- `arts-culture`
+- `arts`
+- `book` - Book clubs
+- `culture and heritage`
+- `disability/neurodivergent`
 - `education`
 - `environment`
-- `events`
+- `general`
 - `health-wellness`
-- `hobby`
-- `lgbtq2s`
-- `rec`
-- `social-impact`
+- `indigenous`
+- `international-solidarity`
+- `justice`
+- `2slgbtq+`
+- `low-income`
+- `seniors`
 - `sports-rec`
+- `tech`
+- `urban-issues`
+- `women+`
+- `youth`
 
 ## Submission form
 
@@ -70,10 +83,12 @@ If you know a Calgary-based community group that should be in the directory (or 
       <label class="text-sm font-medium text-slate-900" for="type">Type</label>
       <select id="type" name="type" required class="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-200">
         <option value="">Select…</option>
-        <option value="club">club</option>
-        <option value="activist-group">activist-group</option>
-        <option value="grassroots-initiative">grassroots-initiative</option>
-        <option value="resource">resource</option>
+        <option value="Nonprofit">Nonprofit</option>
+        <option value="Club">Club</option>
+        <option value="Grassroots">Grassroots</option>
+        <option value="Chapter">Chapter</option>
+        <option value="Cooperative">Cooperative</option>
+        <option value="Small Business">Small Business</option>
       </select>
     </div>
 
@@ -119,18 +134,27 @@ If you know a Calgary-based community group that should be in the directory (or 
 
   <fieldset class="space-y-2">
     <legend class="text-sm font-medium text-slate-900">Interests (pick up to 3)</legend>
-    <div class="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+    <div class="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="anti-racism" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> anti-racism</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="arts-culture" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> arts-culture</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="arts" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> arts</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="book" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> book clubs</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="disability/neurodivergent" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> disability/neurodivergent</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="education" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> education</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="environment" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> environment</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="events" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> events</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="health-wellness" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> health-wellness</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="hobby" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> hobby</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="lgbtq2s" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> lgbtq2s</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="rec" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> rec</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="social-impact" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> social-impact</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="sports-rec" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> sports-rec</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="general" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> general</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="health-wellness" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> health & wellness</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="indigenous" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> indigenous</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="international-solidarity" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> international solidarity</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="justice" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> justice</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="low-income" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> low-income</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="seniors" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> seniors</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="sports-rec" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> sports & rec</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="tech" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> tech</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="urban-issues" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> urban issues</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="women+" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> women+</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="youth" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> youth</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="culture and heritage" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> culture and heritage</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="2slgbtq+" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> 2slgbtq+</label>
     </div>
   </fieldset>
 
@@ -160,8 +184,8 @@ Template:
 ---
 layout: layouts/organization.njk
 name: "Organization Name"
-type: "club" # club, activist-group, grassroots-initiative, resource
-interests: ["arts-culture", "social-impact"]
+type: "Club" # Nonprofit, Club, Grassroots, Chapter, Cooperative, Small Business
+interests: ["arts", "education"] # Choose from the list on /info/
 age_range: "all-ages" # all-ages, youth, adults, seniors
 identity_focused: false
 meeting_format: "in-person" # in-person, online, hybrid

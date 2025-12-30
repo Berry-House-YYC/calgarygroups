@@ -31,6 +31,7 @@ Each organization listing is a Markdown file in this repository (under `src/cont
 
 - **Directory page**: filter/search across all listings.
 - **Organization pages**: one page per org, generated from its Markdown file.
+- **[Types & Interests](/info/)**: learn about the categories and tags we use.
 
 ## Add or update a listing
 

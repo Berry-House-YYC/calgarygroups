@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Reconciliation Action Group YYC"
-type: "Grassroots"
-interests: ["indigenous"]
+type: Grassroots
+interests: ["anti-racism", "indigenous"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

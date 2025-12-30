@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "Hollow Bone Healing Lodge"
-type: "Grassroots"
-interests: ["indigenous"]
+type: Grassroots
+interests: ["culture and heritage", "indigenous"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -1,8 +1,8 @@
 ---
 layout: layouts/organization.njk
 name: "New Friends and Neighbourhood Groups - CIWA"
-type: "Nonprofit"
-interests: ["women+", "culture & heritage"]
+type: Nonprofit
+interests: ["culture and heritage", "women+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -17,5 +17,3 @@ The Gay Druze Community is a space for those born into the Druze faith and ident
 We provide support for our members, including assistance with relocation costs and medication for international members. We also maintain a curated list of organizations to help members connect with local resources.
 
 **Contact Info:**
-- Website: https://gaydruzecommunity.org/
-- Social: [Instagram](https://www.instagram.com/gaydruzecommunity/)

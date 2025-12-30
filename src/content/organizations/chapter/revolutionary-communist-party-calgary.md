@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Revolutionary Communist Party Calgary"
 type: "Chapter"
-interests: ["urban-issues", "social-impact"]
+interests: ["urban-issues"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

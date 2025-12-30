@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "YYC 4 Palestine"
 type: "Grassroots"
-interests: ["social-impact", "international"]
+interests: ["international"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

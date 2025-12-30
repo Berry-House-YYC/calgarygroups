@@ -17,17 +17,4 @@ Friends of Chinatown is a group of dedicated volunteers whose passion is sharing
 Our programs highlight the unique culture and history of Chinatown, support local Asian entrepreneurs and writers through our Moonlight Books and Gifts retail shop, and offer affordable community workshops including ceramic/clay classes. We also offer youth engagement through photo walk programs and community celebration events.
 
 **Contact Info:**
-- Website: https://friendsofchinatown.org/
 - Email: admin@vollyapp.com
-- Historic Tours: $20-25 per person, 2-hour walking tours available by booking
-- Social: [Instagram](https://www.instagram.com/friendsofchinatown/)
-
-**Notable Programs:**
-- Free Cantonese Drop-in Conversation Club
-- Historic Chinatown Tours
-- Dim Sum 101 Tours
-- Ceramic/Clay Workshops
-- Moonlight Books and Gifts (retail shop)
-- Chinatown PopUp Movie Club
-- Badminton Nights (weekly drop-ins)
-- Photo Walk Program

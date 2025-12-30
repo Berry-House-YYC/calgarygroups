@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Rocky Mountain Atheists"
 type: "Social Club"
-interests: ["book", "education", "social-impact"]
+interests: ["book", "education"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "hybrid"

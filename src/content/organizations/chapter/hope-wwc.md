@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Hope WWC"
 type: "Chapter"
-interests: ["low-income", "social-impact"]
+interests: ["low-income"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

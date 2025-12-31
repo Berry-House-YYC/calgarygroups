@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A grassroots-led initiative working to establish a central gathering place for Indigenous spiritual, emotional, cultural, and social well-being in Calgary. The nonprofit focuses on creating a physical space for community connection."
+description: "A grassroots-style initiative working to establish a central gathering place for Indigenous spiritual, emotional, cultural, and social well-being in Calgary. The nonprofit focuses on creating a physical space for community connection."
 ---
 
-A grassroots-led initiative working to establish a central gathering place for Indigenous spiritual, emotional, cultural, and social well-being in Calgary. The nonprofit focuses on creating a physical space for community connection.
+A grassroots-style initiative working to establish a central gathering place for Indigenous spiritual, emotional, cultural, and social well-being in Calgary. The nonprofit focuses on creating a physical space for community connection.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -23,5 +23,3 @@ A grassroots-led initiative working to establish a central gathering place for I
   </ul>
 </div>
 
-**Notes:**
-Focuses on creating a physical space for community connection.

@@ -23,5 +23,4 @@ A volunteer-driven initiative designed to support older adults (55+) in Northeas
   </ul>
 </div>
 
-**Notes:**
-Specifically serves the Northeast quadrant of the city.
+

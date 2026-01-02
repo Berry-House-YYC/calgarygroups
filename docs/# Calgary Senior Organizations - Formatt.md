@@ -6,7 +6,7 @@
 layout: layouts/organization.njk
 name: "Bow Cliff Seniors"
 type: Nonprofit
-interests: ["seniors", "recreation", "fitness", "arts"]
+interests: ["seniors", "sports-rec", "fitness", "arts"]
 age_range: "50+"
 identity_focused: false
 meeting_format: "in-person"

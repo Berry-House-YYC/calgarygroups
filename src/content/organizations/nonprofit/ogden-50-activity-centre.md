@@ -22,6 +22,3 @@ A community centre providing social, recreational, and educational programs for 
     <li>Website: <a href="https://ogden50plus.org/" target="_blank">https://ogden50plus.org/</a></li>
   </ul>
 </div>
-
-**Notes:**
-Long-standing community organization in the Ogden area.

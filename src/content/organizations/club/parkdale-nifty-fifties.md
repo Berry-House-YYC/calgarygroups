@@ -22,6 +22,3 @@ A vibrant seniors' club offering fitness classes, art workshops, and social gath
     <li>Website: <a href="https://parkdaleniftyfifties.ca/" target="_blank">https://parkdaleniftyfifties.ca/</a></li>
   </ul>
 </div>
-
-**Notes:**
-Well-known for its active membership and diverse programming.

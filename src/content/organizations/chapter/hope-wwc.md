@@ -24,4 +24,4 @@ The Calgary chapter of HOPE worldwide Canada, comprised of volunteers dedicated 
 </div>
 
 **Notes:**
-Inspired by God’s love, we strive to develop programs and events that engage volunteers and their communities to support their communities in their time of need. Bringing hope and changing lives.
+Is a religious / Christian organization: "Inspired by God’s love, we strive to develop programs and events that engage volunteers and their communities to support their communities in their time of need. Bringing hope and changing lives."

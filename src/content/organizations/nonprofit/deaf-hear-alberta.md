@@ -23,5 +23,3 @@ Provides services, technology, and education to support the Deaf and hard of hea
   </ul>
 </div>
 
-**Notes:**
-Offers ASL classes and hearing accessibility resources.

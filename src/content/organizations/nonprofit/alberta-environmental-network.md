@@ -12,7 +12,6 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 description: "A group for organizations and individuals to advocate for the environment and climate, including working groups like Defend Alberta Parks, Alberta Beyond Coal, Alberta Health Professionals for the Environment, and the Energy Transition Working Group."
-
 ---
 
 A group for organizations and individuals to advocate for the environment and climate, including working groups like Defend Alberta Parks, Alberta Beyond Coal, Alberta Health Professionals for the Environment, and the

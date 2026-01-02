@@ -1,4 +1,8 @@
 const nunjucks = require("nunjucks");
+const crypto = require("crypto");
+
+// Generate a hash for this build
+const buildHash = crypto.createHash('md5').update(Date.now().toString()).digest('hex').substring(0, 8);
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
@@ -38,6 +42,10 @@ module.exports = function (eleventyConfig) {
     const date = value instanceof Date ? value : new Date(value);
     if (Number.isNaN(date.getTime())) return "";
     return date.toUTCString();
+  });
+
+  eleventyConfig.addFilter("cacheBust", (url) => {
+    return `${url}?v=${buildHash}`;
   });
 
   eleventyConfig.addCollection("organizations", (collectionApi) => {

@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "\"YYC based book club for women who love romance, thrillers, fantasy & more. Uplifting stories, indie authors & each other.\""
+description: "\"YYC based book club for women who love romance, thrillers, fantasy and more. Uplifting stories, indie authors and each other.\""
 ---
 
-YYC based book club for women who love romance, thrillers, fantasy & more. Uplifting stories, indie authors & each other.
+YYC based book club for women who love romance, thrillers, fantasy and more. Uplifting stories, indie authors and each other.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

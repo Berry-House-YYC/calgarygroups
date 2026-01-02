@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Deaf & Hear Alberta"
+name: "Deaf and Hear Alberta"
 type: Nonprofit
 interests: ["disability/neurodivergent", "education", "culture and heritage"]
 age_range: "all-ages"

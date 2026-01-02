@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Pregnancy & Infant Loss Support Centre"
+name: "Pregnancy and Infant Loss Support Centre"
 type: Nonprofit
 interests: ["women+", "health-wellness"]
 age_range: "all-ages"

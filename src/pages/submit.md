@@ -142,13 +142,13 @@ Need help understanding the types and interests? See our [Types & Interests guid
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="education" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> education</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="environment" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> environment</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="general" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> general</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="health-wellness" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> health & wellness</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="health-wellness" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> health and wellness</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="indigenous" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> indigenous</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="international-solidarity" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> international solidarity</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="justice" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> justice</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="low-income" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> low-income</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="seniors" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> seniors</label>
-      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="sports-rec" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> sports & rec</label>
+      <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="sports-rec" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> sports and rec</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="tech" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> tech</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="urban-issues" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> urban issues</label>
       <label class="flex items-center gap-2"><input type="checkbox" name="interests" value="women+" class="h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-400" /> women+</label>

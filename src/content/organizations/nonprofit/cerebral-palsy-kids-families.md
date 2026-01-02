@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Cerebral Palsy Kids & Families"
+name: "Cerebral Palsy Kids and Families"
 type: Nonprofit
 interests: ["disability/neurodivergent", "sports-rec", "youth"]
 age_range: "youth"

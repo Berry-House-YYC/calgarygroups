@@ -1,0 +1,108 @@
+---
+layout: layouts/base.njk
+---
+
+{% block head %}
+<style>
+  :root {
+    --gradient-from: {{ gradient_from | replace('"', '') }};
+    --gradient-to: {{ gradient_to | replace('"', '') }};
+  }
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+  }
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  .icon-large {
+    font-size: 3rem;
+    opacity: 0.9;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .feature-icon i {
+    color: white !important;
+  }
+</style>
+{% endblock %}
+
+<div class="hero-gradient rounded-2xl p-8 md:p-12 mb-12 text-white">
+  <div class="max-w-4xl">
+    <div class="flex items-center gap-4 mb-6">
+      <div class="feature-icon">
+        <i class="{{ hero_icon }} icon-large"></i>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold">{{ seo_h1 }}</h1>
+    </div>
+    <p class="text-xl md:text-2xl mb-8 opacity-95">{{ hero_subtitle }}</p>
+    <p class="text-lg mb-8 opacity-90">{{ hero_description }}</p>
+    <a href="/" class="inline-flex items-center gap-2 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 px-10 py-5 rounded-lg font-semibold text-lg hover:bg-gray-100 dark:hover:bg-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 active:scale-95 active:shadow-lg border border-gray-200 dark:border-slate-600">
+      <i class="fas fa-search"></i>
+      <span>{{ cta_text }}</span>
+    </a>
+  </div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-8 mb-12">
+  <div class="bg-white dark:bg-slate-800 rounded-xl p-6 card-hover">
+    <div class="feature-icon mb-4" style="background: linear-gradient(135deg, {{ gradient_from | replace('"', '') }}22 0%, {{ gradient_to | replace('"', '') }}22 100%);">
+      <i class="{{ feature1_icon }} text-2xl" style="color: {{ gradient_from | replace('"', '') }}; filter: brightness(0.8);"></i>
+    </div>
+    <h2 class="text-2xl font-bold mb-3">{{ feature1_title }}</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">{{ feature1_description }}</p>
+    <ul class="space-y-2">
+      {% for item in feature1_list %}
+      <li class="flex items-start gap-2">
+        <i class="fas fa-check text-green-500 mt-1"></i>
+        <span>{{ item }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="bg-white dark:bg-slate-800 rounded-xl p-6 card-hover">
+    <div class="feature-icon mb-4" style="background: linear-gradient(135deg, {{ gradient_to | replace('"', '') }}22 0%, {{ gradient_from | replace('"', '') }}22 100%);">
+      <i class="{{ feature2_icon }} text-2xl" style="color: {{ gradient_to | replace('"', '') }}; filter: brightness(0.8);"></i>
+    </div>
+    <h2 class="text-2xl font-bold mb-3">{{ feature2_title }}</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">{{ feature2_description }}</p>
+    <ul class="space-y-2">
+      {% for item in feature2_list %}
+      <li class="flex items-start gap-2">
+        <i class="fas fa-check text-green-500 mt-1"></i>
+        <span>{{ item }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<div class="text-center bg-gradient-to-r from-brand-pink to-brand-orange rounded-xl p-8 text-white dark:text-white">
+  <h2 class="text-3xl font-bold mb-4">{{ final_cta_title }}</h2>
+  <p class="text-xl mb-6 opacity-95">{{ final_cta_description }}</p>
+  <a href="/" class="inline-flex items-center gap-2 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 px-10 py-5 rounded-lg font-semibold text-lg hover:bg-gray-100 dark:hover:bg-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-200 active:scale-95 active:shadow-lg border border-gray-200 dark:border-slate-600">
+    <i class="fas fa-arrow-right"></i>
+    <span>{{ final_cta_button }}</span>
+  </a>
+</div>
+
+{% block seo_content %}
+{% endblock %}

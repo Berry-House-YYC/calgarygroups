@@ -6,6 +6,47 @@
         <span>{{ site.name }}</span>
       </a>
       <nav aria-label="Primary" class="flex flex-wrap items-center gap-1 text-sm sm:gap-2">
+        <div class="relative" x-data="{ open: false }">
+          <button @click="open = !open" @click.away="open = false" class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10 flex items-center gap-1">
+            <i aria-hidden="true" class="fa-solid fa-users"></i>
+            <span>Communities</span>
+            <i class="fa-solid fa-chevron-down text-xs" :class="open ? 'rotate-180' : ''"></i>
+          </button>
+          <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="absolute right-0 mt-2 w-56 rounded-lg border border-slate-200 bg-white py-2 shadow-lg dark:border-slate-700 dark:bg-slate-900">
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/newcomers-immigrants/">
+              <i class="fas fa-globe-americas w-4"></i>
+              Newcomers
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/seniors/">
+              <i class="fas fa-heart w-4"></i>
+              Seniors
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/2slgbtq/">
+              <i class="fas fa-rainbow w-4"></i>
+              2SLGBTQ+
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/new-parents/">
+              <i class="fas fa-baby w-4"></i>
+              Parents
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/disability/">
+              <i class="fas fa-universal-access w-4"></i>
+              Disability
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/book-club/">
+              <i class="fas fa-book w-4"></i>
+              Book Club
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/low-income/">
+              <i class="fas fa-hands-helping w-4"></i>
+              Low-Income
+            </a>
+            <a class="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" href="/palestine-activism/">
+              <i class="fas fa-dove w-4"></i>
+              Palestine
+            </a>
+          </div>
+        </div>
         <a class="fun-link text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-brand-cyan/10" href="/about/">
           <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
           <span>About</span>

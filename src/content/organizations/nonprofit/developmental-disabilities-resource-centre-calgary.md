@@ -23,5 +23,3 @@ Dedicated to supporting people with developmental disabilities to be included in
   </ul>
 </div>
 
-**Notes:**
-Provides a wide range of residential and community services.

@@ -23,5 +23,3 @@ This nonprofit offers social activities, games, and community support for senior
   </ul>
 </div>
 
-**Notes:**
-Important community hub for Southeast Calgary seniors.

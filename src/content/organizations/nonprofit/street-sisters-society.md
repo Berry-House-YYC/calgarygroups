@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Street Sisters Society
+name: "Street Sisters Society"
 interests: ["women+", "urban-issues"]
 age_range: "all-ages"
 identity_focused: true

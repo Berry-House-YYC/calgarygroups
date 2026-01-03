@@ -27,6 +27,19 @@ title: Directory
   {{ organizationsData | safe }}
 </template>
 
+<script>
+  // Force refresh of cached data on mobile
+  if ('serviceWorker' in navigator) {
+    caches.keys().then(function(cacheNames) {
+      cacheNames.forEach(function(cacheName) {
+        if (cacheName.includes('dynamic')) {
+          caches.delete(cacheName);
+        }
+      });
+    });
+  }
+</script>
+
 <section class="h-feed space-y-6" x-data="directory(getOrganizations())">
   <!-- Welcome note - appears only on first visit -->
   <div x-data="{ 

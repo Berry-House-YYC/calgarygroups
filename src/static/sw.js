@@ -1,6 +1,6 @@
-const CACHE_NAME = 'calgary-groups-v3';
-const STATIC_CACHE = 'static-v3';
-const DYNAMIC_CACHE = 'dynamic-v3';
+const CACHE_NAME = 'calgary-groups-v4';
+const STATIC_CACHE = 'static-v4';
+const DYNAMIC_CACHE = 'dynamic-v4';
 
 // Assets to cache on install
 const STATIC_ASSETS = [
@@ -54,7 +54,7 @@ self.addEventListener('fetch', (event) => {
   // Network-first strategy for HTML pages
   if (request.headers.get('accept').includes('text/html')) {
     event.respondWith(
-      fetch(request)
+      fetch(request, { cache: 'no-store' })
         .then((response) => {
           // Don't cache non-successful responses
           if (!response || response.status !== 200 || response.type !== 'basic') {

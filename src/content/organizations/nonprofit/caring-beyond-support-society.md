@@ -1,23 +1,25 @@
 ---
 layout: layouts/organization.njk
 name: "Caring Beyond Support Society"
-type: "Nonprofit"
+type: Nonprofit
 interests: ["health-wellness", "women+"]
-age_range: "young-adult"
+age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"
-location_area: "city-wide"
+location_area: "southeast"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
-description: "Caring Beyond offers peer support to parents who have experienced the loss of a baby due to miscarriage, stillbirth, neonatal death, or termination for medical reasons. They provide a safe, non-judgmental environment for parents to share their grief journey and connect with others who have faced similar losses."
+
+
+description: \"Caring Beyond is a peer support group for parents after the loss of a baby through miscarriage, stillbirth, early neonatal death, termination for medical reasons, ectopic pregnancy, and any other loss across the spectrum of early gestation to the neonatal period.\" They meet in-person on a monthly basis.
 ---
 
-Caring Beyond offers peer support to parents who have experienced the loss of a baby due to miscarriage, stillbirth, neonatal death, or termination for medical reasons. They provide a safe, non-judgmental environment for parents to share their grief journey and connect with others who have faced similar losses.
+"Caring Beyond is a peer support group for parents after the loss of a baby through miscarriage, stillbirth, early neonatal death, termination for medical reasons, ectopic pregnancy, and any other loss across the spectrum of early gestation to the neonatal period." They meet in-person on a monthly basis.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
     <li>Website: <a href="https://www.caringbeyond.com/" target="_blank">https://www.caringbeyond.com/</a></li>
-    <li>Email: <a href="mailto:info@caringbeyond.com">info@caringbeyond.com</a></li>
+   <li>Email: <a href="mailto:info@caringbeyond.com">info@caringbeyond.com</a></li>
   </ul>
 </div>

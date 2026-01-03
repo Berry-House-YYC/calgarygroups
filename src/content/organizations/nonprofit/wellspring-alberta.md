@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Wellspring Alberta"
 type: "Nonprofit"
-interests: ["health-wellness", "arts-culture"]
+interests: ["health-wellness", "arts"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "hybrid"

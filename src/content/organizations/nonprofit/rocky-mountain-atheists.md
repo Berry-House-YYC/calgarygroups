@@ -16,6 +16,8 @@ description: "A supportive secular community for atheists, skeptics, and humanis
 
 A supportive secular community for atheists, skeptics, and humanists. Our mission is to be a safe and supportive secular community dedicated to serving society; to support those who have been marginalized or traumatized as a result of faith-based beliefs; and to provide and promote evidence-based learning opportunities.
 
+We have several events, online and in-person, and we welcome people of all backgrounds and identities.
+
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
@@ -26,5 +28,5 @@ A supportive secular community for atheists, skeptics, and humanists. Our missio
 
 <div class="org-notes">
   <strong>Notes:</strong>
-  <p>We have several events, online and in-person, and we welcome people of all backgrounds and identities.</p>
+  <p> They also have a montly book club. </p>
 </div>

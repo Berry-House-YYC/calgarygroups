@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "YYC Strong Daughters"
-type: "Social Club"
+type: "Club"
 interests: ["women+", "health-wellness"]
 age_range: "young-adult"
 identity_focused: true

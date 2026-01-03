@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "First Alliance Church (FAC) - Care & Support"
+name: "First Alliance Church (FAC) - Care and Support"
 type: "Nonprofit"
 interests: ["health-wellness"]
 age_range: "all-ages"

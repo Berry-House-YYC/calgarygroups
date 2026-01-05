@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Be Gay Do Crafts"
 type: Club
-interests: ["arts", "lgbtq2s"]
+interests: ["arts", "2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

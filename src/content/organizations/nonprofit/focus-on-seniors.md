@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "F.O.C.U.S. on Seniors"
 type: Nonprofit
-interests: ["seniors", "culture and heritage", "general"]
+interests: ["seniors", "culture-heritage", "general"]
 age_range: "seniors"
 identity_focused: true
 meeting_format: "in-person"

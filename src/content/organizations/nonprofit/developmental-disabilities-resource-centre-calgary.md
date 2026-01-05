@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Developmental Disabilities Resource Centre of Calgary (DDRC)"
 type: Nonprofit
-interests: ["disability/neurodivergent", "health-wellness", "general"]
+interests: ["disability-neurodivergent", "health-wellness", "general"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

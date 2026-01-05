@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Inclusion Calgary"
 type: Nonprofit
-interests: ["disability/neurodivergent", "justice", "education"]
+interests: ["disability-neurodivergent", "justice", "education"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "hybrid"

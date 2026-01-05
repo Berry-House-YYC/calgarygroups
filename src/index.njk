@@ -32,12 +32,26 @@ title: Directory
   if ('serviceWorker' in navigator) {
     caches.keys().then(function(cacheNames) {
       cacheNames.forEach(function(cacheName) {
-        if (cacheName.includes('dynamic')) {
+        if (cacheName.includes('dynamic') || cacheName.includes('static')) {
           caches.delete(cacheName);
         }
       });
     });
   }
+  
+  // Force Alpine.js reinit on mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if we're on mobile
+    if (window.innerWidth <= 768) {
+      // Force a re-render of Alpine components
+      const Alpine = window.Alpine;
+      if (Alpine && Alpine.initTree) {
+        setTimeout(() => {
+          Alpine.initTree(document.body);
+        }, 100);
+      }
+    }
+  });
 </script>
 
 <section class="h-feed space-y-6" x-data="directory(getOrganizations())">
@@ -256,7 +270,7 @@ title: Directory
             </div>
             <p class="p-summary mt-2 break-words text-sm text-slate-700 dark:text-slate-300" x-text="org.excerpt"></p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <template x-for="tag in (org.interests || []).slice(0, 3)" :key="tag">
+              <template x-for="tag in (org.interests || []).filter(Boolean).slice(0, 3)" :key="tag">
                 <span
                   class="inline-flex min-w-0 items-center gap-2 rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
                   :class="interestMeta(tag).pill">
@@ -359,7 +373,7 @@ title: Directory
           iconColor: "text-fuchsia-700 dark:text-fuchsia-400",
           pill: "bg-fuchsia-50 text-fuchsia-800 ring-fuchsia-200"
         },
-        "disability/neurodivergent": {
+        "disability-neurodivergent": {
           label: "Disability/Neurodivergent",
           icon: "fa-solid fa-universal-access",
           iconColor: "text-violet-700 dark:text-violet-400",
@@ -455,7 +469,7 @@ title: Directory
           iconColor: "text-brown-700 dark:text-brown-400",
           pill: "bg-amber-50 text-amber-900 ring-amber-300"
         },
-        "culture and heritage": {
+        "culture-heritage": {
           label: "Culture and Heritage",
           icon: "fa-solid fa-globe",
           iconColor: "text-amber-800 dark:text-amber-400",

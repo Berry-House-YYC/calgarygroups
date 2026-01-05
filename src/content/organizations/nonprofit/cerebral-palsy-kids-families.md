@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Cerebral Palsy Kids and Families"
 type: Nonprofit
-interests: ["disability/neurodivergent", "sports-rec", "youth"]
+interests: ["disability-neurodivergent", "sports-rec", "youth"]
 age_range: "youth"
 identity_focused: true
 meeting_format: "in-person"

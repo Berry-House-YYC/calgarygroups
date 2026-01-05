@@ -2,9 +2,7 @@
 layout: layouts/organization.njk
 name: Crazy Indians Brotherhood
 type: Chapter
-interests:
-  - indigenous
-  - health-wellness
+interests: ["indigenous", "health-wellness"]
 age_range: all-ages
 identity_focused: true
 meeting_format: in-person

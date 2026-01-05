@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Autism Calgary Association"
 type: Nonprofit
-interests: ["disability/neurodivergent", "health-wellness", "education"]
+interests: ["disability-neurodivergent", "health-wellness", "education"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "hybrid"

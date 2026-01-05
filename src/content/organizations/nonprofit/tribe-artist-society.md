@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Tribe Artist Society"
 type: Nonprofit
-interests: ["culture and heritage", "arts", "indigenous"]
+interests: ["culture-heritage", "arts", "indigenous"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

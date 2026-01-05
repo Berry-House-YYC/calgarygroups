@@ -1,6 +1,6 @@
-const CACHE_NAME = 'calgary-groups-v4';
-const STATIC_CACHE = 'static-v4';
-const DYNAMIC_CACHE = 'dynamic-v4';
+const CACHE_NAME = 'calgary-groups-v5';
+const STATIC_CACHE = 'static-v5';
+const DYNAMIC_CACHE = 'dynamic-v5';
 
 // Assets to cache on install
 const STATIC_ASSETS = [
@@ -70,9 +70,16 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() => {
-          // If network fails, try cache
-          return caches.match(request).then((cachedResponse) => {
-            return cachedResponse || caches.match('/');
+          // If network fails, try cache but only for non-index pages
+          if (!request.url.endsWith('/') && !request.url.endsWith('/index.html')) {
+            return caches.match(request).then((cachedResponse) => {
+              return cachedResponse || caches.match('/');
+            });
+          }
+          // For the main page, always try network first
+          return new Response('Offline', {
+            status: 503,
+            statusText: 'Service Unavailable'
           });
         })
     );

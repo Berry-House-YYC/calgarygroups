@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Raising Readers"
 type: Small Business
-interests: ["disability/neurodivergent", "education"]
+interests: ["disability-neurodivergent", "education"]
 age_range: "youth"
 identity_focused: false
 meeting_format: "hybrid"

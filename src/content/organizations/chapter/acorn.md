@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "ACORN"
 type: Chapter
-interests: ["disability/neurodivergent", "low-income", "urban-issues"]
+interests: ["disability-neurodivergent", "low-income", "urban-issues"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: ""

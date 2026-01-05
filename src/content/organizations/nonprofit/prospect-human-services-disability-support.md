@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Prospect Human Services - Disability Support"
 type: Nonprofit
-interests: ["disability/neurodivergent", "education", "tech"]
+interests: ["disability-neurodivergent", "education", "tech"]
 age_range: "adults"
 identity_focused: true
 meeting_format: "in-person"

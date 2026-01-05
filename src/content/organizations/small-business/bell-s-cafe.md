@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Bell's Cafe"
 type: Small Business
-interests: []
+interests: ["book", "general"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

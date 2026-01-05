@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Congress Coffee"
 type: Small Business
-interests: []
+interests: ["general"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Chinese Elderly Citizens' Association"
 type: Nonprofit
-interests: ["seniors", "culture and heritage", "health-wellness"]
+interests: ["seniors", "culture-heritage", "health-wellness"]
 age_range: "seniors"
 identity_focused: true
 meeting_format: "in-person"

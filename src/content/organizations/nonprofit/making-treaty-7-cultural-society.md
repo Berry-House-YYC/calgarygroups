@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Making Treaty 7 Cultural Society"
 type: Nonprofit
-interests: ["indigenous", "arts", "culture and heritage"]
+interests: ["indigenous", "arts", "culture-heritage"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

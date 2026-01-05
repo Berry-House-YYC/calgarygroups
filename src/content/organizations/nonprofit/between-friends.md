@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Between Friends"
 type: Nonprofit
-interests: ["disability/neurodivergent", "youth"]
+interests: ["disability-neurodivergent", "youth"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

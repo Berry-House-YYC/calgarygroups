@@ -2,9 +2,7 @@
 layout: layouts/organization.njk
 name: Bear Clan Patrol
 type: Chapter
-interests:
-  - health-wellness
-  - indigenous
+interests: ["health-wellness", "indigenous"]
 age_range: all-ages
 identity_focused: true
 meeting_format: in-person

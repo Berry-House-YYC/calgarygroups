@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Autism Aspergers Friendship Society of Calgary (AAFS)"
 type: Nonprofit
-interests: ["disability/neurodivergent", "sports-rec", "youth"]
+interests: ["disability-neurodivergent", "sports-rec", "youth"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

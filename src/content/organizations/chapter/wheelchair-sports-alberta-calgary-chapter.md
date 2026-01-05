@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Wheelchair Sports Alberta (Calgary Chapter)"
 type: Chapter
-interests: ["disability/neurodivergent", "sports-rec"]
+interests: ["disability-neurodivergent", "sports-rec"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

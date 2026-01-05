@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Independent Jewish Voices Calgary"
 type: Chapter
-interests: ["culture and heritage", "anti-racism", "international-solidarity"]
+interests: ["culture-heritage", "anti-racism", "international-solidarity"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Black Pride YYC"
 type: Nonprofit
-interests: ["culture and heritage", "anti-racism", "2slgbtq+"]
+interests: ["culture-heritage", "anti-racism", "2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

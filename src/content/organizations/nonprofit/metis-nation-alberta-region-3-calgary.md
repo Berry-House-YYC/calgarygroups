@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Métis Nation of Alberta - Region 3 (Calgary)"
 type: Nonprofit
-interests: ["indigenous", "culture and heritage", "justice"]
+interests: ["indigenous", "culture-heritage", "justice"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

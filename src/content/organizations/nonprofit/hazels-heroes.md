@@ -19,7 +19,7 @@ Supported by SIDS Calgary, Hazel's Heroes provides no-cost retreats building fri
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
-    <li>Website: <a href="https://afrocaresupportnetwork.com/" target="_blank">https://afrocaresupportnetwork.com/</a></li>
+    <li>Website: <a href="https://sidscalgary.ca/hazels-heroes" target="_blank">https://sidscalgary.ca/hazels-heroes</a></li>
   </ul>
 </div>
 

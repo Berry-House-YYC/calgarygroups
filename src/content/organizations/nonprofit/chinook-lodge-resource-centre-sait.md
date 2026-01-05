@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Chinook Lodge Resource Centre (SAIT)"
 type: Nonprofit
-interests: ["indigenous", "education", "culture and heritage"]
+interests: ["indigenous", "education", "culture-heritage"]
 age_range: "youth"
 identity_focused: true
 meeting_format: "in-person"

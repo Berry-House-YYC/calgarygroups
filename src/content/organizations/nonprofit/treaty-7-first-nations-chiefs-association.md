@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Treaty 7 First Nations Chiefs' Association"
 type: Nonprofit
-interests: ["indigenous", "justice", "culture and heritage"]
+interests: ["indigenous", "justice", "culture-heritage"]
 age_range: "adults"
 identity_focused: true
 meeting_format: "in-person"

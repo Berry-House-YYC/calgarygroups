@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "CMHA Recovery College Welcome Centre Peer Support"
 type: Nonprofit
-interests: ["health-wellness", "disability/neurodivergent", "arts"]
+interests: ["health-wellness", "disability-neurodivergent", "arts"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Aboriginal Friendship Centre of Calgary (AFCC)"
 type: Nonprofit
-interests: ["indigenous", "culture and heritage", "general"]
+interests: ["indigenous", "culture-heritage", "general"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

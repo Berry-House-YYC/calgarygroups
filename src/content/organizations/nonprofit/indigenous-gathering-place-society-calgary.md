@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Indigenous Gathering Place Society of Calgary"
 type: Nonprofit
-interests: ["indigenous", "culture and heritage", "health-wellness"]
+interests: ["indigenous", "culture-heritage", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

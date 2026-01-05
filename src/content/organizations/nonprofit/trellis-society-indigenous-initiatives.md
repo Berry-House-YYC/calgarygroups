@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Trellis Society - Indigenous Initiatives"
 type: Nonprofit
-interests: ["indigenous", "youth", "culture and heritage"]
+interests: ["indigenous", "youth", "culture-heritage"]
 age_range: "youth"
 identity_focused: true
 meeting_format: "in-person"

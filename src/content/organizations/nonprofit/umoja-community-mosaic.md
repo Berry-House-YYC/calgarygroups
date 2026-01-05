@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Umoja Community Mosaic"
 type: Nonprofit
-interests: ["culture and heritage", "youth"]
+interests: ["culture-heritage", "youth"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

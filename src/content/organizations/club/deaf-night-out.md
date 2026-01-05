@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Deaf Night Out Calgary"
 type: Club
-interests: ["disability/neurodivergent", "general"]
+interests: ["disability-neurodivergent", "general"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

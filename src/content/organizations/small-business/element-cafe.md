@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Element Cafe"
 type: Small Business
-interests: []
+interests: ["arts", "general"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

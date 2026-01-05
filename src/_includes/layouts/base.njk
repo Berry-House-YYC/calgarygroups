@@ -10,7 +10,7 @@
           const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           const theme = stored || (prefersDark ? "dark" : "light");
           document.documentElement.classList.toggle("dark", theme === "dark");
-        } catch {}
+        } catch (e) {}
       })();
     </script>
     {% set pageLabel = title or name %}
@@ -85,7 +85,7 @@
 
       function apply(theme) {
         document.documentElement.classList.toggle("dark", theme === "dark");
-        try { localStorage.setItem("theme", theme); } catch { }
+        try { localStorage.setItem("theme", theme); } catch (e) { }
         const isDark = theme === "dark";
         btn.setAttribute("aria-pressed", String(isDark));
         btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");

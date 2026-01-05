@@ -23,9 +23,9 @@ title: Directory
 ]
 {% endset %}
 
-<template id="organizations-data">
+<script type="application/json" id="organizations-data">
   {{ organizationsData | safe }}
-</template>
+</script>
 
 <script>
   // Force refresh of cached data on mobile
@@ -306,8 +306,8 @@ title: Directory
     const el = document.getElementById("organizations-data");
     if (!el) return [];
     try {
-      return JSON.parse(el.innerHTML || "[]");
-    } catch {
+      return JSON.parse(el.textContent || "[]");
+    } catch (e) {
       return [];
     }
   }

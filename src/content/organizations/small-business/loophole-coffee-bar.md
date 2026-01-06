@@ -23,5 +23,3 @@ A community hub and coffee bar that hosts a wide variety of local events. From l
   </ul>
 </div>
 
-**Notes:**
-support local groups

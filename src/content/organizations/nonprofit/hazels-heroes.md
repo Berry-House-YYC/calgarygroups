@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "Supported by SIDS Calgary, Hazel's Heroes provides no-cost retreats building friendship, hope, and healing for grieving mothers who have lost a young child. Past locations include Ghost River and Kananaskis, nearby to Calgary."
+description: "An initiative of SIDS Calgary, Hazel's Heroes provides no-cost retreats building friendship, hope, and healing for grieving mothers who have lost a young child. Past locations include Ghost River and Kananaskis, nearby to Calgary."
 ---
 
-Supported by SIDS Calgary, Hazel's Heroes provides no-cost retreats building friendship, hope, and healing for grieving mothers who have lost a young child. Past locations include Ghost River and Kananaskis, nearby to Calgary.
+An initiative of SIDS Calgary, Hazel's Heroes provides no-cost retreats building friendship, hope, and healing for grieving mothers who have lost a young child. Past locations include Ghost River and Kananaskis, nearby to Calgary.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
@@ -24,4 +24,4 @@ Supported by SIDS Calgary, Hazel's Heroes provides no-cost retreats building fri
 </div>
 
 **Notes:**
-Note that while the retreat is no-cost, they require a $150 deposit to confirm attendance, however, the deposit is returned after the retreat.
+Note that while the retreat is no-cost, they require a $150 deposit to reserve your spot, however, the deposit is returned after the retreat.

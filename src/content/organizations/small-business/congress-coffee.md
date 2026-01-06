@@ -16,8 +16,6 @@ description: "A local coffee company roasting small-batch coffee in Calgary. The
 
 A local coffee company roasting small-batch coffee in Calgary. They act as a community hub through their cafe and support for local events.
 
-Community organization in Calgary.
-
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">

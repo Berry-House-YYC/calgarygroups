@@ -28,4 +28,4 @@ Our services are designed for families seeking targeted, individualized reading 
   </ul>
 </div>
 
-**Notes:**
+

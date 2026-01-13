@@ -24,4 +24,4 @@ description: "\"Lectures led by professors, graduate students and experts... at 
   </ul>
 </div>
 
-**Notes:** All events are "free" (minus the travel/drink/food expenses).
+**Notes:** All events are free (minus the travel/drink/food expenses).

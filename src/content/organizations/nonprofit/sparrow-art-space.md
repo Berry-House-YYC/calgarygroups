@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Sparrow Art Space"
 type: Nonprofit
-interests: ["arts"]
+interests: ["arts", "women+"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"
@@ -11,10 +11,12 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A community art space focused on creativity, collaboration, and connection. They offer artist residencies and exhibitions, creating opportunities for the public to engage directly with artists and their work."
+description: "A community art space focused on creativity, collaboration, and connection. They offer artist residencies and exhibitions, creating opportunities for the public to engage directly with artists and their work. They also host Stitch & Bitch sessions, free to join, 18+, a community for women to come as they are and unwind through textile arts."
 ---
 
 A community art space focused on creativity, collaboration, and connection. They offer artist residencies and exhibitions, creating opportunities for the public to engage directly with artists and their work.
+
+They also host Stitch & Bitch sessions, free to join, 18+, a community for women to come as they are and unwind through textile arts.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

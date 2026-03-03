@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: Crazy Indians Brotherhood
 type: Chapter
 interests: ["indigenous", "health-wellness"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: true
-meeting_format: in-person
-location_area: city-wide
-status: unknown
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "unknown"
 permalink: /organizations/{{ page.fileSlug }}/
 description: A non-profit organization focused on community service, sobriety,
   and healing. They support members in recovery and engage in initiatives like

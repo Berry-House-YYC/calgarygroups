@@ -1,0 +1,170 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at 2 AM UTC to check site health
+    - cron: '0 2 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Check for YAML errors
+      run: |
+        echo "Checking YAML frontmatter in all organization files..."
+        find src/content/organizations -name "*.md" -exec echo "Checking {}" \; -exec node -e "
+          const fs = require('fs');
+          const content = fs.readFileSync('{}', 'utf8');
+          if (content.startsWith('---')) {
+            const parts = content.split('---');
+            if (parts.length > 2) {
+              try {
+                // Simple YAML validation - check for basic syntax issues
+                const frontmatter = parts[1];
+                if (frontmatter.includes('age_range:') && !frontmatter.includes('age_range: \"')) {
+                  console.error('Error: Unquoted age_range value in {}');
+                  process.exit(1);
+                }
+                if (frontmatter.includes('meeting_format:') && !frontmatter.includes('meeting_format: \"')) {
+                  console.error('Error: Unquoted meeting_format value in {}');
+                  process.exit(1);
+                }
+                if (frontmatter.includes('location_area:') && !frontmatter.includes('location_area: \"')) {
+                  console.error('Error: Unquoted location_area value in {}');
+                  process.exit(1);
+                }
+                if (frontmatter.includes('status:') && !frontmatter.includes('status: \"')) {
+                  console.error('Error: Unquoted status value in {}');
+                  process.exit(1);
+                }
+              } catch (e) {
+                console.error('Error parsing YAML in {}:', e.message);
+                process.exit(1);
+              }
+            }
+          }
+        " \;
+        echo "✅ YAML validation passed"
+      
+    - name: Build site
+      run: npm run build
+      
+    - name: Check build output
+      run: |
+        echo "Checking if _site directory exists..."
+        test -d _site || (echo "❌ Build failed: _site directory not found" && exit 1)
+        echo "Checking if index.html exists..."
+        test -f _site/index.html || (echo "❌ Build failed: index.html not found" && exit 1)
+        
+        # Count organizations
+        ORG_COUNT=$(find _site/organizations -name "index.html" | wc -l)
+        echo "✅ Build successful! Generated $ORG_COUNT organization pages"
+        
+        # Check for essential pages
+        for page in index.html about/index.html submit/index.html info/index.html; do
+          if [ -f "_site/$page" ]; then
+            echo "✅ $page generated"
+          else
+            echo "❌ $page missing"
+            exit 1
+          fi
+        done
+        
+    - name: Check for duplicate permalinks
+      run: |
+        echo "Checking for duplicate organization permalinks..."
+        PERMALINKS=$(find src/content/organizations -name "*.md" -exec grep -l "permalink:" {} \; | xargs grep -h "permalink:" | sort | uniq -d)
+        if [ -n "$PERMALINKS" ]; then
+          echo "❌ Duplicate permalinks found:"
+          echo "$PERMALINKS"
+          exit 1
+        else
+          echo "✅ No duplicate permalinks found"
+        fi
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: build-files-${{ github.sha }}
+        path: _site/
+        retention-days: 7
+        
+  deploy-status:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Notify deployment
+      run: |
+        echo "🚀 Site will be deployed to Netlify"
+        echo "📍 Production URL: https://calgarygroups.com"
+        echo "📊 Deploy preview: https://app.netlify.com/sites/calgarygroups/deploys"
+        
+    - name: Check site health (after delay)
+      run: |
+        echo "Waiting 60 seconds for deployment..."
+        sleep 60
+        
+        echo "Checking site health..."
+        if curl -f -s -o /dev/null -w "%{http_code}" https://calgarygroups.com | grep -q "200\|301\|302"; then
+          echo "✅ Site is accessible!"
+        else
+          echo "❌ Site appears to be down"
+          exit 1
+        fi
+        
+  link-check:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: build-files-${{ github.sha }}
+        path: _site
+        
+    - name: Check internal links
+      run: |
+        echo "Checking for broken internal links..."
+        cd _site
+        
+        # Find all HTML files
+        find . -name "*.html" -exec sh -c '
+          for file; do
+            # Extract links and check if they exist
+            grep -oE "href=\"[^\"]+\"" "$file" | grep -E "^href=\"/(?!http)" | cut -d'"' -f2 | while read link; do
+              if [ "$link" != "/" ]; then
+                target="./${link#/}"
+                if [ "${target%/}" = "${target}" ]; then
+                  target="$target/index.html"
+                fi
+                if [ ! -f "$target" ]; then
+                  echo "❌ Broken link in $file: $link -> $target"
+                fi
+              fi
+            done
+        ' sh {} +

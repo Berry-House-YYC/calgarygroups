@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: Bear Clan Patrol
 type: Chapter
 interests: ["health-wellness", "indigenous"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: true
-meeting_format: in-person
-location_area: city-wide
-status: unknown
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "unknown"
 permalink: /organizations/{{ page.fileSlug }}/
 description: An Indigenous-led grassroots safety initiative. Volunteers patrol
   streets to provide support, harm reduction, and a sense of safety for

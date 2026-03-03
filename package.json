@@ -5,13 +5,16 @@
   "description": "Calgary Groups Directory",
   "scripts": {
     "dev": "bash scripts/check-git-status.sh && npm-run-all --parallel dev:11ty dev:css",
-    "dev:11ty": "eleventy --serve",
+    "dev:11ty": "eleventy --serve --port=8081",
     "dev:css": "tailwindcss -i ./src/assets/tailwind.css -o ./src/static/assets/styles.css --watch",
     "build": "npm run build:css && npm run build:11ty",
     "build:11ty": "eleventy",
     "build:css": "tailwindcss -i ./src/assets/tailwind.css -o ./src/static/assets/styles.css --minify",
     "sync": "git pull --no-rebase && npm run dev",
-    "push": "git pull --no-rebase && git push"
+    "push": "git pull --no-rebase && git push",
+    "test": "npm run build && npm run check-links",
+    "check-links": "bash scripts/check-netlify.sh",
+    "pre-commit": "bash scripts/pre-commit-check.sh"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

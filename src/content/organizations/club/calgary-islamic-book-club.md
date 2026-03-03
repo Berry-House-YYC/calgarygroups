@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: Calgary Islamic Book Club
 type: Club
 interests: ["book", "international-solidarity", "culture-heritage"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: true
-meeting_format: in-person
-location_area: city-wide
-status: active
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "active"
 permalink: /organizations/{{ page.fileSlug }}/
 description: "A book club fostering connection through the discussion of Islamic literature and faith."
 ---

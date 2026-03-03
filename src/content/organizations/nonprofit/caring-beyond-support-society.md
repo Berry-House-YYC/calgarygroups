@@ -11,7 +11,7 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: \"Caring Beyond is a peer support group for parents after the loss of a baby through miscarriage, stillbirth, early neonatal death, termination for medical reasons, ectopic pregnancy, and any other loss across the spectrum of early gestation to the neonatal period.\" They meet in-person on a monthly basis.
+description: "Caring Beyond is a peer support group for parents after the loss of a baby through miscarriage, stillbirth, early neonatal death, termination for medical reasons, ectopic pregnancy, and any other loss across the spectrum of early gestation to the neonatal period. They meet in-person on a monthly basis."
 ---
 
 "Caring Beyond is a peer support group for parents after the loss of a baby through miscarriage, stillbirth, early neonatal death, termination for medical reasons, ectopic pregnancy, and any other loss across the spectrum of early gestation to the neonatal period." They meet in-person on a monthly basis.

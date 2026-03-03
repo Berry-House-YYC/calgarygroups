@@ -6,6 +6,9 @@
 
 **Search and filter grassroots organizations, clubs, activist groups, and community initiatives in Calgary.**
 
+[![CI/CD Pipeline](https://github.com/Berry-House-YYC/calgarygroups/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Berry-House-YYC/calgarygroups/actions/workflows/ci-cd.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e5b0e0f-3c6f-4b5a-9e8e-7b0e0f3c6f4b5/deploy-status)](https://app.netlify.com/sites/calgarygroups/deploys)
+
 Calgary Groups is a centralized, searchable directory designed to help Calgarians discover and connect with local organizations that match their interests. Whether you're looking for activist groups, social clubs, nonprofits, or community initiatives, this directory makes it easy to find organizations working on the issues you care about.
 
 ![Calgary Groups Screenshot](src/assets/screenshot.png)

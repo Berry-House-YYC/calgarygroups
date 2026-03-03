@@ -3,9 +3,9 @@ layout: layouts/organization.njk
 name: Calgary Sport and Social Club (CSSC)
 type: Nonprofit
 interests: ["sports-rec"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: false
-meeting_format: in-person
+meeting_format: "in-person"
 location_area: ""
 status: "active"
 permalink: /organizations/{{ page.fileSlug }}/

@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: Gay Book Cult
 type: Club
 interests: ["book","2slgbtq+"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: true
-meeting_format: in-person
-location_area: city-wide
-status: active
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "active"
 permalink: /organizations/{{ page.fileSlug }}/
 description: Fiction, non-fiction, and a whole lot of women loving women. Monthly book club. Have clubs in both Calgary and Red Deer, Alberta
 ---

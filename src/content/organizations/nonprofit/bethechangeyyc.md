@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: BeTheChangeYYC
 type: Nonprofit
 interests: ["low-income"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: false
-meeting_format: in-person
-location_area: city-wide
-status: active
+meeting_format: "in-person"
+location_area: "city-wide"
+status: "active"
 permalink: /organizations/{{ page.fileSlug }}/
 description: A homeless outreach non-profit that provides essential supplies and
   support to those living on the streets. Their volunteer teams offer food,

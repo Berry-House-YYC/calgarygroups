@@ -3,11 +3,11 @@ layout: layouts/organization.njk
 name: "Last Chance Produce"
 type: Grassroots
 interests: ["urban-issues", "low-income"]
-age_range: all-ages
+age_range: "all-ages"
 identity_focused: false
-meeting_format: in-person
-location_area: southeast
-status: active
+meeting_format: "in-person"
+location_area: "southeast"
+status: "active"
 permalink: /organizations/{{ page.fileSlug }}/
 
 

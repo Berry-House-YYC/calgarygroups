@@ -14,7 +14,8 @@
     "push": "git pull --no-rebase && git push",
     "test": "npm run build && npm run check-links",
     "check-links": "bash scripts/check-netlify.sh",
-    "pre-commit": "bash scripts/pre-commit-check.sh"
+    "pre-commit": "bash scripts/pre-commit-check.sh",
+    "deploy": "bash scripts/deploy-netlify.sh"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

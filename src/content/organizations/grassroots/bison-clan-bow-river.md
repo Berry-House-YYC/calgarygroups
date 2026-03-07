@@ -21,7 +21,7 @@ description: "\"An Indigenous-led grassroots organization in Mohkinstis, Treaty 
   <ul class="list-none pl-0">
     <li>Website: <a href="https://www.facebook.com/BisonClan/" target="_blank">https://www.facebook.com/BisonClan/</a></li>
     <li>Website: <a href="https://www.bisonclan.org/" target="_blank">https://www.bisonclan.org/</a></li>
-    <li>Email: <a href="mailto:yycstrongdaughters@gmail.com">bisonclanyyc@gmail.com</a></li>
+    <li>Email: <a href="mailto:ybisonclanyyc@gmail.com">bisonclanyyc@gmail.com</a></li>
   </ul>
 </div>
 

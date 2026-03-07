@@ -1,7 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "YYC Sapphics"
-type: Club
+type: Grassroots
 interests: ["2slgbtq+"]
 age_range: "all-ages"
 identity_focused: true
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship."
+description: "A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship. They are also a key wayfinding group for queer community, running an event spreadsheet and reposting queer happenings on their Instagram story."
 ---
 
-A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship.
+A community group dedicated to connecting sapphic individuals (women and non-binary folks attracted to women) in Calgary. They organize social gatherings to build solidarity and friendship. They are also a key wayfinding group for queer community, running an event spreadsheet and reposting queer happenings on their Instagram story.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

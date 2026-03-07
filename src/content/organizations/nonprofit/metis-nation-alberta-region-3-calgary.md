@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "Métis Nation of Alberta - Region 3 (Calgary)"
+name: "Métis Nation of Alberta - Otipemisiwak Métis Government"
 type: Nonprofit
 interests: ["indigenous", "culture-heritage", "justice"]
 age_range: "all-ages"

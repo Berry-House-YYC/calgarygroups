@@ -20,7 +20,7 @@ bpm is a "collaborative community of music producers dedicated to fostering the 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
-    <li>Website: <a href="https://www.instagram.com/bpm.local" target="_blank">hhttps://www.instagram.com/bpm.local</a></li>
+    <li>Website: <a href="https://www.instagram.com/bpm.local" target="_blank">https://www.instagram.com/bpm.local</a></li>
   </ul>
 </div>
 

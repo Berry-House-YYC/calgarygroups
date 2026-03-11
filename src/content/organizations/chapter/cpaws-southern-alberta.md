@@ -1,6 +1,6 @@
 ---
 layout: layouts/organization.njk
-name: "CPAWs (Canadian Parks and Wildnerness Society - Southern Alberta Chapter"
+name: "CPAWs (Canadian Parks and Wilderness Society - Southern Alberta Chapter"
 type: Chapter
 interests: ["environment", "education", "youth"]
 age_range: "all-ages"

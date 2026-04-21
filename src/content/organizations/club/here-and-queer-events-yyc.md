@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Here and Queer Events YYC"
 type: Club
-interests: ["2slgbtq+"]
+interests: ["2slgbtq+", "sports-rec"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"

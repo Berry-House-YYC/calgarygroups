@@ -4,7 +4,7 @@ name: "Wise Guy Trivia YYC"
 type: Small Business
 interests: ["general"]
 age_range: "all-ages"
-identity_focused: true
+identity_focused: false
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"

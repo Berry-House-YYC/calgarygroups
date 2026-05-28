@@ -2,9 +2,9 @@
 layout: layouts/organization.njk
 name: "Mortis Craft Club"
 type: Club
-interests: ["arts","general"]
+interests: ["arts"]
 age_range: "all-ages"
-identity_focused: true
+identity_focused: false
 meeting_format: "in-person"
 location_area: "downtown"
 status: "active"

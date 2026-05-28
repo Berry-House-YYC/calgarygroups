@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Mortis Craft Club"
 type: Club
-interests: ["arts"]
+interests: ["arts","general"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
@@ -12,10 +12,10 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 
 
 
-description: "Free social craft club for introverts and their token extroverts. Every second Thursday of the month hosted at The Bows, an art gallery in downtown Calgary. They also do other locations like parks when the weather permits. You can bring your own supplies or use what they provide."
+description: "Free social craft club for introverts and their token extroverts. Every second Thursday of the month hosted at The Bows, an art gallery in downtown Calgary. They also do other times and locations like parks when the weather permits. You can bring your own supplies or use what they provide."
 ---
 
-Free social craft club for introverts and their token extroverts. Every second Thursday of the month hosted at The Bows, an art gallery in downtown Calgary. They also do other locations like parks when the weather permits. You can bring your own supplies or use what they provide.
+Free social craft club for introverts and their token extroverts. Every second Thursday of the month hosted at The Bows, an art gallery in downtown Calgary. They also do other times and locations like parks when the weather permits. You can bring your own supplies or use what they provide.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

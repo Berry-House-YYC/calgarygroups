@@ -6,7 +6,7 @@ interests: ["sports-rec", "culture-heritage"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"
-location_area: "Mount Pleasant and Winston Heights, northeast"
+location_area: "northeast"
 status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 

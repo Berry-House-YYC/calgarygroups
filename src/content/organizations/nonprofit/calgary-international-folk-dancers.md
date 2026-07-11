@@ -26,5 +26,3 @@ Contact us to sign up. The first session is free.
     <li>Email: <a href="mailto:blackcrow2000@gmail.com">blackcrow2000@gmail.com</a></li>
   </ul>
 </div>
-
-~

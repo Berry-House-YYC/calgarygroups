@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "Calgary Rakyshinkan"
 type: Nonprofit
-interests: ["sports-rec", "education"]
+interests: ["sports-rec", "culture-heritage"]
 age_range: "all-ages"
 identity_focused: false
 meeting_format: "in-person"

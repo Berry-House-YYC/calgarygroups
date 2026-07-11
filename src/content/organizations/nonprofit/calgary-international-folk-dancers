@@ -1,0 +1,30 @@
+---
+layout: layouts/organization.njk
+name: "Calgary International Folk Dancers"
+type: Nonprofit
+interests: ["arts","sports-rec","culture-heritage"]
+age_range: "all-ages"
+identity_focused: false
+location_area: "citywide"
+status: "active"
+permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+description: "A multicultural and multigenerational recreational folkdance club. Our repertoire is weighed towards Eastern Europe and the Mediterranean. However, we also do dances from China, Japan and Latin America. Our current selection consists of over 250 dances. Previously known as Calgary Folkdance Fridays."
+---
+
+A multicultural and multigenerational recreational folkdance club. Our repertoire is weighed towards Eastern Europe and the Mediterranean. However, we also do dances from China, Japan and Latin America. Our current selection consists of over 250 dances. Previously known as Calgary Folkdance Fridays.
+
+Beginners and experienced dancers are welcome. They offer folkdance classes, workshops, and events. Children are welcome to attend with a guardian.
+
+Contact us to sign up. The first session is free.
+
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://calgaryfolkdance.ca/" target="_blank">https://calgaryfolkdance.ca/</a></li>
+    <li>Email: <a href="mailto:blackcrow2000@gmail.com">blackcrow2000@gmail.com</a></li>
+  </ul>
+</div>
+
+~

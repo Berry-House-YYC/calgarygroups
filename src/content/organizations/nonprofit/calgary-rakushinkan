@@ -1,0 +1,29 @@
+---
+layout: layouts/organization.njk
+name: "Calgary Rakyshinkan"
+type: Nonprofit
+interests: ["sports-rec", "education"]
+age_range: "all-ages"
+identity_focused: false
+meeting_format: "in-person"
+location_area: "Mount Pleasant and Winston Heights, northeast"
+status: "active"
+permalink: "/organizations/{{ page.fileSlug }}/"
+
+
+description: "Calgary Rakushinkan is a dojo located in North Calgary that teaches Aikido, sword arts and other traditional Japanese martial arts. Classes are available to kids, teens and adults."
+---
+
+Calgary Rakushinkan is a dojo located in North Calgary that teaches Aikido, sword arts and other traditional Japanese martial arts. Classes are available to kids, teens and adults.
+
+Rakushinkan is unique in its approach to the modern art of Aikido in that it is based in sword theory.
+Our martial arts are also informed by our practice of kenjutsu, iaijutsu and the ancestor art of Aikido - Daito Ryu.
+Further, we present “aiki” as something real and tangible. We make it attainable through your unique training meat gods of both empty-handed practice and sword methods.
+
+<div class="org-contact-info">
+  <strong>Contact Info:</strong>
+  <ul class="list-none pl-0">
+    <li>Website: <a href="https://calgaryrakushinkan.com" target="_blank">https://calgaryrakushinkan.com</a></li>
+    <li>Email: <a href="mailto:info@calgaryrakushinkan.com">info@calgaryrakushinkan.com</a></li>
+  </ul>
+</div>

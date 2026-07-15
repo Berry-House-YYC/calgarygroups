@@ -15,7 +15,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: 'Lectures led by professors, graduate students and experts... at bars. Past topics have explored Taoism, Incels, inclusive design, and more. Topics are largely socio-cultural.'
 ---
 
-"Lectures led by professors, graduate students and experts... at bars. Past topics have explored Taoism, Incels, inclusive design, and more. Topics are largely socio-cultural."
+Lectures led by professors, graduate students and experts... at bars. Past topics have explored Taoism, incels, inclusive design, and more. Topics are largely socio-cultural.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

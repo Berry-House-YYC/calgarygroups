@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre, offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area."
+description: "The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre - The Calgary Rainbow Room - offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area."
 ---
 
-The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre, offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area.
+The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre - The Calgary Rainbow Room - offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

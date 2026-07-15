@@ -19,6 +19,6 @@ Calgary’s Community for Watching Women’s Sports. Queer Joy Centred, Fun for 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>
   <ul class="list-none pl-0">
-    <li>Website: <a href="https://www.instagram.com/p/DZtGBFQP6dM/" target="_blank">https://www.instagram.com/p/DZtGBFQP6dM/</a></li>
+    <li>Website: <a href="https://www.instagram.com/sporties.yyc/" target="_blank">https://www.instagram.com/sporties.yyc/</a></li>
   </ul>
 </div>

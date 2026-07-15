@@ -11,10 +11,10 @@ status: "active"
 permalink: "/organizations/{{ page.fileSlug }}/"
 
 
-description: "A charitable foundation that creates sponsorship circles and support systems for LGBTQ+ refugees. They help newcomers settle in Canada through mentorship, education, and community support groups."
+description: "The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre, offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area."
 ---
 
-A charitable foundation that creates sponsorship circles and support systems for LGBTQ+ refugees. They help newcomers settle in Canada through mentorship, education, and community support groups.
+The Foundation hosts Calgary’s 2SLGBTQI+ Community Centre, offering non-clinical mental health support, such as community peer support groups; supports to settle in Calgary; supports to refugee claimants; and refugee sponsorships in the Calgary area.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

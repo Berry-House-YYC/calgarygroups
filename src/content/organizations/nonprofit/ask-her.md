@@ -14,7 +14,7 @@ permalink: "/organizations/{{ page.fileSlug }}/"
 description: "We believe that City Council is strong, better, and more effective when it reflects the community it serves. We advance inclusive and equitable representation by preparing women of diverse backgrounds to engage in municipal leadership. They host speaker events, programs, and engage in advocacy for women in leadership."
 ---
 
-WWe believe that City Council is strong, better, and more effective when it reflects the community it serves. We advance inclusive and equitable representation by preparing women of diverse backgrounds to engage in municipal leadership. They host speaker events, programs, and engage in advocacy for women in leadership
+We believe that City Council is strong, better, and more effective when it reflects the community it serves. We advance inclusive and equitable representation by preparing women of diverse backgrounds to engage in municipal leadership. They host speaker events, programs, and engage in advocacy for women in leadership.
 
 <div class="org-contact-info">
   <strong>Contact Info:</strong>

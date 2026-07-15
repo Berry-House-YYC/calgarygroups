@@ -24,4 +24,4 @@ A social group for women who want to explore Calgary and try new activities. The
 </div>
 
 **Notes:**
-Most activities are paid, however, it is on this list because they are gender inclusive, and outwardly support Palestine and Sudan. Also has a book club (Girls Who Like to Read Things).
+Most activities are paid. They are gender inclusive, and outwardly support Palestine and Sudan. Also hosts a book club (Girls Who Like to Read Things).

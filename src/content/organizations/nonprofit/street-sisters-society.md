@@ -1,6 +1,7 @@
 ---
 layout: layouts/organization.njk
 name: "Street Sisters Society"
+type: Nonprofit
 interests: ["women+", "urban-issues"]
 age_range: "all-ages"
 identity_focused: true
@@ -21,5 +22,3 @@ A Calgary-based volunteer-run nonprofit organization that supports homeless wome
     <li>Website: <a href="https://www.instagram.com/streetsisterssociety/" target="_blank">https://www.instagram.com/streetsisterssociety/</a></li>
   </ul>
 </div>
-
-

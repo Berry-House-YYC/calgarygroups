@@ -24,3 +24,5 @@ Calgary Safety Connect (CSC) is focused on bringing quality professional develop
   </ul>
 </div>
 
+**Notes:**
+Professional network for Occupational Health and Safety sector.

@@ -4,7 +4,7 @@ name: "Calgary Parrot Club"
 type: Nonprofit
 interests: ["education", "environment"]
 age_range: "all-ages"
-identity_focused: true
+identity_focused: false
 meeting_format: "in-person"
 location_area: "city-wide"
 status: "active"

@@ -2,7 +2,7 @@
 layout: layouts/organization.njk
 name: "MS Canada"
 type: Nonprofit
-interests: ["youth", "health-wellbeing"]
+interests: ["youth", "health-wellness"]
 age_range: "all-ages"
 identity_focused: true
 meeting_format: "in-person"
